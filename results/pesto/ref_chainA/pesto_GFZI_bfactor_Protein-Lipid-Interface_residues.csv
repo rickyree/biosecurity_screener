@@ -1,0 +1,3 @@
+chain_id,residue_number,residue_identifier,amino_acid_3letter,amino_acid_1letter,binding_probability
+A,441,A441,PRO,P,0.5205352902412415
+A,458,A458,PHE,F,0.6435195207595825

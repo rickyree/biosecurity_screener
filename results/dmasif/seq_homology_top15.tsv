@@ -1,0 +1,68 @@
+rank	candidate	chain	seq_len	ref_len	pct_identity	aln_cov_pct	aln_score	homology_class
+1	A_B_b2_noPTM_A	A	413	413	100.00	100.00	2219.0	near-identical
+2	A_B_b3_noPTM_A	A	428	413	96.26	103.63	2182.5	near-identical
+3	b3_A	A	428	413	96.26	103.63	2182.5	near-identical
+4	3d12_A	A	428	413	96.26	103.63	2182.5	near-identical
+5	A_B_b3_A	A	428	413	96.26	103.63	2182.5	near-identical
+6	6vy5_A	A	409	413	96.65	101.21	2124.0	near-identical
+7	2vsm_A	A	413	413	100.00	100.00	2219.0	near-identical
+8	6pdl_A	A	421	413	74.00	103.39	1719.5	homolog
+9	8ja5_A	A	417	413	98.56	101.21	2179.5	near-identical
+10	2vsk_A	A	400	413	75.42	100.48	1705.5	homolog
+11	8xc4_A	A	428	413	91.61	103.87	2086.0	near-identical
+12	3d11	A	427	413	96.49	103.39	2183.0	near-identical
+13	9dvd_A	A	411	413	72.49	103.87	1657.5	homolog
+14	A_B_b2	A	413	413	100.00	100.00	2219.0	near-identical
+15	6pd4_A	A	436	413	73.17	105.57	1733.0	homolog
+16	8vf1	A	418	413	76.32	101.21	1751.5	homolog
+17	2hle	A	188	413	14.44	108.96	-75.0	non-homolog
+18	2x9m	A	419	413	76.13	101.45	1751.0	homolog
+19	covid_open	A	904	413	13.65	221.79	-113.5	non-homolog
+20	8xc4	A	428	413	91.61	103.87	2086.0	near-identical
+21	9dvd	A	411	413	72.49	103.87	1657.5	homolog
+22	7syy	A	413	413	73.58	102.66	1695.5	homolog
+23	8ja5	A	417	413	98.56	101.21	2179.5	near-identical
+24	2x9m_A	A	419	413	76.13	101.45	1751.0	homolog
+25	1v3d	A	431	413	27.23	113.80	304.5	remote homolog
+26	6cmi	B	428	413	74.53	103.63	1746.5	homolog
+27	6vy5	A	409	413	96.65	101.21	2124.0	near-identical
+28	b3	A	428	413	96.26	103.63	2182.5	near-identical
+29	6cmg_A	A	428	413	74.53	103.63	1746.5	homolog
+30	2hle_A	A	188	413	14.44	108.96	-75.0	non-homolog
+31	3d12	A	428	413	96.26	103.63	2182.5	near-identical
+32	8wjb_A	A	419	413	22.87	107.99	236.5	non-homolog
+33	6p72_A	A	426	413	31.35	105.81	562.0	remote homolog
+34	8wjb	A	419	413	22.87	107.99	236.5	non-homolog
+35	6cmg	A	428	413	74.53	103.63	1746.5	homolog
+36	A_B_b2_noPTM	A	413	413	100.00	100.00	2219.0	near-identical
+37	1v3d_A	A	431	413	27.23	113.80	304.5	remote homolog
+38	1trn	A	223	413	16.90	103.15	-40.5	non-homolog
+39	6p72	A	426	413	31.35	105.81	562.0	remote homolog
+40	7syy_A	A	413	413	73.58	102.66	1695.5	homolog
+41	6pd4	A	436	413	73.17	105.57	1733.0	homolog
+42	8vf1_A	A	418	413	76.32	101.21	1751.5	homolog
+43	b2	A	413	413	100.00	100.00	2219.0	near-identical
+44	5nop_A	A	423	413	24.13	111.38	242.5	non-homolog
+45	3gxu	A	171	413	17.59	100.48	-52.5	non-homolog
+46	3gxu_A	A	171	413	17.59	100.48	-52.5	non-homolog
+47	4wwy	A	224	413	18.10	101.69	-39.0	non-homolog
+48	2vsk	A	400	413	75.42	100.48	1705.5	homolog
+49	6pdl	A	421	413	74.00	103.39	1719.5	homolog
+50	5nop	A	423	413	24.13	111.38	242.5	non-homolog
+51	6vy4	A	422	413	74.18	103.15	1711.5	homolog
+52	2vwd	A	413	413	97.84	100.73	2144.0	near-identical
+53	A_B_b3	A	428	413	96.26	103.63	2182.5	near-identical
+54	brca1	A	699	413	14.33	174.09	-97.5	non-homolog
+55	2bba_A	A	185	413	14.22	108.96	-80.0	non-homolog
+56	A_B_b3_noPTM	A	428	413	96.26	103.63	2182.5	near-identical
+57	2bba	A	185	413	14.22	108.96	-80.0	non-homolog
+58	2vsm	A	413	413	100.00	100.00	2219.0	near-identical
+59	1iko	P	141	413	13.74	102.18	-99.0	non-homolog
+60	6vy4_A	A	422	413	74.18	103.15	1711.5	homolog
+61	covid_closed	A	972	413	12.90	249.64	-122.0	non-homolog
+62	1trn_A	A	223	413	16.90	103.15	-40.5	non-homolog
+63	2vwd_A	A	413	413	97.84	100.73	2144.0	near-identical
+64	5kv9	B	430	413	26.28	113.32	285.0	remote homolog
+65	6cmi_A	?	0	413				no_sequence
+66	1iko_A	?	0	413				no_sequence
+67	5kv9_A	?	0	413				no_sequence

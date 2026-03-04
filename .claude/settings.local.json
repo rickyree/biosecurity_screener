@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(source:*)",
+      "Bash(ls:*)",
+      "Bash(sort -k1,1 -k2,2rn)",
+      "Bash(sort -k1,1n -k2,2rn)",
+      "Bash(sort -k2,2rn)",
+      "Bash(python3 -c \":*)",
+      "Bash(sort -t',' -k6 -rn)",
+      "Bash(sort -k3 -rn)",
+      "Bash(git clone:*)",
+      "Bash(cat:*)",
+      "Bash(done)"
+    ]
+  }
+}

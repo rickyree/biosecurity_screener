@@ -1,0 +1,68 @@
+rank	candidate	score	fp_dist	inlier_pct	rmsd_A	n_clash	clash_pct	verdict	name
+1	A_B_b2_noPTM_A	-1.0000	0.0000	1.0000	0.00	0	0.0000	PREDICTED BINDER	Nipah G ephrin b2 binding noPTM (A)
+2	A_B_b3_noPTM_A	-0.3792	0.0659	0.9487	1.21	0	0.0000	PREDICTED BINDER	Nipah G ephrin b3 binding noPTM (A)
+3	b3_A	-0.3367	0.0709	0.8974	1.17	2	0.0006	PREDICTED BINDER	Nipah G ephrin b3 binding multicomplex (A)
+4	3d12_A	-0.3078	0.0709	0.9231	1.30	2	0.0006	PREDICTED BINDER	Nipah Virus G Attachment Glycoprotein (A)
+5	A_B_b3_A	-0.3078	0.0709	0.9231	1.30	2	0.0006	PREDICTED BINDER	Nipah G ephrin b3 binding (A)
+6	6vy5_A	-0.0369	0.0855	0.7436	1.46	19	0.0059	PREDICTED BINDER	Nipah receptor binding protein head domain (A)
+7	2vsm_A	-0.0062	0.1034	0.6923	1.36	1	0.0003	PREDICTED BINDER	Nipah virus attachment glycoprotein (A)
+8	6pdl_A	+0.0456	0.0884	0.7436	1.65	0	0.0000	PREDICTED BINDER	Hendra Virus Attachment G Glycoprotein (A)
+9	8ja5_A	+0.1149	0.0777	0.6410	1.57	7	0.0021	PREDICTED BINDER	Nipah Virus attachment (G) glycoprotein (A)
+10	2vsk_A	+0.2133	0.0845	0.5641	1.59	1	0.0003	PREDICTED BINDER	Hendra virus attachment glycoprotein (A)
+11	8xc4_A	+0.2552	0.0888	0.5128	1.55	15	0.0044	PREDICTED BINDER	Nipah virus attachment glycoprotein head domain (A)
+12	3d11	+0.2584	0.1045	0.5385	1.59	11	0.0030	PREDICTED BINDER	Nipah G Attachment Glycoprotein
+13	9dvd_A	+0.3455	0.0930	0.4615	1.62	10	0.0030	PREDICTED BINDER	Hendra G ectodomain (A)
+14	A_B_b2	+0.4617	0.1642	0.2051	1.08	45	0.0088	PREDICTED BINDER	Nipah G ephrin b2 binding
+15	6pd4_A	+0.4711	0.1078	0.4615	1.89	43	0.0113	PREDICTED BINDER	Hendra Virus Attachment G Glycoprotein (A)
+16	8vf1	+0.4798	0.1061	0.3077	1.52	17	0.0013	PREDICTED BINDER	Crystal Structure of the Hendra Virus Attachment G glycoprotein (HeV-G)
+17	2hle	+0.4806	0.1117	0.1795	1.17	230	0.0903	PREDICTED BINDER	EphB4-EphrinB2 protein
+18	2x9m	+0.4963	0.0934	0.1795	1.25	16	0.0012	PREDICTED BINDER	Hendra virus attachment glycoprotein
+19	covid_open	+0.5280	0.1038	0.0769	1.04	154	0.0071	PREDICTED BINDER	SARS-CoV-2 spike glycoprotein (open state)
+20	8xc4	+0.5496	0.0925	0.1795	1.38	458	0.0332	PREDICTED BINDER	Nipah virus attachment glycoprotein head domain
+21	9dvd	+0.5523	0.1094	0.2051	1.42	233	0.0391	PREDICTED BINDER	Hendra G ectodomain
+22	7syy	+0.5572	0.1159	0.1538	1.28	472	0.0682	PREDICTED BINDER	Hendra virus G protein head domain
+23	8ja5	+0.5644	0.0951	0.3077	1.74	311	0.0231	PREDICTED BINDER	Nipah Virus attachment (G) glycoprotein
+24	2x9m_A	+0.5800	0.1084	0.2564	1.62	9	0.0026	PREDICTED BINDER	Hendra virus attachment glycoprotein (A)
+25	1v3d	+0.5820	0.1433	0.2821	1.61	585	0.0766	PREDICTED BINDER	Hemagglutinin-neuraminidase
+26	6cmi	+0.5886	0.1001	0.2051	1.52	346	0.0497	PREDICTED BINDER	Hendra Virus Attachment G Glycoprotein
+27	6vy5	+0.5968	0.1011	0.2308	1.61	155	0.0248	PREDICTED BINDER	Nipah receptor binding protein head domain
+28	b3	+0.6061	0.0997	0.1795	1.50	158	0.0165	PREDICTED BINDER	Nipah G ephrin b3 binding 
+29	6cmg_A	+0.6173	0.1037	0.3333	1.92	17	0.0049	PREDICTED BINDER	Hendra Virus Attachment G Glycoprotein (A)
+30	2hle_A	+0.6357	0.1101	0.2308	1.68	17	0.0112	PREDICTED BINDER	EphB4-EphrinB2 protein (A)
+31	3d12	+0.6375	0.0997	0.1538	1.51	522	0.0544	PREDICTED BINDER	Nipah Virus G Attachment Glycoprotein
+32	8wjb_A	+0.6420	0.1148	0.2564	1.75	53	0.0163	PREDICTED BINDER	Langya virus attachment glycoprotein (A)
+33	6p72_A	+0.6589	0.1187	0.1538	1.52	19	0.0055	PREDICTED BINDER	Cedar henipavirus Attachment G Glycoprotein (A)
+34	8wjb	+0.6667	0.1057	0.2051	1.70	57	0.0087	PREDICTED BINDER	Langya virus attachment glycoprotein
+35	6cmg	+0.6690	0.1119	0.1282	1.49	366	0.0531	unlikely binder	Hendra Virus Attachment G Glycoprotein
+36	A_B_b2_noPTM	+0.6755	0.0989	0.3333	2.07	434	0.0992	unlikely binder	
+37	1v3d_A	+0.6803	0.1527	0.1795	1.56	23	0.0061	unlikely binder	Hemagglutinin-neuraminidase (A)
+38	1trn	+0.6834	0.1469	0.1282	1.45	210	0.0567	unlikely binder	Human trypsin 1
+39	6p72	+0.6880	0.1088	0.1538	1.61	38	0.0053	unlikely binder	Cedar henipavirus Attachment G Glycoprotein
+40	7syy_A	+0.6895	0.1115	0.2821	1.94	25	0.0075	unlikely binder	Hendra virus G protein head domain (A)
+41	6pd4	+0.6926	0.0967	0.3333	2.12	108	0.0140	unlikely binder	Hendra Virus Attachment G Glycoprotein
+42	8vf1_A	+0.6928	0.1154	0.3333	2.07	25	0.0038	unlikely binder	(A)
+43	b2	+0.7048	0.1642	0.2308	1.73	40	0.0078	unlikely binder	Nipah G ephrin b2 binding 
+44	5nop_A	+0.7174	0.1748	0.2308	1.74	98	0.0258	unlikely binder	Mojiang virus attachment glycoprotein (A)
+45	3gxu	+0.7188	0.1322	0.2308	1.83	56	0.0198	unlikely binder	Eph receptor and ephrin complex
+46	3gxu_A	+0.7266	0.1363	0.2821	1.98	90	0.0577	unlikely binder	Eph receptor and ephrin complex (A)
+47	4wwy	+0.7274	0.1475	0.1795	1.69	163	0.0346	unlikely binder	
+48	2vsk	+0.7311	0.0994	0.1795	1.80	130	0.0154	unlikely binder	Hendra virus attachment glycoprotein
+49	6pdl	+0.7341	0.1021	0.2308	1.94	425	0.0227	unlikely binder	Hendra Virus Attachment G Glycoprotein
+50	5nop	+0.7366	0.1510	0.2051	1.77	301	0.0395	unlikely binder	Mojiang virus attachment glycoprotein
+51	6vy4	+0.7440	0.1119	0.1026	1.61	342	0.0252	unlikely binder	
+52	2vwd	+0.7457	0.1184	0.2308	1.93	363	0.0499	unlikely binder	Nipah Virus Attachment Glycoprotein
+53	A_B_b3	+0.7466	0.1073	0.1795	1.82	333	0.0694	unlikely binder	
+54	brca1	+0.7478	0.1144	0.1795	1.81	547	0.1001	unlikely binder	
+55	2bba_A	+0.7480	0.1308	0.2564	1.97	55	0.0332	unlikely binder	EphB4 Receptor (A)
+56	A_B_b3_noPTM	+0.7653	0.1051	0.1795	1.87	250	0.0555	unlikely binder	
+57	2bba	+0.7772	0.1357	0.2821	2.10	82	0.0458	unlikely binder	EphB4 Receptor
+58	2vsm	+0.7793	0.1642	0.2564	1.97	43	0.0084	unlikely binder	Nipah virus attachment glycoprotein
+59	1iko	+0.7912	0.1780	0.1795	1.77	60	0.0441	unlikely binder	Murine ephrin-b2 ectodomain 
+60	6vy4_A	+0.8231	0.1443	0.1538	1.86	249	0.0674	unlikely binder	(A)
+61	covid_closed	+0.9828	0.0962	0.1026	2.21	212	0.0089	unlikely binder	SARS-CoV-2 spike glycoprotein (closed state)
+62	1trn_A	+0.9849	0.1581	0.2051	2.35	61	0.0329	unlikely binder	Human trypsin 1 (A)
+63	2vwd_A	+0.9935	0.1419	0.1795	2.34	72	0.0197	unlikely binder	Nipah Virus Attachment Glycoprotein (A)
+64	5kv9	+1.0020	0.1534	0.2051	2.40	129	0.0348	unlikely binder	
+65	6cmi_A	+1.5338	1.0871	0.1538	1.48	13	0.4643	unlikely binder	Hendra Virus Attachment G Glycoprotein (A)
+66	1iko_A	+1.7846	1.0700	0.1538	2.12	15	0.3846	unlikely binder	(A)
+67	5kv9_A	+1.8014	1.0882	0.1538	2.12	9	0.3214	unlikely binder	(A)

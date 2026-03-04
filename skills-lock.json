@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "skills": {
+    "alphafold-database": {
+      "source": "AminoAnalytica/amina-skills",
+      "sourceType": "github",
+      "computedHash": "2744b6dd2c40f5320ee7f438fec11bda7e9d05b9179f3ff150857244864a6edd"
+    },
+    "amina-init": {
+      "source": "AminoAnalytica/amina-skills",
+      "sourceType": "github",
+      "computedHash": "092a742fc5c88dd50da1bb2f117e943a6fc1343220904863adfaaad5aac1a1bb"
+    },
+    "biopython": {
+      "source": "AminoAnalytica/amina-skills",
+      "sourceType": "github",
+      "computedHash": "a27b5c76dde10ebae837d93aa4a585f0ff6babfafcfbfe8c4127fc10d605f26e"
+    },
+    "biorxiv-database": {
+      "source": "AminoAnalytica/amina-skills",
+      "sourceType": "github",
+      "computedHash": "e602642bbc0492dfe123d2949105a41069eda855ac19b016e5b11b48f1c1b204"
+    },
+    "chembl-database": {
+      "source": "AminoAnalytica/amina-skills",
+      "sourceType": "github",
+      "computedHash": "62598eebb183ba7eb270e7b1cfa4a1c572b35222fb6edb064a1cec8e6d2c9ed0"
+    },
+    "pdb-database": {
+      "source": "AminoAnalytica/amina-skills",
+      "sourceType": "github",
+      "computedHash": "05cca57cd64ac25e18071d82b309c901889382823e54e61ba36287be46bef6ef"
+    },
+    "pymol": {
+      "source": "AminoAnalytica/amina-skills",
+      "sourceType": "github",
+      "computedHash": "8a92194f57bd642656af0a168d106ca17604f965b574c31b180932baf3ba5cdc"
+    },
+    "rdkit": {
+      "source": "AminoAnalytica/amina-skills",
+      "sourceType": "github",
+      "computedHash": "dfab7ecb507e1c59d630ce1a1cd276f317feb5c09309be8b0be2465ee0fec3cd"
+    },
+    "scikit-bio": {
+      "source": "AminoAnalytica/amina-skills",
+      "sourceType": "github",
+      "computedHash": "2dbe4380d5373500cb780286d702e0e573a39dff93ef1ef302b75c05f3c1652a"
+    },
+    "uniprot-database": {
+      "source": "AminoAnalytica/amina-skills",
+      "sourceType": "github",
+      "computedHash": "c27cfbecf63cc7186d32d55eb81474e4b7357fcf6d72870af157e7850b931c4c"
+    }
+  }
+}

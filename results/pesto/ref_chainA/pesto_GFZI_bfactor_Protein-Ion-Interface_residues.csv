@@ -1,0 +1,4 @@
+chain_id,residue_number,residue_identifier,amino_acid_3letter,amino_acid_1letter,binding_probability
+A,219,A219,ASP,D,0.5055984258651733
+A,225,A225,ASP,D,0.5811735391616821
+A,329,A329,GLY,G,0.5440704226493835

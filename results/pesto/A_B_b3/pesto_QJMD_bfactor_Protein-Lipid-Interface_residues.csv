@@ -1,0 +1,5 @@
+chain_id,residue_number,residue_identifier,amino_acid_3letter,amino_acid_1letter,binding_probability
+B,101,B101,LEU,L,0.6030091047286987
+B,115,B115,ILE,I,0.7241660356521606
+B,116,B116,LYS,K,0.5316537618637085
+B,117,B117,PHE,F,0.6037265658378601
