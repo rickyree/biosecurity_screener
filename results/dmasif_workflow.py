@@ -35,8 +35,8 @@ A_CACHE_SGK    = 'results/dmasif/A_interface_cache_sgk.npz'
 ESMFOLD_A_PDB  = 'results/esmfold/A_standalone/esmfold_esmfold_A_standalone_structure.pdb'
 APO_A_PDB      = 'binding/2vwd_A.pdb'
 SGK_A_PDB      = 'binding/1sgk_A.pdb'   # apo receptor for NAD-site screen
-F0L_A_PDB      = 'binding/1f0l_A.pdb'   # holo reference (chain B + APU)
-F0L_CHAIN      = 'B'
+F0L_A_PDB      = 'binding/1f0l_A.pdb'   # holo reference (chain A + APU)
+F0L_CHAIN      = 'A'
 F0L_LIGAND     = 'APU'
 PLDDT_THRESH   = 50.0   # minimum ESMFold pLDDT to include an interface residue
 EXCLUDE_RNUMS  = {579, 580}  # induced-fit loop residues (ordered only in bound state)
@@ -303,26 +303,47 @@ def load_or_build_A_fingerprints(pdb_parser, use_esmfold=False, use_apo=False, u
         sgk_struct   = pdb_parser.get_structure('SGK', SGK_A_PDB)
         f0l_struct   = pdb_parser.get_structure('F0L', F0L_A_PDB)
 
-        # Cα coords of 1f0l chain B (protein residues)
-        f0l_ca = np.array([res['CA'].coord
-                           for model in f0l_struct for chain in model
-                           if chain.id == F0L_CHAIN
-                           for res in chain if res.id[0] == ' ' and 'CA' in res])
+        # Cα coords and sequences of 1f0l chain A (protein residues)
+        from Bio.SeqUtils import seq1
+        from Bio import pairwise2
+        f0l_residues = [res for model in f0l_struct for chain in model
+                        if chain.id == F0L_CHAIN
+                        for res in chain if res.id[0] == ' ' and 'CA' in res]
+        f0l_ca  = np.array([res['CA'].coord for res in f0l_residues])
+        f0l_seq = ''.join(seq1(r.get_resname()) for r in f0l_residues)
 
-        # Cα coords of 1sgk_A
+        # Cα coords and sequence of 1sgk_A
         sgk_chain_id = list(sgk_struct[0].get_chains())[0].id
         sgk_residues = [res for model in sgk_struct for chain in model
                         for res in chain if res.id[0] == ' ' and 'CA' in res]
-        sgk_ca = np.array([res['CA'].coord for res in sgk_residues])
+        sgk_ca  = np.array([res['CA'].coord for res in sgk_residues])
+        sgk_seq = ''.join(seq1(r.get_resname()) for r in sgk_residues)
 
-        # Kabsch: superimpose 1sgk_A onto 1f0l chain B
-        n_aln = min(len(sgk_ca), len(f0l_ca))
-        R_sup, t_sup = superimpose_kabsch(sgk_ca[:n_aln], f0l_ca[:n_aln])
+        # Sequence alignment → matched Cα pairs for Kabsch
+        aln = pairwise2.align.globalds(
+            sgk_seq, f0l_seq,
+            pairwise2.substitution_matrices.load("BLOSUM62"),
+            -10, -0.5, one_alignment_only=True)[0]
+        sgk_aln, f0l_aln = aln.seqA, aln.seqB
+        sgk_idx, f0l_idx = [], []
+        si, fi = 0, 0
+        for a, b in zip(sgk_aln, f0l_aln):
+            if a != '-' and b != '-':
+                sgk_idx.append(si)
+                f0l_idx.append(fi)
+            if a != '-': si += 1
+            if b != '-': fi += 1
+        sgk_ca_aln = sgk_ca[sgk_idx]
+        f0l_ca_aln = f0l_ca[f0l_idx]
+
+        # Kabsch: superimpose 1sgk_A onto 1f0l chain A using sequence-aligned pairs
+        R_sup, t_sup = superimpose_kabsch(sgk_ca_aln, f0l_ca_aln)
         rmsd_sup = float(np.sqrt(np.mean(
-            np.sum(((R_sup @ sgk_ca[:n_aln].T).T + t_sup - f0l_ca[:n_aln])**2, axis=1))))
-        print(f"  Superimposed 1sgk_A onto 1f0l chain B ({n_aln} Cα, RMSD={rmsd_sup:.2f} Å)")
+            np.sum(((R_sup @ sgk_ca_aln.T).T + t_sup - f0l_ca_aln)**2, axis=1))))
+        print(f"  Superimposed 1sgk_A onto 1f0l chain A "
+              f"({len(sgk_idx)} aligned Cα pairs, RMSD={rmsd_sup:.2f} Å)")
 
-        # APU atoms in 1f0l chain B → inverse-transform into 1sgk_A frame
+        # APU atoms in 1f0l chain A → inverse-transform into 1sgk_A frame
         apu_coords = np.array([a.coord
                                 for model in f0l_struct for chain in model
                                 if chain.id == F0L_CHAIN

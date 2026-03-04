@@ -11,7 +11,10 @@
       "Bash(sort -k3 -rn)",
       "Bash(git clone:*)",
       "Bash(cat:*)",
-      "Bash(done)"
+      "Bash(done)",
+      "Bash(export NVM_DIR=\"$HOME/.nvm\")",
+      "Bash(. \"$NVM_DIR/nvm.sh\")",
+      "Bash(npm install -g @anthropic-ai/claude-code)"
     ]
   }
 }
