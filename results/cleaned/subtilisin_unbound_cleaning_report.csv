@@ -1,0 +1,45 @@
+PDB Cleaning Report
+Generated:,2026-03-05 22:29:29
+Input File:,subtilisin_unbound.pdb
+
+SUMMARY STATISTICS
+Metric,Count
+Water molecules removed,194
+Heterogens removed,3
+Nonstandard residues replaced,0
+Missing residues added,0
+Missing atoms added,0
+Hydrogens added,1899
+Disulfide bonds detected,0
+Original chains,"A, A"
+Chains modified,A
+B-factor preservation enabled,True
+B-factors preserved from original,3837
+Atoms with default B-factors,0
+Biological assembly generated,False
+Biological assembly transformations,0
+Biological assembly chains,0
+
+REMOVED HETEROGENS
+Name,Type,Chain ID,Residue Number,Atom Count,Atom Names
+CA,metal_ion,A,276,1,CA
+NA,metal_ion,A,277,1,NA
+PMS,unknown_heterogen,A,278,10,"C, S, C1, C2, C3, C4, C5, C6, O2S, O1S"
+
+REMOVED WATER MOLECULES
+Chain ID,Count,Residue Numbers
+A,194,279-472
+
+WATER MOLECULES SAMPLE (First 10)
+Chain ID,Residue Number,X,Y,Z
+A,279,1.0344,-0.7737,2.2613
+A,280,1.4754,-0.5323000000000001,2.0612
+A,281,0.8978,-0.5765,2.4249
+A,282,0.8748,-0.9376,2.1144
+A,283,1.7896,-0.21000000000000002,1.3352000000000002
+A,284,1.6561000000000001,0.9944000000000002,2.6996
+A,285,0.1654,0.7662,2.0568000000000004
+A,286,2.3434000000000004,1.6248000000000002,2.8078000000000003
+A,287,0.9582000000000002,-0.5843,2.6852
+A,288,1.0672000000000001,-0.7964000000000001,2.8389
+... and 184 more water molecules

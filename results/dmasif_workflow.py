@@ -17,29 +17,22 @@ Workflow:
   5. Report ranked predictions.
 """
 
-import os, sys, copy, time, warnings, argparse
+import os, sys, copy, time, warnings, argparse, subprocess
 import numpy as np
 from scipy.spatial import KDTree
 from Bio.PDB import PDBParser, PDBIO
 from Bio.PDB.SASA import ShrakeRupley
+
+AMINA = os.path.join(os.path.dirname(sys.executable), 'amina')
 
 warnings.filterwarnings('ignore')
 np.random.seed(42)
 
 os.makedirs('results/dmasif', exist_ok=True)
 
-A_CACHE        = 'results/dmasif/A_interface_cache.npz'
-A_CACHE_ESM    = 'results/dmasif/A_interface_cache_esmfold.npz'
-A_CACHE_APO    = 'results/dmasif/A_interface_cache_apo_nosas.npz'
-A_CACHE_SGK    = 'results/dmasif/A_interface_cache_sgk.npz'
-ESMFOLD_A_PDB  = 'results/esmfold/A_standalone/esmfold_esmfold_A_standalone_structure.pdb'
-APO_A_PDB      = 'binding/2vwd_A.pdb'
-SGK_A_PDB      = 'binding/1sgk_A.pdb'   # apo receptor for NAD-site screen
-F0L_A_PDB      = 'binding/1f0l_A.pdb'   # holo reference (chain A + APU)
-F0L_CHAIN      = 'A'
-F0L_LIGAND     = 'APU'
-PLDDT_THRESH   = 50.0   # minimum ESMFold pLDDT to include an interface residue
-EXCLUDE_RNUMS  = {579, 580}  # induced-fit loop residues (ordered only in bound state)
+SGK_A_PDB            = 'binding/1sgk_A.pdb'   # default apo receptor
+DEFAULT_BOUND_REF    = 'binding/1f0l_A.pdb'   # default holo reference (chain A + APU)
+DEFAULT_BOUND_LIGAND = 'APU'                   # default ligand residue name
 
 # ── Residue property tables ──────────────────────────────────────────────────
 
@@ -271,332 +264,327 @@ def superimpose_kabsch(mobile_ca, target_ca):
     return R, t
 
 
-def load_or_build_A_fingerprints(pdb_parser, use_esmfold=False, use_apo=False, use_sgk=False):
+def resolve_bound_chain(structure, bound_chain):
+    """Return (receptor_chain_id, partner_chain_id_or_None).
+
+    1 protein chain  → receptor=that chain, partner=None (use ligand for interface)
+    2 protein chains → receptor=chain A if present else first, partner=the other chain
+    >2 protein chains → error (ambiguous multi-partner complex)
+
+    If bound_chain is explicitly provided it is used as the receptor chain.
+    """
+    protein_chains = [
+        chain.id
+        for model in structure
+        for chain in model
+        if any('CA' in res for res in chain if res.id[0] == ' ')
+    ]
+
+    if len(protein_chains) > 2:
+        raise SystemExit(
+            f"ERROR: bound reference contains {len(protein_chains)} protein chains "
+            f"({protein_chains}). Multi-partner complexes are not supported — the "
+            f"workflow cannot distinguish between distinct interfaces. Provide a "
+            f"single-chain or two-chain (receptor + one partner) structure as --bound-ref."
+        )
+
+    if bound_chain:
+        all_chains = [chain.id for model in structure for chain in model]
+        if bound_chain not in all_chains:
+            raise SystemExit(
+                f"ERROR: --bound-chain '{bound_chain}' not found in bound reference "
+                f"(chains present: {all_chains})."
+            )
+        receptor = bound_chain
+    elif len(protein_chains) == 0:
+        all_chains = [chain.id for model in structure for chain in model]
+        if 'A' in all_chains:
+            receptor = 'A'
+        else:
+            raise SystemExit(
+                f"ERROR: no protein chains detected in bound reference "
+                f"(chains: {all_chains}). Use --bound-chain to specify."
+            )
+    elif len(protein_chains) == 1:
+        receptor = protein_chains[0]
+    else:  # 2 protein chains
+        receptor = 'A' if 'A' in protein_chains else protein_chains[0]
+
+    partner = None
+    if len(protein_chains) == 2:
+        partner = next(c for c in protein_chains if c != receptor)
+
+    return receptor, partner
+
+
+def get_bound_partner_coords(structure, receptor_chain, partner_chain, bound_ligand):
+    """Return coords of the interface-defining atoms from the bound reference.
+
+    Two-chain complex: return all heavy atoms of partner_chain.
+    Single-chain:      return atoms of the ligand residue (bound_ligand name).
+    """
+    if partner_chain is not None:
+        coords = [a.coord for model in structure for chain in model
+                  if chain.id == partner_chain
+                  for res in chain if res.id[0] == ' '
+                  for a in res
+                  if (a.element or a.name[0]).strip().upper() != 'H']
+        if not coords:
+            raise SystemExit(
+                f"ERROR: no heavy atoms found in partner chain '{partner_chain}' "
+                f"of bound reference."
+            )
+        return np.array(coords)
+    else:
+        if not bound_ligand:
+            raise SystemExit(
+                "ERROR: --bound-ref has a single protein chain so a ligand is needed "
+                "to define the interface. Specify it with --bound-ligand <RES>."
+            )
+        coords = [a.coord for model in structure for chain in model
+                  if chain.id == receptor_chain
+                  for res in chain
+                  if res.get_resname().strip() == bound_ligand
+                  for a in res]
+        if not coords:
+            raise SystemExit(
+                f"ERROR: ligand '{bound_ligand}' not found in chain '{receptor_chain}' "
+                f"of bound reference. Use --bound-ligand to specify the correct residue name."
+            )
+        return np.array(coords)
+
+
+def get_union_iface_res(apo_ref, bound_ref, bound_chain=None, bound_ligand=None,
+                        pesto_threshold=0.5, work_dir='results/dmasif/union_tmp'):
+    """Return sorted list of apo residue numbers from PeSTo ∪ P2Rank pocket-1.
+
+    PeSTo interface type is chosen automatically:
+      - 1 protein chain in bound_ref → Protein-Ligand-Interface
+      - 2 protein chains             → Protein-Protein-Interface
+    """
+    import pandas as pd
+
+    os.makedirs(work_dir, exist_ok=True)
+    pdb_parser = PDBParser(QUIET=True)
+    bound_struct = pdb_parser.get_structure('BOUND', bound_ref)
+    receptor_chain, partner_chain = resolve_bound_chain(bound_struct, bound_chain)
+    iface_type = ('Protein-Protein-Interface' if partner_chain
+                  else 'Protein-Ligand-Interface')
+    print(f"  [union] Partner type: {'protein chain ' + partner_chain if partner_chain else 'ligand ' + str(bound_ligand)}")
+    print(f"  [union] PeSTo interface type: {iface_type}")
+
+    # Step 1: clean apo with pdb-cleaner
+    apo_stem   = os.path.splitext(os.path.basename(apo_ref))[0]
+    clean_dir  = os.path.join(work_dir, 'cleaned')
+    clean_path = os.path.join(clean_dir, f'{apo_stem}_cleaned.pdb')
+    os.makedirs(clean_dir, exist_ok=True)
+    if not os.path.exists(clean_path):
+        print(f"  [union] Cleaning apo with pdb-cleaner …", flush=True)
+        subprocess.run([AMINA, 'run', 'pdb-cleaner', '--pdb', apo_ref,
+                        '-o', clean_dir, '-j', apo_stem],
+                       capture_output=True)
+    if not os.path.exists(clean_path):
+        print(f"  [union] pdb-cleaner failed; using original apo.", flush=True)
+        clean_path = apo_ref
+    else:
+        print(f"  [union] Using cleaned apo: {clean_path}")
+
+    # Step 2: run PeSTo and P2Rank (skip if results already cached)
+    pesto_dir  = os.path.join(work_dir, 'pesto')
+    p2rank_dir = os.path.join(work_dir, 'p2rank')
+    os.makedirs(pesto_dir,  exist_ok=True)
+    os.makedirs(p2rank_dir, exist_ok=True)
+
+    pesto_csv_path  = os.path.join(pesto_dir,
+                                   f'pesto_{apo_stem}_bfactor_{iface_type}_residues.csv')
+    p2rank_csv_path = os.path.join(p2rank_dir, f'p2rank_{apo_stem}_residues.csv')
+
+    def submit(args):
+        r = subprocess.run([AMINA, 'run'] + args + ['--background'],
+                           capture_output=True, text=True)
+        for line in (r.stdout + r.stderr).splitlines():
+            if 'Job submitted:' in line:
+                return line.split('Job submitted:')[1].strip()
+        return None
+
+    jobs = []
+    if os.path.exists(pesto_csv_path):
+        print(f"  [union] PeSTo results already cached, skipping.", flush=True)
+    else:
+        print(f"  [union] Submitting PeSTo ({iface_type}) …", flush=True)
+        job = submit(['pesto', '--pdb', clean_path,
+                      '--threshold', str(pesto_threshold),
+                      '-o', pesto_dir, '-j', apo_stem])
+        if job:
+            jobs.append((job, 'PeSTo', pesto_dir))
+
+    if os.path.exists(p2rank_csv_path):
+        print(f"  [union] P2Rank results already cached, skipping.", flush=True)
+    else:
+        print(f"  [union] Submitting P2Rank …", flush=True)
+        job = submit(['p2rank', '--pdb', clean_path,
+                      '-o', p2rank_dir, '-j', apo_stem])
+        if job:
+            jobs.append((job, 'P2Rank', p2rank_dir))
+
+    # Step 3: wait and download only new jobs
+    for job_id, label, out_dir in jobs:
+        print(f"  [union] Waiting for {label} (job {job_id[:8]}) …", flush=True)
+        subprocess.run([AMINA, 'jobs', 'wait', job_id], check=True)
+        subprocess.run([AMINA, 'jobs', 'download', job_id, '-o', out_dir], check=True)
+
+    # Step 4: parse PeSTo residues for the chosen interface type
+    pesto_res = set()
+    if os.path.exists(pesto_csv_path):
+        df = pd.read_csv(pesto_csv_path)
+        pesto_res = set(df['residue_number'].tolist())
+        print(f"  [union] PeSTo {iface_type}: {len(pesto_res)} residues")
+    else:
+        print(f"  [union] WARNING: PeSTo CSV not found at {pesto_csv_path}", file=sys.stderr)
+
+    # Step 5: parse P2Rank pocket-1 residues only
+    p2rank_res = set()
+    if os.path.exists(p2rank_csv_path):
+        df = pd.read_csv(p2rank_csv_path, skipinitialspace=True)
+        p2rank_res = set(df[df['pocket'] == 1]['residue_label'].tolist())
+        print(f"  [union] P2Rank pocket-1: {len(p2rank_res)} residues")
+    else:
+        print(f"  [union] WARNING: P2Rank CSV not found at {p2rank_csv_path}", file=sys.stderr)
+
+    union = sorted(pesto_res | p2rank_res)
+    print(f"  [union] Union: {len(union)} residues → {union}")
+    return union
+
+
+def load_or_build_A_fingerprints(pdb_parser, apo_ref, bound_ref,
+                                  bound_chain=None, bound_ligand=None,
+                                  plddt_thresh=0.0, use_union=False):
     """Return (A_fps, A_iface_coords, B_pos, B_vdw) either from cache or by computing.
 
-    use_sgk:     fingerprints from 1sgk_A (apo DT) at NAD-site residues identified
-                 by superimposing onto 1f0l_A and projecting APU coordinates.
-                 B_pos/B_vdw are empty (no partner — clash check is skipped).
-    use_esmfold: fingerprints from ESMFold standalone A (pLDDT-filtered).
-    use_apo:     fingerprints from apo crystal monomer (2vwd_A), superimposed
-                 onto bound frame; excludes induced-fit residues (EXCLUDE_RNUMS).
-    default:     fingerprints from bound complex chain A.
+    apo_ref:     path to the apo receptor PDB.
+    bound_ref:   path to holo PDB that defines the binding site via ligand proximity
+                 (1 protein chain) or chain-chain interface (2 protein chains).
+    bound_chain: chain in bound_ref containing the receptor (auto-detected if None).
+    bound_ligand: residue name of the ligand in bound_ref (single-chain case only).
+    plddt_thresh: drop interface residues whose CA B-factor < this value (default 0,
+                  i.e. disabled). Set >0 when apo_ref is a predicted structure.
+    use_union:   if True, derive interface residues via PeSTo+P2Rank union instead
+                 of the <5Å holo distance method.
     """
-    cache = A_CACHE_SGK if use_sgk else (A_CACHE_APO if use_apo else (A_CACHE_ESM if use_esmfold else A_CACHE))
+    apo_stem   = os.path.splitext(os.path.basename(apo_ref))[0]
+    bound_stem = os.path.splitext(os.path.basename(bound_ref))[0]
+    suffix = '_union' if use_union else ''
+    cache = f'results/dmasif/A_interface_cache_{apo_stem}_{bound_stem}{suffix}.npz'
     if os.path.exists(cache):
         print(f"  Loading cached A-interface fingerprints from {cache}")
         d = np.load(cache)
         return d['A_fps'], d['A_iface_coords'], d['B_pos'], d['B_vdw']
 
+    # ── Load bound reference and resolve interface definition ─────────────────
+    if not os.path.exists(bound_ref):
+        sys.exit(f"ERROR: bound reference not found at {bound_ref}")
+    bound_struct = pdb_parser.get_structure('BOUND', bound_ref)
+    receptor_chain, partner_chain = resolve_bound_chain(bound_struct, bound_chain)
+    iface_label = (f"chain {partner_chain} contact" if partner_chain
+                   else f"ligand {bound_ligand}")
+    method_str = "PeSTo+P2Rank union" if use_union else f"<5Å from {iface_label}"
+    plddt_str  = f", pLDDT>{plddt_thresh:.0f}" if plddt_thresh > 0 else ""
     print("=" * 65)
-    print(" Step 1: Building dMaSIF fingerprint for A's interface with B")
-    if use_sgk:
-        print(f"         (1sgk_A apo, NAD-site via superposition onto 1f0l_A)")
-    elif use_esmfold:
-        print(f"         (ESMFold standalone, pLDDT>{PLDDT_THRESH:.0f} filter)")
-    elif use_apo:
-        print(f"         (apo crystal monomer 2vwd_A, exclude residues {sorted(EXCLUDE_RNUMS)})")
+    print(f" Step 1: Building dMaSIF fingerprint for A's interface")
+    print(f"         ({os.path.basename(apo_ref)}, {method_str}{plddt_str})")
     print("=" * 65)
 
-    if use_sgk:
-        # ── 1sgk_A NAD-site path ──────────────────────────────────────────────
-        sgk_struct   = pdb_parser.get_structure('SGK', SGK_A_PDB)
-        f0l_struct   = pdb_parser.get_structure('F0L', F0L_A_PDB)
+    A_fps, A_fp_coords = [], []
+    B_pos = np.empty((0, 3))
+    B_vdw = np.empty(0)
 
-        # Cα coords and sequences of 1f0l chain A (protein residues)
+    if not os.path.exists(apo_ref):
+        sys.exit(f"ERROR: apo reference not found at {apo_ref}")
+    apo_struct   = pdb_parser.get_structure('APO', apo_ref)
+    apo_residues = [res for model in apo_struct for chain in model
+                    for res in chain if res.id[0] == ' ' and 'CA' in res]
+    apo_label = os.path.basename(apo_ref)
+
+    if use_union:
+        # ── Union path: PeSTo + P2Rank ────────────────────────────────────────
+        union_resnums = set(get_union_iface_res(
+            apo_ref, bound_ref, bound_chain, bound_ligand))
+        iface_res = [res for res in apo_residues if res.id[1] in union_resnums]
+        print(f"  Interface residues from union ({len(iface_res)}): "
+              f"{[r.id[1] for r in iface_res]}")
+    else:
+        # ── 5Å path: superpose apo onto holo, distance cutoff ─────────────────
         from Bio.SeqUtils import seq1
         from Bio import pairwise2
-        f0l_residues = [res for model in f0l_struct for chain in model
-                        if chain.id == F0L_CHAIN
-                        for res in chain if res.id[0] == ' ' and 'CA' in res]
-        f0l_ca  = np.array([res['CA'].coord for res in f0l_residues])
-        f0l_seq = ''.join(seq1(r.get_resname()) for r in f0l_residues)
 
-        # Cα coords and sequence of 1sgk_A
-        sgk_chain_id = list(sgk_struct[0].get_chains())[0].id
-        sgk_residues = [res for model in sgk_struct for chain in model
-                        for res in chain if res.id[0] == ' ' and 'CA' in res]
-        sgk_ca  = np.array([res['CA'].coord for res in sgk_residues])
-        sgk_seq = ''.join(seq1(r.get_resname()) for r in sgk_residues)
+        bound_residues = [res for model in bound_struct for chain in model
+                          if chain.id == receptor_chain
+                          for res in chain if res.id[0] == ' ' and 'CA' in res]
+        bound_ca  = np.array([res['CA'].coord for res in bound_residues])
+        bound_seq = ''.join(seq1(r.get_resname()) for r in bound_residues)
 
-        # Sequence alignment → matched Cα pairs for Kabsch
+        partner_coords = get_bound_partner_coords(
+            bound_struct, receptor_chain, partner_chain, bound_ligand)
+        print(f"  Interface-defining atoms in bound ref: {len(partner_coords)}")
+
+        apo_ca  = np.array([res['CA'].coord for res in apo_residues])
+        apo_seq = ''.join(seq1(r.get_resname()) for r in apo_residues)
+
         aln = pairwise2.align.globalds(
-            sgk_seq, f0l_seq,
+            apo_seq, bound_seq,
             pairwise2.substitution_matrices.load("BLOSUM62"),
             -10, -0.5, one_alignment_only=True)[0]
-        sgk_aln, f0l_aln = aln.seqA, aln.seqB
-        sgk_idx, f0l_idx = [], []
+        apo_aln, bnd_aln = aln.seqA, aln.seqB
+        apo_idx, bnd_idx = [], []
         si, fi = 0, 0
-        for a, b in zip(sgk_aln, f0l_aln):
+        for a, b in zip(apo_aln, bnd_aln):
             if a != '-' and b != '-':
-                sgk_idx.append(si)
-                f0l_idx.append(fi)
+                apo_idx.append(si)
+                bnd_idx.append(fi)
             if a != '-': si += 1
             if b != '-': fi += 1
-        sgk_ca_aln = sgk_ca[sgk_idx]
-        f0l_ca_aln = f0l_ca[f0l_idx]
+        apo_ca_aln   = apo_ca[apo_idx]
+        bound_ca_aln = bound_ca[bnd_idx]
 
-        # Kabsch: superimpose 1sgk_A onto 1f0l chain A using sequence-aligned pairs
-        R_sup, t_sup = superimpose_kabsch(sgk_ca_aln, f0l_ca_aln)
+        R_sup, t_sup = superimpose_kabsch(apo_ca_aln, bound_ca_aln)
         rmsd_sup = float(np.sqrt(np.mean(
-            np.sum(((R_sup @ sgk_ca_aln.T).T + t_sup - f0l_ca_aln)**2, axis=1))))
-        print(f"  Superimposed 1sgk_A onto 1f0l chain A "
-              f"({len(sgk_idx)} aligned Cα pairs, RMSD={rmsd_sup:.2f} Å)")
+            np.sum(((R_sup @ apo_ca_aln.T).T + t_sup - bound_ca_aln)**2, axis=1))))
+        print(f"  Superimposed {apo_label} onto {os.path.basename(bound_ref)} "
+              f"chain {receptor_chain} ({len(apo_idx)} Cα pairs, RMSD={rmsd_sup:.2f} Å)")
 
-        # APU atoms in 1f0l chain A → inverse-transform into 1sgk_A frame
-        apu_coords = np.array([a.coord
-                                for model in f0l_struct for chain in model
-                                if chain.id == F0L_CHAIN
-                                for res in chain for a in res
-                                if res.get_resname().strip() == F0L_LIGAND])
-        print(f"  APU atoms in 1f0l: {len(apu_coords)}")
         R_inv = R_sup.T
         t_inv = -R_inv @ t_sup
-        apu_in_sgk = (R_inv @ apu_coords.T).T + t_inv
+        partner_in_apo = (R_inv @ partner_coords.T).T + t_inv
 
-        apu_tree = KDTree(apu_in_sgk)
+        partner_tree = KDTree(partner_in_apo)
         iface_res = []
-        for res in sgk_residues:
+        for res in apo_residues:
             for atom in res:
-                if apu_tree.query_ball_point(atom.coord, r=5.0):
+                if partner_tree.query_ball_point(atom.coord, r=5.0):
                     iface_res.append(res)
                     break
-        print(f"  1sgk_A interface residues ({len(iface_res)}): {[r.id[1] for r in iface_res]}")
 
-        A_atoms, A_pos = all_heavy_atoms(sgk_struct)
-        print(f"  1sgk_A heavy atoms: {len(A_atoms)}")
-        A_desc = build_desc(A_atoms, A_pos)
-        A_tree = KDTree(A_pos)
+    if plddt_thresh > 0:
+        iface_res = [res for res in iface_res
+                     if res['CA'].get_bfactor() >= plddt_thresh]
+        print(f"  Interface residues after pLDDT>{plddt_thresh:.0f} filter: {len(iface_res)}")
+    elif not use_union:
+        print(f"  Interface residues ({len(iface_res)}): {[r.id[1] for r in iface_res]}")
 
-        A_fps, A_fp_coords = [], []
-        for res in iface_res:
-            if 'CA' not in res:
-                continue
-            ca_coord = res['CA'].coord
-            _, idx = A_tree.query(ca_coord)
-            fp = patch_fp(idx, A_pos, A_desc, A_tree)
-            if fp is not None:
-                A_fps.append(fp)
-                A_fp_coords.append(A_pos[idx])
+    A_atoms, A_pos = all_heavy_atoms(apo_struct)
+    print(f"  {apo_label} heavy atoms: {len(A_atoms)}")
+    A_desc = build_desc(A_atoms, A_pos)
+    A_tree = KDTree(A_pos)
 
-        # No partner B — return empty arrays; clash check will be skipped
-        B_pos = np.empty((0, 3))
-        B_vdw = np.empty(0)
-
-        if len(A_fps) == 0:
-            sys.exit("ERROR: no valid fingerprints computed for 1sgk_A.")
-
-        A_fps          = np.array(A_fps)
-        A_iface_coords = np.array(A_fp_coords)
-        print(f"  Interface fingerprints: {len(A_fps)}")
-
-        np.savez(cache, A_fps=A_fps, A_iface_coords=A_iface_coords,
-                 B_pos=B_pos, B_vdw=B_vdw)
-        print(f"  Cached A fingerprints → {cache}")
-        return A_fps, A_iface_coords, B_pos, B_vdw
-
-    ab = pdb_parser.get_structure('AB', 'binding/A_B_b2_noPTM.pdb')
-
-    # ── B surface (needed for interface detection and clash check) ────────────
-    print("  Computing SASA for chain B (partner) …", end=' ', flush=True)
-    ab_B_only = copy.deepcopy(ab)
-    for model in ab_B_only:
-        for cid in [c.id for c in model if c.id != 'B']:
-            model.detach_child(cid)
-    run_sasa(ab_B_only)
-    print("done")
-    B_sasa_map = {}
-    for model in ab_B_only:
-        for chain in model:
-            for res in chain:
-                for atom in res:
-                    B_sasa_map[(res.get_full_id(), atom.name)] = atom.sasa
-    for model in ab:
-        for chain in model:
-            if chain.id != 'B':
-                continue
-            for res in chain:
-                for atom in res:
-                    key = (res.get_full_id(), atom.name)
-                    if key in B_sasa_map:
-                        atom.sasa = B_sasa_map[key]
-
-    B_atoms, B_pos = surface_atoms(ab, chain_ids=['B'])
-    print(f"  Chain B surface atoms : {len(B_atoms)}")
-    B_vdw = np.array([vdw(a) for a in B_atoms])
-
-    # ── Identify interface residue positions (sequential, 0-based) ───────────
-    # Done on the bound complex so we know which positions contact B.
-    tree_B_all = KDTree(np.array([a.coord for model in ab
-                                  for chain in model if chain.id == 'B'
-                                  for res in chain for a in res]))
-    ab_a_residues = [res for model in ab for chain in model if chain.id == 'A'
-                     for res in chain if res.id[0] == ' ']
-    iface_seq_pos = set()
-    for i, res in enumerate(ab_a_residues):
-        for atom in res:
-            if tree_B_all.query_ball_point(atom.coord, r=5.0):
-                iface_seq_pos.add(i)
-                break
-
-    # Map sequential position → original residue number (for exclusion)
-    pos_to_rnum = {i: res.id[1] for i, res in enumerate(ab_a_residues)}
-
-    if use_apo:
-        # ── Apo crystal monomer path ──────────────────────────────────────────
-        if not os.path.exists(APO_A_PDB):
-            sys.exit(f"ERROR: Apo structure not found at {APO_A_PDB}")
-
-        apo_struct   = pdb_parser.get_structure('APO', APO_A_PDB)
-        apo_residues = [res for model in apo_struct for chain in model
-                        for res in chain if res.id[0] == ' ' and 'CA' in res]
-
-        # Exclude induced-fit residues by original residue number
-        good_pos = [p for p in sorted(iface_seq_pos)
-                    if pos_to_rnum.get(p) not in EXCLUDE_RNUMS]
-        print(f"  Interface positions (bound complex) : {len(iface_seq_pos)}")
-        print(f"  After excluding residues {sorted(EXCLUDE_RNUMS)}: {len(good_pos)}")
-
-        # Superimpose apo onto bound chain A
-        n_shared = min(len(apo_residues), len(ab_a_residues))
-        apo_ca = np.array([apo_residues[i]['CA'].coord for i in range(n_shared)])
-        ab_ca  = np.array([ab_a_residues[i]['CA'].coord for i in range(n_shared)
-                           if 'CA' in ab_a_residues[i]])
-        n_aln  = min(len(apo_ca), len(ab_ca))
-        R_sup, t_sup = superimpose_kabsch(apo_ca[:n_aln], ab_ca[:n_aln])
-        print(f"  Superimposed apo-A onto bound chain A ({n_aln} Cα pairs)")
-
-        apo_sup = copy.deepcopy(apo_struct)
-        for atom in apo_sup.get_atoms():
-            atom.set_coord(R_sup @ atom.coord + t_sup)
-
-        A_atoms, A_pos = all_heavy_atoms(apo_sup)
-        print(f"  Apo-A heavy atoms : {len(A_atoms)}")
-
-        A_desc = build_desc(A_atoms, A_pos)
-        A_tree = KDTree(A_pos)
-        apo_sup_residues = [res for model in apo_sup for chain in model
-                            for res in chain if res.id[0] == ' ' and 'CA' in res]
-        A_fps, A_fp_coords = [], []
-        for p in good_pos:
-            if p >= len(apo_sup_residues):
-                continue
-            ca_coord = apo_sup_residues[p]['CA'].coord
-            # nearest heavy atom to Cα is the Cα itself — no SASA filter needed
-            _, idx = A_tree.query(ca_coord)
-            fp = patch_fp(idx, A_pos, A_desc, A_tree)
-            if fp is not None:
-                A_fps.append(fp)
-                A_fp_coords.append(A_pos[idx])
-
-    elif use_esmfold:
-        # ── ESMFold path ──────────────────────────────────────────────────────
-        if not os.path.exists(ESMFOLD_A_PDB):
-            sys.exit(f"ERROR: ESMFold structure not found at {ESMFOLD_A_PDB}")
-
-        esm_struct = pdb_parser.get_structure('ESM', ESMFOLD_A_PDB)
-        esm_residues = [res for model in esm_struct for chain in model
-                        for res in chain if res.id[0] == ' ' and 'CA' in res]
-
-        # Filter interface positions to well-predicted residues only
-        good_pos = [p for p in sorted(iface_seq_pos)
-                    if p < len(esm_residues)
-                    and esm_residues[p]['CA'].get_bfactor() >= PLDDT_THRESH]
-        print(f"  Interface positions (bound complex) : {len(iface_seq_pos)}")
-        print(f"  After ESMFold pLDDT>{PLDDT_THRESH:.0f} filter        : {len(good_pos)}")
-
-        # Superimpose ESMFold-A onto bound chain A via shared CA positions
-        n_shared = min(len(esm_residues), len(ab_a_residues))
-        esm_ca  = np.array([esm_residues[i]['CA'].coord for i in range(n_shared)])
-        ab_ca   = np.array([ab_a_residues[i]['CA'].coord
-                            for i in range(n_shared) if 'CA' in ab_a_residues[i]])
-        # Both must have same length for Kabsch
-        n_aln = min(len(esm_ca), len(ab_ca))
-        R_sup, t_sup = superimpose_kabsch(esm_ca[:n_aln], ab_ca[:n_aln])
-        print(f"  Superimposed ESMFold-A onto bound chain A ({n_aln} Cα pairs)")
-
-        # Apply superposition to all ESMFold atoms
-        esm_sup = copy.deepcopy(esm_struct)
-        for atom in esm_sup.get_atoms():
-            atom.set_coord(R_sup @ atom.coord + t_sup)
-
-        # Compute SASA on superimposed ESMFold-A (standalone)
-        print("  Computing SASA for ESMFold-A …", end=' ', flush=True)
-        run_sasa(esm_sup)
-        print("done")
-
-        A_atoms, A_pos = surface_atoms(esm_sup)
-        print(f"  ESMFold-A surface atoms : {len(A_atoms)}")
-
-        # Build descriptors on the full ESMFold surface
-        A_desc = build_desc(A_atoms, A_pos)
-        A_tree = KDTree(A_pos)
-
-        # Fingerprint only the good interface positions: find nearest ESMFold
-        # surface atom to each good-position CA (after superposition)
-        esm_sup_residues = [res for model in esm_sup for chain in model
-                            for res in chain if res.id[0] == ' ' and 'CA' in res]
-        surf_tree = KDTree(A_pos)
-        A_fps, A_fp_coords = [], []
-        for p in good_pos:
-            if p >= len(esm_sup_residues):
-                continue
-            ca_coord = esm_sup_residues[p]['CA'].coord
-            dist, idx = surf_tree.query(ca_coord)
-            if dist > 5.0:          # CA not on surface — skip
-                continue
-            fp = patch_fp(idx, A_pos, A_desc, A_tree)
-            if fp is not None:
-                A_fps.append(fp)
-                A_fp_coords.append(A_pos[idx])
-
-    else:
-        # ── Bound complex path (original behaviour) ───────────────────────────
-        ab_A_only = copy.deepcopy(ab)
-        for model in ab_A_only:
-            for cid in [c.id for c in model if c.id != 'A']:
-                model.detach_child(cid)
-        print("  Computing SASA for chain A alone …", end=' ', flush=True)
-        run_sasa(ab_A_only)
-        print("done")
-
-        sasa_map = {}
-        for model in ab_A_only:
-            for chain in model:
-                for res in chain:
-                    for atom in res:
-                        sasa_map[(res.get_full_id(), atom.name)] = atom.sasa
-        for model in ab:
-            for chain in model:
-                if chain.id != 'A':
-                    continue
-                for res in chain:
-                    for atom in res:
-                        key = (res.get_full_id(), atom.name)
-                        if key in sasa_map:
-                            atom.sasa = sasa_map[key]
-
-        A_atoms, A_pos = surface_atoms(ab, chain_ids=['A'])
-        print(f"  Chain A surface atoms : {len(A_atoms)}  (chain-A-alone SASA)")
-
-        if len(A_atoms) == 0:
-            sys.exit("ERROR: could not extract surface atoms.")
-
-        tree_B     = KDTree(B_pos)
-        iface_mask = np.array([bool(tree_B.query_ball_point(p, r=5.0)) for p in A_pos])
-        n_iface    = iface_mask.sum()
-        print(f"  Interface atoms on A  : {n_iface}  (≤5 Å from chain B)")
-        if n_iface == 0:
-            sys.exit("ERROR: no interface atoms at 5 Å cutoff.")
-
-        A_desc = build_desc(A_atoms, A_pos)
-        A_tree = KDTree(A_pos)
-        A_fps, A_fp_coords = [], []
-        for i in np.where(iface_mask)[0]:
-            fp = patch_fp(i, A_pos, A_desc, A_tree)
-            if fp is not None:
-                A_fps.append(fp)
-                A_fp_coords.append(A_pos[i])
+    for res in iface_res:
+        if 'CA' not in res:
+            continue
+        ca_coord = res['CA'].coord
+        _, idx = A_tree.query(ca_coord)
+        fp = patch_fp(idx, A_pos, A_desc, A_tree)
+        if fp is not None:
+            A_fps.append(fp)
+            A_fp_coords.append(A_pos[idx])
 
     if len(A_fps) == 0:
         sys.exit("ERROR: no valid fingerprints computed.")
@@ -767,29 +755,54 @@ def main():
                     help='PDB paths to screen as protein C (default: new downloads)')
     ap.add_argument('--clear-cache', action='store_true',
                     help='Force recomputation of A-interface fingerprints')
-    ap.add_argument('--use-esmfold', action='store_true',
-                    help='Build reference fingerprint from ESMFold standalone A '
-                         f'(pLDDT>{PLDDT_THRESH:.0f} filtered) instead of bound complex')
-    ap.add_argument('--use-apo', action='store_true',
-                    help=f'Build reference fingerprint from apo crystal monomer ({APO_A_PDB}), '
-                         f'excluding induced-fit residues {sorted(EXCLUDE_RNUMS)}')
-    ap.add_argument('--use-sgk', action='store_true',
-                    help=f'Build reference fingerprint from {SGK_A_PDB} (apo DT), '
-                         f'NAD-site residues identified via superposition onto {F0L_A_PDB}')
-    ap.add_argument('--rankings-tsv', default='results/dmasif/rankings.tsv',
-                    help='Output TSV path for rankings (default: results/dmasif/rankings.tsv)')
+    ap.add_argument('--apo-ref', required=True, metavar='PDB',
+                    help='Apo receptor PDB to build interface fingerprints from.')
+    ap.add_argument('--plddt-thresh', type=float, default=0.0, metavar='THRESH',
+                    help='Drop interface residues with CA B-factor below this value '
+                         '(default: 0 = disabled). Set >0 when --apo-ref is a '
+                         'predicted structure storing pLDDT in the B-factor column.')
+    ap.add_argument('--bound-ref', required=True, metavar='PDB',
+                    help='Holo PDB defining the binding site. '
+                         '1 protein chain: ligand proximity defines interface. '
+                         '2 protein chains: chain-chain interface used directly.')
+    ap.add_argument('--bound-chain', default=None, metavar='ID',
+                    help='Chain ID of the receptor in --bound-ref (auto-detected if omitted).')
+    ap.add_argument('--bound-ligand', default=None, metavar='RES',
+                    help='Residue name of the ligand in --bound-ref (single-chain case only). '
+                         'Required when --bound-ref has one protein chain.')
+    ap.add_argument('--rankings-tsv', default=None,
+                    help='Output TSV path for rankings. Defaults to '
+                         'results/dmasif/rankings_union.tsv (--union) or '
+                         'results/dmasif/rankings.tsv (default).')
+    ap.add_argument('--union', action='store_true',
+                    help='Derive interface residues via PeSTo+P2Rank union '
+                         'instead of <5Å from holo. Uses a separate cache and '
+                         'outputs rankings to rankings_union.tsv by default.')
     args = ap.parse_args()
-
-    cache = A_CACHE_SGK if args.use_sgk else (A_CACHE_APO if args.use_apo else (A_CACHE_ESM if args.use_esmfold else A_CACHE))
-    if args.clear_cache and os.path.exists(cache):
-        os.remove(cache)
-        print(f"Removed cache: {cache}")
 
     t0         = time.time()
     pdb_parser = PDBParser(QUIET=True)
 
+    # Derive cache path so different apo / bound-ref / method combos don't collide
+    apo_stem   = os.path.splitext(os.path.basename(args.apo_ref))[0]
+    bound_stem = os.path.splitext(os.path.basename(args.bound_ref))[0]
+    suffix = '_union' if args.union else ''
+    cache  = f'results/dmasif/A_interface_cache_{apo_stem}_{bound_stem}{suffix}.npz'
+    if args.clear_cache and os.path.exists(cache):
+        os.remove(cache)
+        print(f"Removed cache: {cache}")
+
+    if args.rankings_tsv is None:
+        args.rankings_tsv = (f'results/dmasif/rankings_{apo_stem}_union.tsv'
+                             if args.union else 'results/dmasif/rankings.tsv')
+
     A_fps, A_iface_coords, B_pos, B_vdw = load_or_build_A_fingerprints(
-        pdb_parser, use_esmfold=args.use_esmfold, use_apo=args.use_apo, use_sgk=args.use_sgk)
+        pdb_parser, apo_ref=args.apo_ref,
+        bound_ref=args.bound_ref,
+        bound_chain=args.bound_chain,
+        bound_ligand=args.bound_ligand,
+        plddt_thresh=args.plddt_thresh,
+        use_union=args.union)
     print(f"  A interface fingerprints : {len(A_fps)}")
     print(f"  Chain B surface atoms    : {len(B_pos)}")
 

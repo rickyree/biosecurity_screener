@@ -7,41 +7,36 @@ to candidate positions via nearest-neighbour search in embedding space):
   2. Chemistry similarity: mean cosine similarity of reference binding site
      embeddings to their nearest neighbours in the candidate patch.
 
-Default reference (1f0l_A, chain A, holo):
-  Binding site clusters (0-based indices in 1f0l_A):
-    C1: idx 19-68  C2: idx 147,152  C3: idx 432,444
-
-SGK reference (--use-sgk, 1sgk_A apo):
-  Binding site indices and clusters derived from A_interface_cache_sgk.npz,
-  which contains the ATP-site residue coordinates in 1sgk_A's own frame.
+Binding site indices and clusters are derived from the dMaSIF interface cache
+(A_interface_cache_{apo_stem}_{bound_stem}.npz), which must be built first by
+running dmasif_workflow.py with the same --apo-ref and --bound-ref arguments.
 """
-import sys, os, argparse
+import sys, os, argparse, hashlib
 import numpy as np
 import pandas as pd
 import torch
 import esm as esmlib
 from scipy.spatial import KDTree
 
-# ── Default binding site (1f0l_A chain A) ────────────────────────────────────
-F0L_BINDING_IDX = [
-    19,20,21,22,23,26,29,30,33,34,35,37,41,42,43,44,45,
-    51,52,53,54,55,61,64,68,
-    147,152,
-    432,444
-]
-F0L_C1 = [19,20,21,22,23,26,29,30,33,34,35,37,41,42,43,44,45,51,52,53,54,55,61,64,68]
-F0L_C2 = [147,152]
-F0L_C3 = [432,444]
-
-SGK_A_PDB   = 'binding/1sgk_A.pdb'
-SGK_CACHE   = 'results/dmasif/A_interface_cache_sgk.npz'
-F0L_A_PDB   = 'binding/1f0l_A.pdb'
+ESM2_CACHE_DIR = 'results/esm2_embed_cache'
 
 
-# ── ESM2 inference ────────────────────────────────────────────────────────────
+# ── ESM2 inference (with sequence-keyed cache) ────────────────────────────────
+
+def seq_hash(seq):
+    """SHA256 hash of the cleaned sequence — used as cache key."""
+    clean = seq.replace('X', 'G').replace('-', 'G')[:1000]
+    return hashlib.sha256(clean.encode()).hexdigest()
+
 
 def get_outputs(model, batch_converter, seq, label):
-    clean = seq.replace('X', 'G').replace('-', 'G')[:1000]
+    clean     = seq.replace('X', 'G').replace('-', 'G')[:1000]
+    cache_path = os.path.join(ESM2_CACHE_DIR, f'{seq_hash(seq)}.npz')
+
+    if os.path.exists(cache_path):
+        d = np.load(cache_path)
+        return d['emb'], d['contacts']
+
     data = [(label, clean)]
     _, _, tokens = batch_converter(data)
     device = next(model.parameters()).device
@@ -50,39 +45,41 @@ def get_outputs(model, batch_converter, seq, label):
         out = model(tokens, repr_layers=[33], return_contacts=True)
     emb      = out['representations'][33][0, 1:1+len(clean)].cpu().numpy()
     contacts = out['contacts'][0].cpu().numpy()
+
+    os.makedirs(ESM2_CACHE_DIR, exist_ok=True)
+    np.savez(cache_path, emb=emb, contacts=contacts)
     return emb, contacts
 
 
 # ── SGK binding site derivation ───────────────────────────────────────────────
 
-def derive_sgk_binding_indices(gap=10):
-    """Load A_interface_cache_sgk.npz, map iface_coords to 1sgk_A Cα sequence
+def derive_binding_indices(cache_path, apo_pdb, gap=10):
+    """Load a dMaSIF interface cache, map iface_coords to apo Cα sequence
     indices, and split into clusters by sequence gaps >= `gap`.
 
     Returns (binding_idx, clusters) where clusters is a list of index lists.
     """
     from Bio.PDB import PDBParser
-    from Bio.SeqUtils import seq1
 
-    if not os.path.exists(SGK_CACHE):
-        sys.exit(f"ERROR: SGK cache not found at {SGK_CACHE}. "
-                 "Run dmasif_workflow.py --use-sgk first.")
+    if not os.path.exists(cache_path):
+        sys.exit(f"ERROR: dMaSIF cache not found at {cache_path}. "
+                 f"Run dmasif_workflow.py with matching --apo-ref and --bound-ref first.")
+    if not os.path.exists(apo_pdb):
+        sys.exit(f"ERROR: apo PDB not found at {apo_pdb}.")
 
-    cache       = np.load(SGK_CACHE)
-    iface_coords = cache['A_iface_coords']          # (N, 3) coords in 1sgk frame
+    cache        = np.load(cache_path)
+    iface_coords = cache['A_iface_coords']   # (N, 3) coords in apo frame
 
-    p       = PDBParser(QUIET=True)
-    sgk_s   = p.get_structure('SGK', SGK_A_PDB)
-    residues = [res for model in sgk_s for chain in model
+    p        = PDBParser(QUIET=True)
+    apo_s    = p.get_structure('APO', apo_pdb)
+    residues = [res for model in apo_s for chain in model
                 for res in chain if res.id[0] == ' ' and 'CA' in res]
     ca_coords = np.array([res['CA'].coord for res in residues])
 
-    # Map each iface_coord to the nearest Cα → sequence index
-    tree      = KDTree(ca_coords)
-    _, idx    = tree.query(iface_coords)
-    seq_idx   = sorted(set(idx.tolist()))
+    tree    = KDTree(ca_coords)
+    _, idx  = tree.query(iface_coords)
+    seq_idx = sorted(set(idx.tolist()))
 
-    # Split into clusters by sequence gaps
     clusters, current = [], [seq_idx[0]]
     for i in range(1, len(seq_idx)):
         if seq_idx[i] - seq_idx[i-1] >= gap:
@@ -91,8 +88,8 @@ def derive_sgk_binding_indices(gap=10):
         current.append(seq_idx[i])
     clusters.append(current)
 
-    print(f"  SGK binding site: {len(seq_idx)} residues, "
-          f"{len(clusters)} cluster(s): {[c[0] for c in clusters]}")
+    print(f"  Binding site: {len(seq_idx)} residues, "
+          f"{len(clusters)} cluster(s) starting at: {[c[0] for c in clusters]}")
 
     return seq_idx, clusters
 
@@ -199,13 +196,24 @@ def ref_contact_score(ref_contacts, clusters):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('--use-sgk', action='store_true',
-                    help='Use 1sgk_A (apo) as reference; derive binding indices '
-                         'from A_interface_cache_sgk.npz')
-    ap.add_argument('--rankings-tsv', default='results/dmasif/rankings.tsv',
-                    help='dMaSIF rankings TSV to read candidates from '
-                         '(default: results/dmasif/rankings.tsv)')
+    ap.add_argument('--apo-ref', required=True, metavar='PDB',
+                    help='Apo receptor PDB — must match the --apo-ref used in dmasif_workflow.py.')
+    ap.add_argument('--bound-ref', required=True, metavar='PDB',
+                    help='Bound reference PDB — must match the --bound-ref used in dmasif_workflow.py.')
+    ap.add_argument('--candidates-tsv', required=True, metavar='TSV',
+                    help='TSV file of candidate sequences with columns '
+                         '"candidate" and "sequence_chain1".')
+    ap.add_argument('--out', default=None, metavar='TSV',
+                    help='Output TSV path (default: results/dmasif/esm2_prefilter_{apo_stem}[_union].tsv)')
+    ap.add_argument('--union', action='store_true',
+                    help='Use the union interface cache (built with --union in dmasif_workflow.py).')
     args = ap.parse_args()
+
+    apo_stem   = os.path.splitext(os.path.basename(args.apo_ref))[0]
+    bound_stem = os.path.splitext(os.path.basename(args.bound_ref))[0]
+    union_suffix = '_union' if args.union else ''
+    cache_path = f'results/dmasif/A_interface_cache_{apo_stem}_{bound_stem}{union_suffix}.npz'
+    out_path   = args.out or f'results/dmasif/esm2_prefilter_{apo_stem}{union_suffix}.tsv'
 
     print("Loading ESM2 650M...", flush=True)
     model, alphabet = esmlib.pretrained.esm2_t33_650M_UR50D()
@@ -220,17 +228,9 @@ def main():
     p = PDBParser(QUIET=True)
 
     # ── Reference setup ──
-    if args.use_sgk:
-        print("Reference: 1sgk_A (apo, SGK ATP-site)", flush=True)
-        binding_idx, clusters = derive_sgk_binding_indices()
-        ref_pdb   = SGK_A_PDB
-        out_path  = 'results/dmasif/esm2_prefilter_sgk.tsv'
-    else:
-        print("Reference: 1f0l_A (holo, PKA ATP-site)", flush=True)
-        binding_idx = F0L_BINDING_IDX
-        clusters    = [F0L_C1, F0L_C2, F0L_C3]
-        ref_pdb     = F0L_A_PDB
-        out_path    = 'results/dmasif/esm2_prefilter.tsv'
+    print(f"Reference: {args.apo_ref}", flush=True)
+    binding_idx, clusters = derive_binding_indices(cache_path, args.apo_ref)
+    ref_pdb = args.apo_ref
 
     s        = p.get_structure('ref', ref_pdb)
     chain    = list(list(s[0].get_chains()))[0]
@@ -243,7 +243,9 @@ def main():
     print(f"  Reference contact score: {ref_cs:.4f}", flush=True)
 
     # ── Candidates ──
-    df   = pd.read_csv('results/dmasif/candidate_sequences.tsv', sep='\t')
+    if not os.path.exists(args.candidates_tsv):
+        sys.exit(f"ERROR: candidates TSV not found at {args.candidates_tsv}")
+    df   = pd.read_csv(args.candidates_tsv, sep='\t')
     rows = []
 
     for i, row in df.iterrows():
@@ -277,7 +279,7 @@ def main():
 
     results_df = pd.DataFrame(rows)
 
-    cs_thresh = ref_cs * 0.30
+    cs_thresh = ref_cs * 0.50
     es_thresh = 0.80
 
     results_df['contact_pass'] = results_df['contact_score'].apply(
@@ -290,7 +292,7 @@ def main():
 
     print(f"\n{'='*70}")
     print(f"Reference contact score: {ref_cs:.4f}")
-    print(f"Contact threshold (30%): {cs_thresh:.4f}")
+    print(f"Contact threshold (50%): {cs_thresh:.4f}")
     print(f"Chemistry sim threshold: {es_thresh:.2f}")
     print(f"{'='*70}")
 

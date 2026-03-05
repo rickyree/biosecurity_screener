@@ -1,0 +1,65 @@
+PDB Cleaning Report
+Generated:,2026-03-05 21:13:44
+Input File:,1tox.pdb
+
+SUMMARY STATISTICS
+Metric,Count
+Water molecules removed,302
+Heterogens removed,2
+Nonstandard residues replaced,0
+Missing residues added,0
+Missing atoms added,4
+Hydrogens added,7785
+Disulfide bonds detected,4
+Original chains,"A, B, A, B, A, B"
+Chains modified,"B, A"
+B-factor preservation enabled,True
+B-factors preserved from original,15694
+Atoms with default B-factors,0
+Biological assembly generated,True
+Biological assembly transformations,5
+Biological assembly chains,8
+
+BIOLOGICAL ASSEMBLY WARNINGS
+Warning
+"BIOMT transform 1 specified chains [] which don't match cleaned PDB chains ['A', 'B']. Applied transformation to all available chains instead."
+"BIOMT transform 1 specified chains [] which don't match cleaned PDB chains ['A', 'B']. Applied transformation to all available chains instead."
+"BIOMT transform 2 specified chains [] which don't match cleaned PDB chains ['A', 'B']. Applied transformation to all available chains instead."
+
+REMOVED HETEROGENS
+Name,Type,Chain ID,Residue Number,Atom Count,Atom Names
+NAD,cofactor,A,536,44,"PA, O1A, O2A, O5B, C5B, C4B, O4B, C3B, O3B, C2B, O2B, C1B, N9A, C8A, N7A, C5A, C6A, N6A, N1A, C2A, N3A, C4A, O3, PN, O1N, O2N, O5D, C5D, C4D, O4D, C3D, O3D, C2D, O2D, C1D, N1N, C2N, C3N, C7N, O7N, N7N, C4N, C5N, C6N"
+NAD,cofactor,B,536,44,"PA, O1A, O2A, O5B, C5B, C4B, O4B, C3B, O3B, C2B, O2B, C1B, N9A, C8A, N7A, C5A, C6A, N6A, N1A, C2A, N3A, C4A, O3, PN, O1N, O2N, O5D, C5D, C4D, O4D, C3D, O3D, C2D, O2D, C1D, N1N, C2N, C3N, C7N, O7N, N7N, C4N, C5N, C6N"
+
+REMOVED WATER MOLECULES
+Chain ID,Count,Residue Numbers
+A,150,537-686
+B,152,537-688
+
+MISSING ATOMS ADDED
+Atom Name,Residue Name,Chain ID,Residue Number
+O,PRO,A,38
+O,ALA,A,187
+O,LYS,B,37
+O,ALA,B,187
+
+DISULFIDE BONDS DETECTED
+Residue 1 Chain,Residue 1 Number,Residue 2 Chain,Residue 2 Number,Distance (A),Position 1 X,Position 1 Y,Position 1 Z,Position 2 X,Position 2 Y,Position 2 Z
+A,186,A,201,0.2,2.5418000000000003,-3.1616,-0.15700000000000003,2.3746,-3.0487,-0.12940000000000002
+A,461,A,471,0.2,5.9181,-3.5737000000000005,2.3098,5.7669,-3.4767000000000006,2.2131000000000003
+B,186,B,201,0.2,2.0714,-2.2260000000000004,6.3215,1.9131,-2.1045000000000003,6.3619
+B,461,B,471,0.2,5.446300000000001,-2.6287000000000003,8.823500000000001,5.2937,-2.5334000000000003,8.7263
+
+WATER MOLECULES SAMPLE (First 10)
+Chain ID,Residue Number,X,Y,Z
+A,537,1.8678000000000001,-1.5685000000000002,-0.1174
+A,538,5.2903,-3.7162,-0.23730000000000004
+A,539,4.6327,-2.246,1.0844
+A,540,4.5566,-2.5577000000000005,0.48510000000000003
+A,541,4.5165999999999995,-2.3453,0.6341000000000001
+A,542,4.5131000000000006,-2.572,0.21760000000000002
+A,543,4.4156,-2.7597000000000005,0.028499999999999998
+A,544,4.470000000000001,-2.9957000000000003,0.10920000000000002
+A,545,5.3821,-3.5064,-0.0863
+A,546,4.177600000000001,-3.0364000000000004,1.6432
+... and 292 more water molecules

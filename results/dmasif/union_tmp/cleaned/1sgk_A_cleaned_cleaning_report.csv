@@ -1,0 +1,27 @@
+PDB Cleaning Report
+Generated:,2026-03-05 22:30:08
+Input File:,1sgk_A_cleaned.pdb
+
+SUMMARY STATISTICS
+Metric,Count
+Water molecules removed,0
+Heterogens removed,0
+Nonstandard residues replaced,0
+Missing residues added,0
+Missing atoms added,0
+Hydrogens added,0
+Disulfide bonds detected,2
+Original chains,A
+Chains modified,
+B-factor preservation enabled,True
+B-factors preserved from original,7973
+Atoms with default B-factors,0
+Biological assembly generated,False
+Biological assembly transformations,0
+Biological assembly chains,0
+
+DISULFIDE BONDS DETECTED
+Residue 1 Chain,Residue 1 Number,Residue 2 Chain,Residue 2 Number,Distance (A),Position 1 X,Position 1 Y,Position 1 Z,Position 2 X,Position 2 Y,Position 2 Z
+A,186,A,201,0.2,2.2605,2.2257000000000002,6.3616,2.4195,2.1171,6.426200000000001
+A,461,A,471,0.2,-1.2119,2.6286000000000005,8.824800000000002,-1.0459,2.5537,8.7372
+

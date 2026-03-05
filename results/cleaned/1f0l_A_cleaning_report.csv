@@ -1,0 +1,41 @@
+PDB Cleaning Report
+Generated:,2026-03-05 21:13:39
+Input File:,1f0l_A.pdb
+
+SUMMARY STATISTICS
+Metric,Count
+Water molecules removed,0
+Heterogens removed,1
+Nonstandard residues replaced,0
+Missing residues added,0
+Missing atoms added,7
+Hydrogens added,3947
+Disulfide bonds detected,2
+Original chains,A
+Chains modified,A
+B-factor preservation enabled,True
+B-factors preserved from original,7962
+Atoms with default B-factors,0
+Biological assembly generated,False
+Biological assembly transformations,0
+Biological assembly chains,0
+
+REMOVED HETEROGENS
+Name,Type,Chain ID,Residue Number,Atom Count,Atom Names
+APU,unknown_heterogen,A,602,43,"PA, O1A, O2A, O5B, C5B, C4B, O4B, C3B, O3B, C2B, O2B, C1B, N9A, C8A, N7A, C5A, C6A, N6A, N1A, C2A, N3A, C4A, N1U, C2U, O2U, N3U, C4U, O4U, C5U, C6U, C1D, C2D, O2D, C3D, O3D, C4D, O4D, O5D, C5D, PU, O1X, O2X, O3X"
+
+MISSING ATOMS ADDED
+Atom Name,Residue Name,Chain ID,Residue Number
+CD,LYS,A,39
+CE,LYS,A,39
+NZ,LYS,A,39
+CG,LYS,A,498
+CD,LYS,A,498
+CE,LYS,A,498
+NZ,LYS,A,498
+
+DISULFIDE BONDS DETECTED
+Residue 1 Chain,Residue 1 Number,Residue 2 Chain,Residue 2 Number,Distance (A),Position 1 X,Position 1 Y,Position 1 Z,Position 2 X,Position 2 Y,Position 2 Z
+A,186,A,201,0.2,-3.7316000000000003,3.483,5.702000000000001,-3.5603000000000002,3.5751,5.760400000000001
+A,461,A,471,0.21,-6.508400000000001,2.2594000000000003,5.4604,-6.553400000000001,2.4036000000000004,5.321300000000001
+

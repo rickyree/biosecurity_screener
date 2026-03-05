@@ -1,0 +1,71 @@
+PDB Cleaning Report
+Generated:,2026-03-05 21:13:29
+Input File:,1iko.pdb
+
+SUMMARY STATISTICS
+Metric,Count
+Water molecules removed,201
+Heterogens removed,3
+Nonstandard residues replaced,1
+Missing residues added,0
+Missing atoms added,10
+Hydrogens added,1121
+Disulfide bonds detected,6
+Original chains,"P, A, P"
+Chains modified,"P, A"
+B-factor preservation enabled,True
+B-factors preserved from original,2252
+Atoms with default B-factors,0
+Biological assembly generated,False
+Biological assembly transformations,0
+Biological assembly chains,0
+
+REMOVED HETEROGENS
+Name,Type,Chain ID,Residue Number,Atom Count,Atom Names
+NAG,unknown_heterogen,A,1,14,"C1, C2, C3, C4, C5, C6, C7, C8, N2, O3, O4, O5, O6, O7"
+NAG,unknown_heterogen,A,2,14,"C1, C2, C3, C4, C5, C6, C7, C8, N2, O3, O4, O5, O6, O7"
+MAN,unknown_heterogen,A,3,11,"C1, C2, C3, C4, C5, C6, O2, O3, O4, O5, O6"
+
+REMOVED WATER MOLECULES
+Chain ID,Count,Residue Numbers
+P,201,208-408
+
+NONSTANDARD RESIDUES REPLACED
+Original Name,Replacement Name,Chain ID,Residue Number,Position X,Position Y,Position Z
+ASN,ASN,P,39,2.6285000000000003,3.9569000000000005,9.011700000000001
+
+MISSING ATOMS ADDED
+Atom Name,Residue Name,Chain ID,Residue Number
+CD,LYS,P,95
+CE,LYS,P,95
+NZ,LYS,P,95
+CB,LYS,P,96
+CG,LYS,P,96
+CD,LYS,P,96
+CE,LYS,P,96
+NZ,LYS,P,96
+CE,LYS,P,133
+NZ,LYS,P,133
+
+DISULFIDE BONDS DETECTED
+Residue 1 Chain,Residue 1 Number,Residue 2 Chain,Residue 2 Number,Distance (A),Position 1 X,Position 1 Y,Position 1 Z,Position 2 X,Position 2 Y,Position 2 Z
+P,65,P,92,1.88,2.1054,3.7710000000000004,9.6708,1.6185,4.3125,7.942
+P,65,P,104,0.2,2.1054,3.7710000000000004,9.6708,2.0581,3.8967,9.5174
+P,65,P,156,1.7,2.1054,3.7710000000000004,9.6708,1.6564,4.168,8.0846
+P,92,P,104,1.69,1.6185,4.3125,7.942,2.0581,3.8967,9.5174
+P,92,P,156,0.21,1.6185,4.3125,7.942,1.6564,4.168,8.0846
+P,104,P,156,1.51,2.0581,3.8967,9.5174,1.6564,4.168,8.0846
+
+WATER MOLECULES SAMPLE (First 10)
+Chain ID,Residue Number,X,Y,Z
+P,208,2.1072,4.9163,8.4925
+P,209,2.6162,2.5730000000000004,9.2654
+P,210,2.3258,4.2052000000000005,9.7436
+P,211,2.1695,4.0600000000000005,9.924700000000001
+P,212,1.8491,4.7824,9.217400000000001
+P,213,2.4236000000000004,3.9372000000000003,9.9762
+P,214,2.9599,3.3186999999999998,8.872100000000001
+P,215,2.6987,2.7331000000000003,8.608
+P,216,2.7520000000000002,3.7992,9.3758
+P,217,0.5438,1.7362,9.377
+... and 191 more water molecules

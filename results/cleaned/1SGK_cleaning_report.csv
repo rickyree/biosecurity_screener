@@ -1,0 +1,49 @@
+PDB Cleaning Report
+Generated:,2026-03-05 21:13:34
+Input File:,1SGK.pdb
+
+SUMMARY STATISTICS
+Metric,Count
+Water molecules removed,357
+Heterogens removed,0
+Nonstandard residues replaced,0
+Missing residues added,0
+Missing atoms added,0
+Hydrogens added,3952
+Disulfide bonds detected,2
+Original chains,"A, A"
+Chains modified,A
+B-factor preservation enabled,True
+B-factors preserved from original,7973
+Atoms with default B-factors,0
+Biological assembly generated,True
+Biological assembly transformations,2
+Biological assembly chains,2
+
+BIOLOGICAL ASSEMBLY WARNINGS
+Warning
+BIOMT transform 1 specified chains [] which don't match cleaned PDB chains ['A']. Applied transformation to all available chains instead.
+BIOMT transform 2 specified chains [] which don't match cleaned PDB chains ['A']. Applied transformation to all available chains instead.
+
+REMOVED WATER MOLECULES
+Chain ID,Count,Residue Numbers
+A,357,536-940
+
+DISULFIDE BONDS DETECTED
+Residue 1 Chain,Residue 1 Number,Residue 2 Chain,Residue 2 Number,Distance (A),Position 1 X,Position 1 Y,Position 1 Z,Position 2 X,Position 2 Y,Position 2 Z
+A,186,A,201,0.2,2.2605,2.2257000000000002,6.3616,2.4195,2.1171,6.426200000000001
+A,461,A,471,0.2,-1.2119,2.6286000000000005,8.824800000000002,-1.0459,2.5537,8.7372
+
+WATER MOLECULES SAMPLE (First 10)
+Chain ID,Residue Number,X,Y,Z
+A,536,-1.8605,1.2713,6.4934
+A,537,-0.9552,3.798,8.2574
+A,538,1.4915,2.8217,4.3498
+A,539,1.1466,3.5382,4.4057
+A,540,-2.0025,2.7427,6.7258
+A,541,-1.1493,3.6865000000000006,8.0891
+A,542,-2.2657000000000003,2.2274000000000003,7.3252
+A,543,-1.0669000000000002,3.9040999999999997,8.6899
+A,544,-0.14070000000000002,3.6993000000000005,7.7859
+A,545,-1.0541,2.3459,6.7493
+... and 347 more water molecules

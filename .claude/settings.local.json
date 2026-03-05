@@ -14,7 +14,9 @@
       "Bash(done)",
       "Bash(export NVM_DIR=\"$HOME/.nvm\")",
       "Bash(. \"$NVM_DIR/nvm.sh\")",
-      "Bash(npm install -g @anthropic-ai/claude-code)"
+      "Bash(npm install -g @anthropic-ai/claude-code)",
+      "Bash(myenv/bin/amina auth status && myenv/bin/amina --version)",
+      "Bash(myenv/bin/amina tools list)"
     ]
   }
 }

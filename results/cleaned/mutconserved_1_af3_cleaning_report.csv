@@ -1,0 +1,30 @@
+PDB Cleaning Report
+Generated:,2026-03-05 21:20:09
+Input File:,mutconserved_1_af3.pdb
+
+SUMMARY STATISTICS
+Metric,Count
+Water molecules removed,0
+Heterogens removed,0
+Nonstandard residues replaced,0
+Missing residues added,0
+Missing atoms added,0
+Hydrogens added,4101
+Disulfide bonds detected,5
+Original chains,A
+Chains modified,
+B-factor preservation enabled,True
+B-factors preserved from original,8142
+Atoms with default B-factors,0
+Biological assembly generated,False
+Biological assembly transformations,0
+Biological assembly chains,0
+
+DISULFIDE BONDS DETECTED
+Residue 1 Chain,Residue 1 Number,Residue 2 Chain,Residue 2 Number,Distance (A),Position 1 X,Position 1 Y,Position 1 Z,Position 2 X,Position 2 Y,Position 2 Z
+A,186,A,188,0.19,0.9994000000000001,0.5344000000000001,1.2177,1.1163,0.38870000000000005,1.1983000000000001
+A,186,A,448,2.93,0.9994000000000001,0.5344000000000001,1.2177,-1.0717,-0.051500000000000004,-0.7668
+A,186,A,458,2.96,0.9994000000000001,0.5344000000000001,1.2177,-1.1057000000000001,-0.24700000000000003,-0.7159
+A,188,A,448,2.97,1.1163,0.38870000000000005,1.1983000000000001,-1.0717,-0.051500000000000004,-0.7668
+A,448,A,458,0.2,-1.0717,-0.051500000000000004,-0.7668,-1.1057000000000001,-0.24700000000000003,-0.7159
+
