@@ -1,0 +1,77 @@
+candidate	seq_len	contact_score	chem_sim	contact_pass	chem_pass	pass_filter
+1iko	141	0.0058	0.5003	False	False	False
+1trn	446	0.2831	0.6497	True	False	False
+1v3d	862	0.1724	0.3386	True	False	False
+1v3d_A	431	0.1055	0.2145	False	False	False
+2bba	199	0.2803	0.3083	True	False	False
+2bba_A	185	0.2726	0.3018	True	False	False
+2hle	321	0.0189		False	False	False
+2hle_A	188	0.2631	0.3119	True	False	False
+2vsk	1061	0.0253		False	False	False
+2vsk_A	400	0.3382	0.1049	True	False	False
+2vsm	550	0.0118	0.4254	False	False	False
+2vwd	823	0.0063	0.3731	False	False	False
+2vwd_A	413	0.0103		False	False	False
+2vwd_A_boltz2	413	0.0103		False	False	False
+2x9m_A	419	0.0088	0.1072	False	False	False
+3d11	427	0.0041		False	False	False
+3d12	1138	0.0125	0.5059	False	False	False
+3d12_A	428	0.01		False	False	False
+3gxu	309	0.0079	0.4206	False	False	False
+4wwy	564	0.3119	0.6345	True	False	False
+5kv9	430	0.337	0.2228	True	False	False
+5nop	857	0.0062	0.3128	False	False	False
+6cmg	860	0.0136	0.4562	False	False	False
+6cmg_A	428	0.009	0.1074	False	False	False
+6cmi	869	0.0136	0.4657	False	False	False
+6p72	852	0.007	0.3328	False	False	False
+6p72_A	426	0.2111		True	False	False
+6pd4	865	0.2878	0.3499	True	False	False
+6pdl_A	421	0.0386	0.1074	False	False	False
+6vy5	835	0.0115	0.4452	False	False	False
+7syy	849	0.0112	0.4097	False	False	False
+7syy_A	413	0.0382	0.101	False	False	False
+8vf1	836	0.0067	0.3457	False	False	False
+8vf1_A	418	0.0088	0.1071	False	False	False
+8wjb	840	0.0063	0.319	False	False	False
+9dvd	748	0.0359		False	False	False
+9dvd_A	411	0.3384	0.103	True	False	False
+A_B_b2	550	0.0118	0.4254	False	False	False
+A_B_b2_noPTM	550	0.0118	0.4254	False	False	False
+A_B_b2_noPTM_A	413	0.0111		False	False	False
+A_B_b2_noPTM_A_boltz2	413	0.0111		False	False	False
+A_B_b3	569	0.0131	0.4942	False	False	False
+A_B_b3_noPTM	569	0.0131	0.4942	False	False	False
+b2	550	0.0118	0.4254	False	False	False
+b3	1138	0.0125	0.5059	False	False	False
+b3_A	428	0.01		False	False	False
+brca1	699	0.255	0.4787	True	False	False
+1f0l_A_mutoutside_1	535	0.4647	0.2104	True	False	False
+1f0l_A_mutoutside_2	535	0.4883	0.211	True	False	False
+1f0l_A_mutoutside_3	535	0.2525		True	False	False
+1f0l_A_mutoutside_4	535	0.4568	0.212	True	False	False
+1f0l_A_mutoutside_5	535	0.4683	0.2181	True	False	False
+1f0l_A_mutoutside_6	535	0.4607	0.2136	True	False	False
+1f0l_A_mutoutside_7	535	0.4699	0.2131	True	False	False
+1f0l_A_mutoutside_8	535	0.4823	0.2218	True	False	False
+1f0l_A_mutoutside_9	535	0.5047	0.2162	True	False	False
+1f0l_A_mutoutside_10	535	0.5346	0.2146	True	False	False
+1f0l_A_mutoutside_11	535	0.5324	0.2137	True	False	False
+1f0l_A_mutoutside_12	535	0.5246	0.2196	True	False	False
+1f0l_A_mutoutside_13	535	0.5223	0.2256	True	False	False
+1f0l_A_mutoutside_14	535	0.4406	0.1913	True	False	False
+1f0l_A_mutoutside_15	535	0.0218		False	False	False
+1f0l_mutconserved_1	535	0.1505		True	False	False
+1f0l_mutconserved_2	535	0.1877		True	False	False
+1f0l_mutconserved_3	535	0.476		True	False	False
+1f0l_mutconserved_4	535	0.7307		True	False	False
+1f0l_mutconserved_5	535	0.0659		False	False	False
+1f0l_mutconserved_6	535	0.2964		True	False	False
+1f0l_mutconserved_7	535	0.2368		True	False	False
+1f0l_mutconserved_8	535	0.7086		True	False	False
+1f0l_mutconserved_9	535	0.3687	0.0706	True	False	False
+1f0l_mutconserved_10	535	0.1399	0.067	True	False	False
+1sgk_A	523	0.0179	0.2096	False	False	False
+1f0l_A	522	0.0172	0.209	False	False	False
+subtilisin_unbound	275	0.2732	1.0	True	True	True
+chymotrypsin_unbound	238	0.3309	0.5916	True	False	False

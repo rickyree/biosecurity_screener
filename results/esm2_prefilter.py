@@ -175,7 +175,7 @@ def chem_sim_matched(ref_emb, cand_emb, ref_binding_idx, matched_cand_idx):
         rv_norm = rv / (np.linalg.norm(rv) + 1e-8)
         sims.append(float((patch_norm @ rv_norm).max()))
 
-    if len(sims) < 10:
+    if len(sims) < 3:
         return float('nan')
     return float(np.mean(sims))
 
@@ -198,22 +198,30 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--apo-ref', required=True, metavar='PDB',
                     help='Apo receptor PDB — must match the --apo-ref used in dmasif_workflow.py.')
-    ap.add_argument('--bound-ref', required=True, metavar='PDB',
-                    help='Bound reference PDB — must match the --bound-ref used in dmasif_workflow.py.')
+    ap.add_argument('--bound-ref', default=None, metavar='PDB',
+                    help='Bound reference PDB — must match the --bound-ref used in dmasif_workflow.py. '
+                         'Not required when --union or --iface-residues was used.')
     ap.add_argument('--candidates-tsv', required=True, metavar='TSV',
                     help='TSV file of candidate sequences with columns '
                          '"candidate" and "sequence_chain1".')
     ap.add_argument('--out', default=None, metavar='TSV',
-                    help='Output TSV path (default: results/dmasif/esm2_prefilter_{apo_stem}[_union].tsv)')
+                    help='Output TSV path (default: results/dmasif/esm2_prefilter_{apo_stem}[_union|_explicit].tsv)')
     ap.add_argument('--union', action='store_true',
                     help='Use the union interface cache (built with --union in dmasif_workflow.py).')
+    ap.add_argument('--iface-residues', action='store_true',
+                    help='Use the explicit-residues cache (built with --iface-residues in dmasif_workflow.py).')
     args = ap.parse_args()
 
     apo_stem   = os.path.splitext(os.path.basename(args.apo_ref))[0]
-    bound_stem = os.path.splitext(os.path.basename(args.bound_ref))[0]
-    union_suffix = '_union' if args.union else ''
-    cache_path = f'results/dmasif/A_interface_cache_{apo_stem}_{bound_stem}{union_suffix}.npz'
-    out_path   = args.out or f'results/dmasif/esm2_prefilter_{apo_stem}{union_suffix}.tsv'
+    bound_stem = os.path.splitext(os.path.basename(args.bound_ref))[0] if args.bound_ref else 'noref'
+    if args.iface_residues:
+        suffix = '_explicit'
+    elif args.union:
+        suffix = '_union'
+    else:
+        suffix = ''
+    cache_path = f'results/dmasif/A_interface_cache_{apo_stem}_{bound_stem}{suffix}.npz'
+    out_path   = args.out or f'results/dmasif/esm2_prefilter_{apo_stem}{suffix}.tsv'
 
     print("Loading ESM2 650M...", flush=True)
     model, alphabet = esmlib.pretrained.esm2_t33_650M_UR50D()

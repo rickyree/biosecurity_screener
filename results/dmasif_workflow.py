@@ -354,23 +354,31 @@ def get_bound_partner_coords(structure, receptor_chain, partner_chain, bound_lig
         return np.array(coords)
 
 
-def get_union_iface_res(apo_ref, bound_ref, bound_chain=None, bound_ligand=None,
-                        pesto_threshold=0.5, work_dir='results/dmasif/union_tmp'):
+def get_union_iface_res(apo_ref, bound_ref=None, bound_chain=None, bound_ligand=None,
+                        pesto_threshold=0.5, work_dir='results/dmasif/union_tmp',
+                        pesto_type=None):
     """Return sorted list of apo residue numbers from PeSTo ∪ P2Rank pocket-1.
 
-    PeSTo interface type is chosen automatically:
+    PeSTo interface type is chosen automatically when bound_ref is provided:
       - 1 protein chain in bound_ref → Protein-Ligand-Interface
       - 2 protein chains             → Protein-Protein-Interface
+    If bound_ref is None, pesto_type must be 'ligand' or 'protein' (default: 'ligand').
     """
     import pandas as pd
 
     os.makedirs(work_dir, exist_ok=True)
-    pdb_parser = PDBParser(QUIET=True)
-    bound_struct = pdb_parser.get_structure('BOUND', bound_ref)
-    receptor_chain, partner_chain = resolve_bound_chain(bound_struct, bound_chain)
-    iface_type = ('Protein-Protein-Interface' if partner_chain
-                  else 'Protein-Ligand-Interface')
-    print(f"  [union] Partner type: {'protein chain ' + partner_chain if partner_chain else 'ligand ' + str(bound_ligand)}")
+    if bound_ref is not None:
+        pdb_parser = PDBParser(QUIET=True)
+        bound_struct = pdb_parser.get_structure('BOUND', bound_ref)
+        _, partner_chain = resolve_bound_chain(bound_struct, bound_chain)
+        iface_type = ('Protein-Protein-Interface' if partner_chain
+                      else 'Protein-Ligand-Interface')
+        print(f"  [union] Partner type: {'protein chain ' + partner_chain if partner_chain else 'ligand ' + str(bound_ligand)}")
+    else:
+        explicit = pesto_type or 'ligand'
+        iface_type = ('Protein-Protein-Interface' if explicit == 'protein'
+                      else 'Protein-Ligand-Interface')
+        print(f"  [union] No bound reference — using PeSTo type: {iface_type}")
     print(f"  [union] PeSTo interface type: {iface_type}")
 
     # Step 1: clean apo with pdb-cleaner
@@ -456,38 +464,51 @@ def get_union_iface_res(apo_ref, bound_ref, bound_chain=None, bound_ligand=None,
     return union
 
 
-def load_or_build_A_fingerprints(pdb_parser, apo_ref, bound_ref,
+def load_or_build_A_fingerprints(pdb_parser, apo_ref, bound_ref=None,
                                   bound_chain=None, bound_ligand=None,
-                                  plddt_thresh=0.0, use_union=False):
+                                  plddt_thresh=0.0, use_union=False,
+                                  pesto_type=None, iface_residues=None):
     """Return (A_fps, A_iface_coords, B_pos, B_vdw) either from cache or by computing.
 
-    apo_ref:     path to the apo receptor PDB.
-    bound_ref:   path to holo PDB that defines the binding site via ligand proximity
-                 (1 protein chain) or chain-chain interface (2 protein chains).
-    bound_chain: chain in bound_ref containing the receptor (auto-detected if None).
-    bound_ligand: residue name of the ligand in bound_ref (single-chain case only).
-    plddt_thresh: drop interface residues whose CA B-factor < this value (default 0,
-                  i.e. disabled). Set >0 when apo_ref is a predicted structure.
-    use_union:   if True, derive interface residues via PeSTo+P2Rank union instead
-                 of the <5Å holo distance method.
+    apo_ref:        path to the apo receptor PDB.
+    bound_ref:      path to holo PDB defining the binding site. Required unless
+                    use_union=True or iface_residues is provided.
+    bound_chain:    chain in bound_ref containing the receptor (auto-detected).
+    bound_ligand:   residue name of the ligand in bound_ref (single-chain case).
+    plddt_thresh:   drop interface residues whose CA B-factor < this value.
+    use_union:      derive interface via PeSTo+P2Rank union instead of <5Å.
+    pesto_type:     'ligand' or 'protein' — used when use_union=True and
+                    bound_ref is None.
+    iface_residues: explicit list of residue numbers to use as the interface,
+                    bypassing both <5Å and union methods. bound_ref not needed.
     """
     apo_stem   = os.path.splitext(os.path.basename(apo_ref))[0]
-    bound_stem = os.path.splitext(os.path.basename(bound_ref))[0]
-    suffix = '_union' if use_union else ''
+    bound_stem = os.path.splitext(os.path.basename(bound_ref))[0] if bound_ref else 'noref'
+    if iface_residues is not None:
+        suffix = '_explicit'
+    elif use_union:
+        suffix = '_union'
+    else:
+        suffix = ''
     cache = f'results/dmasif/A_interface_cache_{apo_stem}_{bound_stem}{suffix}.npz'
     if os.path.exists(cache):
         print(f"  Loading cached A-interface fingerprints from {cache}")
         d = np.load(cache)
         return d['A_fps'], d['A_iface_coords'], d['B_pos'], d['B_vdw']
 
-    # ── Load bound reference and resolve interface definition ─────────────────
-    if not os.path.exists(bound_ref):
-        sys.exit(f"ERROR: bound reference not found at {bound_ref}")
-    bound_struct = pdb_parser.get_structure('BOUND', bound_ref)
-    receptor_chain, partner_chain = resolve_bound_chain(bound_struct, bound_chain)
-    iface_label = (f"chain {partner_chain} contact" if partner_chain
-                   else f"ligand {bound_ligand}")
-    method_str = "PeSTo+P2Rank union" if use_union else f"<5Å from {iface_label}"
+    if iface_residues is not None:
+        method_str = f"explicit residues {sorted(iface_residues)}"
+    elif use_union:
+        method_str = "PeSTo+P2Rank union"
+    else:
+        if not bound_ref or not os.path.exists(bound_ref):
+            sys.exit(f"ERROR: --bound-ref is required when not using --union or --iface-residues")
+        bound_struct = pdb_parser.get_structure('BOUND', bound_ref)
+        receptor_chain, partner_chain = resolve_bound_chain(bound_struct, bound_chain)
+        iface_label = (f"chain {partner_chain} contact" if partner_chain
+                       else f"ligand {bound_ligand}")
+        method_str = f"<5Å from {iface_label}"
+
     plddt_str  = f", pLDDT>{plddt_thresh:.0f}" if plddt_thresh > 0 else ""
     print("=" * 65)
     print(f" Step 1: Building dMaSIF fingerprint for A's interface")
@@ -505,7 +526,12 @@ def load_or_build_A_fingerprints(pdb_parser, apo_ref, bound_ref,
                     for res in chain if res.id[0] == ' ' and 'CA' in res]
     apo_label = os.path.basename(apo_ref)
 
-    if use_union:
+    if iface_residues is not None:
+        # ── Explicit residues path ────────────────────────────────────────────
+        iface_res = [res for res in apo_residues if res.id[1] in set(iface_residues)]
+        print(f"  Interface residues explicit ({len(iface_res)}): "
+              f"{[r.id[1] for r in iface_res]}")
+    elif use_union:
         # ── Union path: PeSTo + P2Rank ────────────────────────────────────────
         union_resnums = set(get_union_iface_res(
             apo_ref, bound_ref, bound_chain, bound_ligand))
@@ -761,10 +787,11 @@ def main():
                     help='Drop interface residues with CA B-factor below this value '
                          '(default: 0 = disabled). Set >0 when --apo-ref is a '
                          'predicted structure storing pLDDT in the B-factor column.')
-    ap.add_argument('--bound-ref', required=True, metavar='PDB',
+    ap.add_argument('--bound-ref', default=None, metavar='PDB',
                     help='Holo PDB defining the binding site. '
                          '1 protein chain: ligand proximity defines interface. '
-                         '2 protein chains: chain-chain interface used directly.')
+                         '2 protein chains: chain-chain interface used directly. '
+                         'Not required when --union or --iface-residues is used.')
     ap.add_argument('--bound-chain', default=None, metavar='ID',
                     help='Chain ID of the receptor in --bound-ref (auto-detected if omitted).')
     ap.add_argument('--bound-ligand', default=None, metavar='RES',
@@ -778,23 +805,39 @@ def main():
                     help='Derive interface residues via PeSTo+P2Rank union '
                          'instead of <5Å from holo. Uses a separate cache and '
                          'outputs rankings to rankings_union.tsv by default.')
+    ap.add_argument('--iface-residues', default=None, metavar='NUMS',
+                    help='Comma-separated residue numbers to use as the binding site '
+                         '(e.g. 32,64,65,68,125,221). Bypasses <5Å and union methods; '
+                         '--bound-ref not required.')
     args = ap.parse_args()
+
+    iface_residues = ([int(x) for x in args.iface_residues.split(',')]
+                      if args.iface_residues else None)
 
     t0         = time.time()
     pdb_parser = PDBParser(QUIET=True)
 
     # Derive cache path so different apo / bound-ref / method combos don't collide
     apo_stem   = os.path.splitext(os.path.basename(args.apo_ref))[0]
-    bound_stem = os.path.splitext(os.path.basename(args.bound_ref))[0]
-    suffix = '_union' if args.union else ''
+    bound_stem = os.path.splitext(os.path.basename(args.bound_ref))[0] if args.bound_ref else 'noref'
+    if iface_residues is not None:
+        suffix = '_explicit'
+    elif args.union:
+        suffix = '_union'
+    else:
+        suffix = ''
     cache  = f'results/dmasif/A_interface_cache_{apo_stem}_{bound_stem}{suffix}.npz'
     if args.clear_cache and os.path.exists(cache):
         os.remove(cache)
         print(f"Removed cache: {cache}")
 
     if args.rankings_tsv is None:
-        args.rankings_tsv = (f'results/dmasif/rankings_{apo_stem}_union.tsv'
-                             if args.union else 'results/dmasif/rankings.tsv')
+        if iface_residues is not None:
+            args.rankings_tsv = f'results/dmasif/rankings_{apo_stem}_explicit.tsv'
+        elif args.union:
+            args.rankings_tsv = f'results/dmasif/rankings_{apo_stem}_union.tsv'
+        else:
+            args.rankings_tsv = 'results/dmasif/rankings.tsv'
 
     A_fps, A_iface_coords, B_pos, B_vdw = load_or_build_A_fingerprints(
         pdb_parser, apo_ref=args.apo_ref,
@@ -802,7 +845,8 @@ def main():
         bound_chain=args.bound_chain,
         bound_ligand=args.bound_ligand,
         plddt_thresh=args.plddt_thresh,
-        use_union=args.union)
+        use_union=args.union,
+        iface_residues=iface_residues)
     print(f"  A interface fingerprints : {len(A_fps)}")
     print(f"  Chain B surface atoms    : {len(B_pos)}")
 
