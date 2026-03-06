@@ -1,0 +1,45 @@
+PDB Cleaning Report
+Generated:,2026-03-06 01:41:33
+Input File:,botul_A.pdb
+
+SUMMARY STATISTICS
+Metric,Count
+Water molecules removed,129
+Heterogens removed,0
+Nonstandard residues replaced,0
+Missing residues added,0
+Missing atoms added,0
+Hydrogens added,3579
+Disulfide bonds detected,3
+Original chains,"A, A"
+Chains modified,A
+B-factor preservation enabled,True
+B-factors preserved from original,7242
+Atoms with default B-factors,0
+Biological assembly generated,False
+Biological assembly transformations,0
+Biological assembly chains,0
+
+REMOVED WATER MOLECULES
+Chain ID,Count,Residue Numbers
+A,129,1-99
+
+DISULFIDE BONDS DETECTED
+Residue 1 Chain,Residue 1 Number,Residue 2 Chain,Residue 2 Number,Distance (A),Position 1 X,Position 1 Y,Position 1 Z,Position 2 X,Position 2 Y,Position 2 Z
+A,1221,A,1258,1.53,-0.5233,-0.6579,0.405,-0.8493,0.8343,0.49470000000000003
+A,1221,A,1278,1.0,-0.5233,-0.6579,0.405,-0.13799999999999998,0.20710000000000003,0.7355
+A,1258,A,1278,0.98,-0.8493,0.8343,0.49470000000000003,-0.13799999999999998,0.20710000000000003,0.7355
+
+WATER MOLECULES SAMPLE (First 10)
+Chain ID,Residue Number,X,Y,Z
+A,1,-0.9751,-1.9440000000000002,1.9013000000000002
+A,2,-1.2986000000000002,-1.1640000000000001,-0.1713
+A,3,-1.1046,-1.6128,0.4016
+A,4,-1.2237,-1.7997,0.7208000000000001
+A,5,0.031200000000000002,-4.1894,2.8341000000000003
+A,6,-0.14670000000000002,-3.1656,1.3145
+A,7,-1.083,-0.0984,-0.6451
+A,8,0.26730000000000004,-3.0825,1.2967000000000002
+A,9,-0.6729,-3.0802,3.0947
+A,10,-1.5888,-2.4187000000000003,1.1122
+... and 119 more water molecules

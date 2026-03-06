@@ -37,10 +37,11 @@ from Bio.PDB import PDBParser
 from Bio.PDB.Polypeptide import PPBuilder
 
 
-# ── Ligand interface detection ────────────────────────────────────────────────
+# ── Interface detection ───────────────────────────────────────────────────────
 
 def find_ligand_interface(pdb_path, chain_id, ligand_name, cutoff=5.0):
     """Return sorted list of residue numbers within cutoff Å of the ligand."""
+    from scipy.spatial import KDTree
     parser = PDBParser(QUIET=True)
     struct = parser.get_structure('s', pdb_path)
     chain  = struct[0][chain_id]
@@ -52,9 +53,7 @@ def find_ligand_interface(pdb_path, chain_id, ligand_name, cutoff=5.0):
     if len(ligand_coords) == 0:
         sys.exit(f"ERROR: ligand '{ligand_name}' not found in chain {chain_id} of {pdb_path}")
 
-    from scipy.spatial import KDTree
     tree = KDTree(ligand_coords)
-
     iface = []
     for res in chain:
         if res.id[0] != ' ':
@@ -63,7 +62,51 @@ def find_ligand_interface(pdb_path, chain_id, ligand_name, cutoff=5.0):
             if tree.query_ball_point(atom.coord, r=cutoff):
                 iface.append(res.id[1])
                 break
+    return sorted(iface)
 
+
+def pdb_to_sequential(pdb_path, chain_id, pdb_resnums):
+    """Map PDB residue numbers to 1-based sequential positions (as ProteinMPNN expects)."""
+    parser = PDBParser(QUIET=True)
+    struct = parser.get_structure('s', pdb_path)
+    ordered = [r.id[1] for r in struct[0][chain_id]
+               if r.id[0] == ' ' and 'CA' in r]
+    resnum_to_seq = {rn: i + 1 for i, rn in enumerate(ordered)}
+    mapped = [resnum_to_seq[r] for r in pdb_resnums if r in resnum_to_seq]
+    missing = [r for r in pdb_resnums if r not in resnum_to_seq]
+    if missing:
+        print(f"  WARNING: residues not found in chain {chain_id}: {missing}")
+    return mapped
+
+
+def find_protein_interface(pdb_path, chain_id, partner_chain_id, cutoff=5.0):
+    """Return sorted list of receptor residue numbers within cutoff Å of partner chain."""
+    from scipy.spatial import KDTree
+    parser = PDBParser(QUIET=True)
+    struct = parser.get_structure('s', pdb_path)
+    model  = struct[0]
+
+    if partner_chain_id not in [c.id for c in model]:
+        sys.exit(f"ERROR: partner chain '{partner_chain_id}' not found in {pdb_path}")
+
+    partner_coords = np.array([
+        a.coord for res in model[partner_chain_id]
+        if res.id[0] == ' '
+        for a in res
+        if (a.element or a.name[0]).strip().upper() != 'H'
+    ])
+    if len(partner_coords) == 0:
+        sys.exit(f"ERROR: no heavy atoms in partner chain '{partner_chain_id}' of {pdb_path}")
+
+    tree  = KDTree(partner_coords)
+    iface = []
+    for res in model[chain_id]:
+        if res.id[0] != ' ':
+            continue
+        for atom in res:
+            if tree.query_ball_point(atom.coord, r=cutoff):
+                iface.append(res.id[1])
+                break
     return sorted(iface)
 
 
@@ -160,10 +203,19 @@ def append_to_tsv(tsv_path, sequences):
 def main():
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument('--pdb',          required=True,  help='Input PDB file')
-    ap.add_argument('--chain',        required=True,  help='Chain ID containing the ligand')
-    ap.add_argument('--ligand',       required=True,  help='Ligand residue name (e.g. APU, NAD)')
-    ap.add_argument('--prefix',       required=True,  help='Candidate name prefix (e.g. 1f0l_A)')
+    ap.add_argument('--pdb',           required=True,  help='Input PDB file')
+    ap.add_argument('--chain',         required=True,  help='Chain ID of the receptor to redesign')
+    ap.add_argument('--prefix',        required=True,  help='Candidate name prefix (e.g. 1f0l_A)')
+
+    iface_grp = ap.add_mutually_exclusive_group(required=True)
+    iface_grp.add_argument('--ligand',         metavar='RES',
+                            help='Ligand residue name to define binding site (e.g. APU, NAD)')
+    iface_grp.add_argument('--partner-chain',  metavar='ID',
+                            help='Chain ID of the protein partner to define the interface (e.g. B)')
+    iface_grp.add_argument('--iface-residues', metavar='NUMS',
+                            help='Comma-separated residue numbers to use as the binding site '
+                                 '(e.g. 32,64,65,68). Bypasses proximity detection; '
+                                 'useful when --pdb is an apo and residues were identified from a holo.')
     ap.add_argument('--n-outside',    type=int, default=15,
                     help='Number of mutoutside sequences (default: 15)')
     ap.add_argument('--n-conserved',  type=int, default=10,
@@ -190,11 +242,23 @@ def main():
 
     # ── Step 1: Find binding site ─────────────────────────────────────────────
     print(f"\n{'='*60}")
-    print(f" Finding {args.ligand} binding site in {pdb_path.name} chain {args.chain}")
-    print(f"{'='*60}")
-    iface_rnums = find_ligand_interface(pdb_path, args.chain, args.ligand, args.cutoff)
-    fixed_str   = f"{args.chain}:{','.join(map(str, iface_rnums))}"
-    print(f"  Binding site residues ({len(iface_rnums)}): {iface_rnums}")
+    if args.ligand:
+        print(f" Finding {args.ligand} binding site in {pdb_path.name} chain {args.chain}")
+        print(f"{'='*60}")
+        iface_rnums = find_ligand_interface(pdb_path, args.chain, args.ligand, args.cutoff)
+    elif args.partner_chain:
+        print(f" Finding protein interface: chain {args.chain} vs chain {args.partner_chain}"
+              f" in {pdb_path.name}")
+        print(f"{'='*60}")
+        iface_rnums = find_protein_interface(pdb_path, args.chain, args.partner_chain, args.cutoff)
+    else:
+        print(f" Using explicit interface residues for chain {args.chain} in {pdb_path.name}")
+        print(f"{'='*60}")
+        iface_rnums = sorted(int(x) for x in args.iface_residues.split(','))
+    seq_positions = pdb_to_sequential(pdb_path, args.chain, iface_rnums)
+    fixed_str     = f"{args.chain}:{','.join(map(str, seq_positions))}"
+    print(f"  Interface residues ({len(iface_rnums)}) PDB nums: {iface_rnums}")
+    print(f"  Sequential positions ({len(seq_positions)}):       {seq_positions}")
     print(f"  Fixed string: {fixed_str}")
 
     # ── Step 2: Submit jobs ───────────────────────────────────────────────────
@@ -249,7 +313,8 @@ def main():
     # ── Step 5: Validation summary ────────────────────────────────────────────
     native_seqres = list(SeqIO.parse(str(pdb_path), 'pdb-seqres'))
     native_rec    = next((r for r in native_seqres
-                          if r.id.endswith(f':{args.chain}')), None)
+                          if r.id.endswith(f':{args.chain}')
+                          or r.id.split(':')[-1] == args.chain), None)
     if native_rec:
         native_seq = str(native_rec.seq)
         fixed_idx  = [r - 1 for r in iface_rnums]

@@ -26,6 +26,7 @@ import os, sys, argparse, subprocess, tempfile, json
 import numpy as np
 from Bio.PDB import PDBParser, Superimposer
 from Bio.SeqUtils import seq1
+from Bio import pairwise2
 from scipy.spatial import KDTree
 import pandas as pd
 
@@ -133,20 +134,41 @@ def workflow_5a(apo_path, holo_path, bound_ligand=None, cutoff=5.0):
     partner_coords = get_partner_coords(holo, receptor_chain, partner_type, partner_info)
     print(f"  Partner: {partner_type} '{partner_info}'  ({len(partner_coords)} heavy atoms)")
 
-    # Superpose apo onto holo receptor by shared residue number
-    holo_res = ca_residues(holo, receptor_chain)
-    apo_res  = ca_residues(apo)
-    common   = sorted(set(holo_res) & set(apo_res))
-    if len(common) < 10:
-        sys.exit(f"ERROR: only {len(common)} shared Cα residues — cannot superpose.")
+    # Superpose apo onto holo receptor using sequence alignment (handles residue number offsets)
+    holo_res_list = [r for m in holo for c in m if c.id == receptor_chain
+                     for r in c if r.id[0] == ' ' and 'CA' in r]
+    apo_res_list  = [r for m in apo  for c in m
+                     for r in c if r.id[0] == ' ' and 'CA' in r]
 
-    holo_ca = [holo_res[i]['CA'] for i in common]
-    apo_ca  = [apo_res[i]['CA']  for i in common]
+    holo_seq = ''.join(seq1(r.get_resname()) for r in holo_res_list)
+    apo_seq  = ''.join(seq1(r.get_resname()) for r in apo_res_list)
+
+    aln = pairwise2.align.globalds(
+        apo_seq, holo_seq,
+        pairwise2.substitution_matrices.load("BLOSUM62"),
+        -10, -0.5, one_alignment_only=True)[0]
+
+    apo_idx, holo_idx = [], []
+    ai, hi = 0, 0
+    for a, b in zip(aln.seqA, aln.seqB):
+        if a != '-' and b != '-':
+            apo_idx.append(ai)
+            holo_idx.append(hi)
+        if a != '-': ai += 1
+        if b != '-': hi += 1
+
+    if len(apo_idx) < 10:
+        sys.exit(f"ERROR: only {len(apo_idx)} aligned Cα pairs — cannot superpose.")
+
+    holo_ca = [holo_res_list[i]['CA'] for i in holo_idx]
+    apo_ca  = [apo_res_list[i]['CA']  for i in apo_idx]
 
     sup = Superimposer()
     sup.set_atoms(holo_ca, apo_ca)   # fixed=holo, moving=apo
     sup.apply(list(apo.get_atoms()))
-    print(f"  Superposition: {len(common)} Cα pairs, RMSD = {sup.rms:.3f} Å")
+    print(f"  Superposition: {len(apo_idx)} aligned Cα pairs, RMSD = {sup.rms:.3f} Å")
+
+    apo_res = ca_residues(apo)
 
     # Partner is already in holo frame; apo is now also in holo frame
     tree = KDTree(partner_coords)

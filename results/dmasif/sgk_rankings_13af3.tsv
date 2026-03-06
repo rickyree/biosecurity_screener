@@ -1,2 +1,0 @@
-rank	candidate	score	fp_dist	inlier_pct	rmsd_A	n_clash	clash_pct	verdict
-1	mutoutside_13_af3	+0.0000	0.0956	0.8333	0.30	0	0.0000	PREDICTED BINDER
