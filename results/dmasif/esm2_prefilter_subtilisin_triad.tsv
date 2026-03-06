@@ -1,0 +1,15 @@
+candidate	seq_len	contact_score	chem_sim	contact_pass	chem_pass	pass_filter
+1trn	446	0.2831	0.6497	True	False	False
+brca1	699	0.255	0.4787	True	False	False
+subtilisin_unbound	275	0.2732	1.0	True	True	True
+chymotrypsin_unbound	238	0.3309	0.5916	True	False	False
+subtilisin_mutated_1	275	0.6518	0.7122	True	False	False
+subtilisin_mutated_2	275	0.3299	0.5685	True	False	False
+subtilisin_mutated_3	275	0.3351	0.6273	True	False	False
+subtilisin_mutated_4	275	0.6582	0.6976	True	False	False
+subtilisin_mutated_5	275	0.6666	0.6877	True	False	False
+subtilisin_mutated_6	275	0.3279	0.5625	True	False	False
+subtilisin_mutated_7	275	0.6434	0.7168	True	False	False
+subtilisin_mutated_8	275	0.3316	0.5751	True	False	False
+subtilisin_mutated_9	275	0.012	0.5488	False	False	False
+subtilisin_mutated_10	275	0.6379	0.6735	True	False	False

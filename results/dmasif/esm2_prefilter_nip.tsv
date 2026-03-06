@@ -1,0 +1,26 @@
+candidate	seq_len	contact_score	chem_sim	contact_pass	chem_pass	pass_filter
+nip_mutoutside_1	535			True	False	False
+nip_mutoutside_2	535		0.893	True	True	True
+nip_mutoutside_3	535		0.8984	True	True	True
+nip_mutoutside_4	535		0.9046	True	True	True
+nip_mutoutside_5	535		0.9065	True	True	True
+nip_mutoutside_6	535		0.9051	True	True	True
+nip_mutoutside_7	535		0.9097	True	True	True
+nip_mutoutside_8	535		0.9004	True	True	True
+nip_mutoutside_9	535		0.9159	True	True	True
+nip_mutoutside_10	535		0.9135	True	True	True
+nip_mutoutside_11	535		0.9143	True	True	True
+nip_mutoutside_12	535		0.9096	True	True	True
+nip_mutoutside_13	535		0.9121	True	True	True
+nip_mutoutside_14	535		0.9084	True	True	True
+nip_mutoutside_15	535		0.8966	True	True	True
+nip_mutconserved_1	535		0.8842	True	True	True
+nip_mutconserved_2	535		0.8848	True	True	True
+nip_mutconserved_3	535		0.897	True	True	True
+nip_mutconserved_4	535		0.9102	True	True	True
+nip_mutconserved_5	535		0.908	True	True	True
+nip_mutconserved_6	535		0.9055	True	True	True
+nip_mutconserved_7	535			True	False	False
+nip_mutconserved_8	535		0.9094	True	True	True
+nip_mutconserved_9	535		0.9098	True	True	True
+nip_mutconserved_10	535		0.9082	True	True	True
