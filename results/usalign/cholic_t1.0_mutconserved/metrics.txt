@@ -1,0 +1,696 @@
+=== cholix_fullprotein_t10_mutconserved_11 vs cholix_catalytic_2q5tA03 ===
+Read mobile structure from 
+results/boltz2/mutconserved_t10_struc/boltz2_cholix_fullprotein_t10_mutconserved
+_11_structure.pdb
+Read target structure from structural_db/cholix_catalytic_2q5tA03.pdb
+⠏ Downloading results... 0:00:19
+
+✓ Completed (1.5s)
+✓ Downloaded 1 file(s) to results/usalign/mutconserved_t10/
+  - usalign_CPUE_aligned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.3125
+  tm_score_2: 0.8536
+  rmsd: 2.2900
+  sequence_identity: 0.3420
+  aligned_length: 199
+  length_1: 605
+  length_2: 211
+
+Input parameters:
+  mobile_pdb_filename: 
+boltz2_cholix_fullprotein_t10_mutconserved_11_structure.pdb
+  target_pdb_filename: cholix_catalytic_2q5tA03.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+
+=== cholix_fullprotein_t10_mutconserved_11 vs cholix_receptor_binding_2q5tA01 ===
+Read mobile structure from 
+results/boltz2/mutconserved_t10_struc/boltz2_cholix_fullprotein_t10_mutconserved
+_11_structure.pdb
+Read target structure from structural_db/cholix_receptor_binding_2q5tA01.pdb
+⠇ Downloading results... 0:00:09
+
+✓ Completed (1.3s)
+✓ Downloaded 1 file(s) to results/usalign/mutconserved_t10/
+  - usalign_ZPYJ_aligned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.3017
+  tm_score_2: 0.7716
+  rmsd: 2.9700
+  sequence_identity: 0.1850
+  aligned_length: 200
+  length_1: 605
+  length_2: 216
+
+Input parameters:
+  mobile_pdb_filename: 
+boltz2_cholix_fullprotein_t10_mutconserved_11_structure.pdb
+  target_pdb_filename: cholix_receptor_binding_2q5tA01.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+
+=== cholix_fullprotein_t10_mutconserved_11 vs cholix_translocation_2q5tA02 ===
+Read mobile structure from 
+results/boltz2/mutconserved_t10_struc/boltz2_cholix_fullprotein_t10_mutconserved
+_11_structure.pdb
+Read target structure from structural_db/cholix_translocation_2q5tA02.pdb
+⠸ Downloading results... 0:00:09
+
+✓ Completed (1.2s)
+✓ Downloaded 1 file(s) to results/usalign/mutconserved_t10/
+  - usalign_KMJQ_aligned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.2525
+  tm_score_2: 0.8452
+  rmsd: 2.3500
+  sequence_identity: 0.2470
+  aligned_length: 162
+  length_1: 605
+  length_2: 166
+
+Input parameters:
+  mobile_pdb_filename: 
+boltz2_cholix_fullprotein_t10_mutconserved_11_structure.pdb
+  target_pdb_filename: cholix_translocation_2q5tA02.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+
+=== cholix_fullprotein_t10_mutconserved_14 vs cholix_catalytic_2q5tA03 ===
+Read mobile structure from 
+results/boltz2/mutconserved_t10_struc/boltz2_cholix_fullprotein_t10_mutconserved
+_14_structure.pdb
+Read target structure from structural_db/cholix_catalytic_2q5tA03.pdb
+⠇ Downloading results... 0:00:08
+
+✓ Completed (0.9s)
+✓ Downloaded 1 file(s) to results/usalign/mutconserved_t10/
+  - usalign_BWZK_aligned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.3290
+  tm_score_2: 0.9061
+  rmsd: 1.9700
+  sequence_identity: 0.3770
+  aligned_length: 207
+  length_1: 605
+  length_2: 211
+
+Input parameters:
+  mobile_pdb_filename: 
+boltz2_cholix_fullprotein_t10_mutconserved_14_structure.pdb
+  target_pdb_filename: cholix_catalytic_2q5tA03.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+
+=== cholix_fullprotein_t10_mutconserved_14 vs cholix_receptor_binding_2q5tA01 ===
+Read mobile structure from 
+results/boltz2/mutconserved_t10_struc/boltz2_cholix_fullprotein_t10_mutconserved
+_14_structure.pdb
+Read target structure from structural_db/cholix_receptor_binding_2q5tA01.pdb
+⠏ Downloading results... 0:00:08
+
+✓ Completed (1.1s)
+✓ Downloaded 1 file(s) to results/usalign/mutconserved_t10/
+  - usalign_ETUV_aligned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.3276
+  tm_score_2: 0.8707
+  rmsd: 2.1000
+  sequence_identity: 0.3030
+  aligned_length: 208
+  length_1: 605
+  length_2: 216
+
+Input parameters:
+  mobile_pdb_filename: 
+boltz2_cholix_fullprotein_t10_mutconserved_14_structure.pdb
+  target_pdb_filename: cholix_receptor_binding_2q5tA01.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+
+=== cholix_fullprotein_t10_mutconserved_14 vs cholix_translocation_2q5tA02 ===
+Read mobile structure from 
+results/boltz2/mutconserved_t10_struc/boltz2_cholix_fullprotein_t10_mutconserved
+_14_structure.pdb
+Read target structure from structural_db/cholix_translocation_2q5tA02.pdb
+⠹ Downloading results... 0:00:08
+
+✓ Completed (0.9s)
+✓ Downloaded 1 file(s) to results/usalign/mutconserved_t10/
+  - usalign_MGCR_aligned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.2563
+  tm_score_2: 0.8441
+  rmsd: 2.3000
+  sequence_identity: 0.3030
+  aligned_length: 165
+  length_1: 605
+  length_2: 166
+
+Input parameters:
+  mobile_pdb_filename: 
+boltz2_cholix_fullprotein_t10_mutconserved_14_structure.pdb
+  target_pdb_filename: cholix_translocation_2q5tA02.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+
+=== cholix_fullprotein_t10_mutconserved_19 vs cholix_catalytic_2q5tA03 ===
+Read mobile structure from 
+results/boltz2/mutconserved_t10_struc/boltz2_cholix_fullprotein_t10_mutconserved
+_19_structure.pdb
+Read target structure from structural_db/cholix_catalytic_2q5tA03.pdb
+⠹ Downloading results... 0:00:08
+
+✓ Completed (0.9s)
+✓ Downloaded 1 file(s) to results/usalign/mutconserved_t10/
+  - usalign_RGRI_aligned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.3188
+  tm_score_2: 0.8637
+  rmsd: 2.5000
+  sequence_identity: 0.3460
+  aligned_length: 205
+  length_1: 605
+  length_2: 211
+
+Input parameters:
+  mobile_pdb_filename: 
+boltz2_cholix_fullprotein_t10_mutconserved_19_structure.pdb
+  target_pdb_filename: cholix_catalytic_2q5tA03.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+
+=== cholix_fullprotein_t10_mutconserved_19 vs cholix_receptor_binding_2q5tA01 ===
+Read mobile structure from 
+results/boltz2/mutconserved_t10_struc/boltz2_cholix_fullprotein_t10_mutconserved
+_19_structure.pdb
+Read target structure from structural_db/cholix_receptor_binding_2q5tA01.pdb
+⠏ Downloading results... 0:00:09
+
+✓ Completed (0.9s)
+✓ Downloaded 1 file(s) to results/usalign/mutconserved_t10/
+  - usalign_GOXN_aligned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.3265
+  tm_score_2: 0.8574
+  rmsd: 2.2100
+  sequence_identity: 0.2540
+  aligned_length: 209
+  length_1: 605
+  length_2: 216
+
+Input parameters:
+  mobile_pdb_filename: 
+boltz2_cholix_fullprotein_t10_mutconserved_19_structure.pdb
+  target_pdb_filename: cholix_receptor_binding_2q5tA01.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+
+=== cholix_fullprotein_t10_mutconserved_19 vs cholix_translocation_2q5tA02 ===
+Read mobile structure from 
+results/boltz2/mutconserved_t10_struc/boltz2_cholix_fullprotein_t10_mutconserved
+_19_structure.pdb
+Read target structure from structural_db/cholix_translocation_2q5tA02.pdb
+⠹ Downloading results... 0:00:08
+
+✓ Completed (0.9s)
+✓ Downloaded 1 file(s) to results/usalign/mutconserved_t10/
+  - usalign_URFZ_aligned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.2256
+  tm_score_2: 0.7373
+  rmsd: 2.9800
+  sequence_identity: 0.2750
+  aligned_length: 149
+  length_1: 605
+  length_2: 166
+
+Input parameters:
+  mobile_pdb_filename: 
+boltz2_cholix_fullprotein_t10_mutconserved_19_structure.pdb
+  target_pdb_filename: cholix_translocation_2q5tA02.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+
+=== cholix_fullprotein_t10_mutconserved_1 vs cholix_catalytic_2q5tA03 ===
+Read mobile structure from 
+results/boltz2/mutconserved_t10_struc/boltz2_cholix_fullprotein_t10_mutconserved
+_1_structure.pdb
+Read target structure from structural_db/cholix_catalytic_2q5tA03.pdb
+⠋ Downloading results... 0:00:08
+
+✓ Completed (1.2s)
+✓ Downloaded 1 file(s) to results/usalign/mutconserved_t10/
+  - usalign_UUCH_aligned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.3359
+  tm_score_2: 0.9275
+  rmsd: 1.6900
+  sequence_identity: 0.3520
+  aligned_length: 210
+  length_1: 605
+  length_2: 211
+
+Input parameters:
+  mobile_pdb_filename: 
+boltz2_cholix_fullprotein_t10_mutconserved_1_structure.pdb
+  target_pdb_filename: cholix_catalytic_2q5tA03.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+
+=== cholix_fullprotein_t10_mutconserved_1 vs cholix_receptor_binding_2q5tA01 ===
+Read mobile structure from 
+results/boltz2/mutconserved_t10_struc/boltz2_cholix_fullprotein_t10_mutconserved
+_1_structure.pdb
+Read target structure from structural_db/cholix_receptor_binding_2q5tA01.pdb
+⠧ Downloading results... 0:00:10
+
+✓ Completed (1.4s)
+✓ Downloaded 1 file(s) to results/usalign/mutconserved_t10/
+  - usalign_INRQ_aligned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.3362
+  tm_score_2: 0.8951
+  rmsd: 2.3100
+  sequence_identity: 0.2520
+  aligned_length: 214
+  length_1: 605
+  length_2: 216
+
+Input parameters:
+  mobile_pdb_filename: 
+boltz2_cholix_fullprotein_t10_mutconserved_1_structure.pdb
+  target_pdb_filename: cholix_receptor_binding_2q5tA01.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+
+=== cholix_fullprotein_t10_mutconserved_1 vs cholix_translocation_2q5tA02 ===
+Read mobile structure from 
+results/boltz2/mutconserved_t10_struc/boltz2_cholix_fullprotein_t10_mutconserved
+_1_structure.pdb
+Read target structure from structural_db/cholix_translocation_2q5tA02.pdb
+⠋ Downloading results... 0:00:08
+
+✓ Completed (1.1s)
+✓ Downloaded 1 file(s) to results/usalign/mutconserved_t10/
+  - usalign_PNZR_aligned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.2622
+  tm_score_2: 0.8950
+  rmsd: 1.8000
+  sequence_identity: 0.3270
+  aligned_length: 165
+  length_1: 605
+  length_2: 166
+
+Input parameters:
+  mobile_pdb_filename: 
+boltz2_cholix_fullprotein_t10_mutconserved_1_structure.pdb
+  target_pdb_filename: cholix_translocation_2q5tA02.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+
+=== cholix_fullprotein_t10_mutconserved_21 vs cholix_catalytic_2q5tA03 ===
+Read mobile structure from 
+results/boltz2/mutconserved_t10_struc/boltz2_cholix_fullprotein_t10_mutconserved
+_21_structure.pdb
+Read target structure from structural_db/cholix_catalytic_2q5tA03.pdb
+⠋ Downloading results... 0:00:09
+
+✓ Completed (1.0s)
+✓ Downloaded 1 file(s) to results/usalign/mutconserved_t10/
+  - usalign_IHHP_aligned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.3066
+  tm_score_2: 0.8187
+  rmsd: 2.8800
+  sequence_identity: 0.3430
+  aligned_length: 201
+  length_1: 605
+  length_2: 211
+
+Input parameters:
+  mobile_pdb_filename: 
+boltz2_cholix_fullprotein_t10_mutconserved_21_structure.pdb
+  target_pdb_filename: cholix_catalytic_2q5tA03.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+
+=== cholix_fullprotein_t10_mutconserved_21 vs cholix_receptor_binding_2q5tA01 ===
+Read mobile structure from 
+results/boltz2/mutconserved_t10_struc/boltz2_cholix_fullprotein_t10_mutconserved
+_21_structure.pdb
+Read target structure from structural_db/cholix_receptor_binding_2q5tA01.pdb
+⠴ Downloading results... 0:00:09
+
+✓ Completed (1.1s)
+✓ Downloaded 1 file(s) to results/usalign/mutconserved_t10/
+  - usalign_YCIR_aligned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.3281
+  tm_score_2: 0.8634
+  rmsd: 2.4200
+  sequence_identity: 0.3180
+  aligned_length: 211
+  length_1: 605
+  length_2: 216
+
+Input parameters:
+  mobile_pdb_filename: 
+boltz2_cholix_fullprotein_t10_mutconserved_21_structure.pdb
+  target_pdb_filename: cholix_receptor_binding_2q5tA01.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+
+=== cholix_fullprotein_t10_mutconserved_21 vs cholix_translocation_2q5tA02 ===
+Read mobile structure from 
+results/boltz2/mutconserved_t10_struc/boltz2_cholix_fullprotein_t10_mutconserved
+_21_structure.pdb
+Read target structure from structural_db/cholix_translocation_2q5tA02.pdb
+⠏ Downloading results... 0:00:08
+
+✓ Completed (0.9s)
+✓ Downloaded 1 file(s) to results/usalign/mutconserved_t10/
+  - usalign_OFCA_aligned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.2606
+  tm_score_2: 0.8871
+  rmsd: 2.0200
+  sequence_identity: 0.2790
+  aligned_length: 165
+  length_1: 605
+  length_2: 166
+
+Input parameters:
+  mobile_pdb_filename: 
+boltz2_cholix_fullprotein_t10_mutconserved_21_structure.pdb
+  target_pdb_filename: cholix_translocation_2q5tA02.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+
+=== cholix_fullprotein_t10_mutconserved_28 vs cholix_catalytic_2q5tA03 ===
+Read mobile structure from 
+results/boltz2/mutconserved_t10_struc/boltz2_cholix_fullprotein_t10_mutconserved
+_28_structure.pdb
+Read target structure from structural_db/cholix_catalytic_2q5tA03.pdb
+⠧ Downloading results... 0:00:08
+
+✓ Completed (1.2s)
+✓ Downloaded 1 file(s) to results/usalign/mutconserved_t10/
+  - usalign_OXNL_aligned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.2997
+  tm_score_2: 0.8025
+  rmsd: 2.8900
+  sequence_identity: 0.3160
+  aligned_length: 196
+  length_1: 605
+  length_2: 211
+
+Input parameters:
+  mobile_pdb_filename: 
+boltz2_cholix_fullprotein_t10_mutconserved_28_structure.pdb
+  target_pdb_filename: cholix_catalytic_2q5tA03.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+
+=== cholix_fullprotein_t10_mutconserved_28 vs cholix_receptor_binding_2q5tA01 ===
+Read mobile structure from 
+results/boltz2/mutconserved_t10_struc/boltz2_cholix_fullprotein_t10_mutconserved
+_28_structure.pdb
+Read target structure from structural_db/cholix_receptor_binding_2q5tA01.pdb
+⠴ Downloading results... 0:00:08
+
+✓ Completed (1.1s)
+✓ Downloaded 1 file(s) to results/usalign/mutconserved_t10/
+  - usalign_CWQS_aligned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.3103
+  tm_score_2: 0.8025
+  rmsd: 2.8500
+  sequence_identity: 0.3240
+  aligned_length: 204
+  length_1: 605
+  length_2: 216
+
+Input parameters:
+  mobile_pdb_filename: 
+boltz2_cholix_fullprotein_t10_mutconserved_28_structure.pdb
+  target_pdb_filename: cholix_receptor_binding_2q5tA01.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+
+=== cholix_fullprotein_t10_mutconserved_28 vs cholix_translocation_2q5tA02 ===
+Read mobile structure from 
+results/boltz2/mutconserved_t10_struc/boltz2_cholix_fullprotein_t10_mutconserved
+_28_structure.pdb
+Read target structure from structural_db/cholix_translocation_2q5tA02.pdb
+⠹ Downloading results... 0:00:09
+
+✓ Completed (1.0s)
+✓ Downloaded 1 file(s) to results/usalign/mutconserved_t10/
+  - usalign_ZQXZ_aligned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.1816
+  tm_score_2: 0.5052
+  rmsd: 4.6600
+  sequence_identity: 0.1910
+  aligned_length: 136
+  length_1: 605
+  length_2: 166
+
+Input parameters:
+  mobile_pdb_filename: 
+boltz2_cholix_fullprotein_t10_mutconserved_28_structure.pdb
+  target_pdb_filename: cholix_translocation_2q5tA02.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+
+=== cholix_fullprotein_t10_mutconserved_30 vs cholix_catalytic_2q5tA03 ===
+Read mobile structure from 
+results/boltz2/mutconserved_t10_struc/boltz2_cholix_fullprotein_t10_mutconserved
+_30_structure.pdb
+Read target structure from structural_db/cholix_catalytic_2q5tA03.pdb
+⠋ Downloading results... 0:00:08
+
+✓ Completed (0.9s)
+✓ Downloaded 1 file(s) to results/usalign/mutconserved_t10/
+  - usalign_IUFI_aligned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.3073
+  tm_score_2: 0.8115
+  rmsd: 3.1900
+  sequence_identity: 0.3140
+  aligned_length: 204
+  length_1: 605
+  length_2: 211
+
+Input parameters:
+  mobile_pdb_filename: 
+boltz2_cholix_fullprotein_t10_mutconserved_30_structure.pdb
+  target_pdb_filename: cholix_catalytic_2q5tA03.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+
+=== cholix_fullprotein_t10_mutconserved_30 vs cholix_receptor_binding_2q5tA01 ===
+Read mobile structure from 
+results/boltz2/mutconserved_t10_struc/boltz2_cholix_fullprotein_t10_mutconserved
+_30_structure.pdb
+Read target structure from structural_db/cholix_receptor_binding_2q5tA01.pdb
+⠹ Downloading results... 0:00:09
+
+✓ Completed (0.9s)
+✓ Downloaded 1 file(s) to results/usalign/mutconserved_t10/
+  - usalign_JEYZ_aligned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.3269
+  tm_score_2: 0.8607
+  rmsd: 2.1900
+  sequence_identity: 0.2300
+  aligned_length: 209
+  length_1: 605
+  length_2: 216
+
+Input parameters:
+  mobile_pdb_filename: 
+boltz2_cholix_fullprotein_t10_mutconserved_30_structure.pdb
+  target_pdb_filename: cholix_receptor_binding_2q5tA01.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+
+=== cholix_fullprotein_t10_mutconserved_30 vs cholix_translocation_2q5tA02 ===
+Read mobile structure from 
+results/boltz2/mutconserved_t10_struc/boltz2_cholix_fullprotein_t10_mutconserved
+_30_structure.pdb
+Read target structure from structural_db/cholix_translocation_2q5tA02.pdb
+⠧ Downloading results... 0:00:09
+
+✓ Completed (1.3s)
+✓ Downloaded 1 file(s) to results/usalign/mutconserved_t10/
+  - usalign_EAGL_aligned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.2084
+  tm_score_2: 0.6230
+  rmsd: 3.8600
+  sequence_identity: 0.1430
+  aligned_length: 147
+  length_1: 605
+  length_2: 166
+
+Input parameters:
+  mobile_pdb_filename: 
+boltz2_cholix_fullprotein_t10_mutconserved_30_structure.pdb
+  target_pdb_filename: cholix_translocation_2q5tA02.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+
+=== cholix_fullprotein_t10_mutconserved_6 vs cholix_catalytic_2q5tA03 ===
+Read mobile structure from 
+results/boltz2/mutconserved_t10_struc/boltz2_cholix_fullprotein_t10_mutconserved
+_6_structure.pdb
+Read target structure from structural_db/cholix_catalytic_2q5tA03.pdb
+⠴ Downloading results... 0:00:08
+
+✓ Completed (1.2s)
+✓ Downloaded 1 file(s) to results/usalign/mutconserved_t10/
+  - usalign_HIVZ_aligned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.3200
+  tm_score_2: 0.8555
+  rmsd: 2.6800
+  sequence_identity: 0.3990
+  aligned_length: 208
+  length_1: 605
+  length_2: 211
+
+Input parameters:
+  mobile_pdb_filename: 
+boltz2_cholix_fullprotein_t10_mutconserved_6_structure.pdb
+  target_pdb_filename: cholix_catalytic_2q5tA03.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+
+=== cholix_fullprotein_t10_mutconserved_6 vs cholix_receptor_binding_2q5tA01 ===
+Read mobile structure from 
+results/boltz2/mutconserved_t10_struc/boltz2_cholix_fullprotein_t10_mutconserved
+_6_structure.pdb
+Read target structure from structural_db/cholix_receptor_binding_2q5tA01.pdb
+⠼ Downloading results... 0:00:08
+
+✓ Completed (1.1s)
+✓ Downloaded 1 file(s) to results/usalign/mutconserved_t10/
+  - usalign_MSZN_aligned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.3123
+  tm_score_2: 0.7858
+  rmsd: 3.3300
+  sequence_identity: 0.2270
+  aligned_length: 211
+  length_1: 605
+  length_2: 216
+
+Input parameters:
+  mobile_pdb_filename: 
+boltz2_cholix_fullprotein_t10_mutconserved_6_structure.pdb
+  target_pdb_filename: cholix_receptor_binding_2q5tA01.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+
+=== cholix_fullprotein_t10_mutconserved_6 vs cholix_translocation_2q5tA02 ===
+Read mobile structure from 
+results/boltz2/mutconserved_t10_struc/boltz2_cholix_fullprotein_t10_mutconserved
+_6_structure.pdb
+Read target structure from structural_db/cholix_translocation_2q5tA02.pdb
+⠇ Downloading results... 0:00:08
+
+✓ Completed (1.1s)
+✓ Downloaded 1 file(s) to results/usalign/mutconserved_t10/
+  - usalign_ZNBE_aligned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.2377
+  tm_score_2: 0.7757
+  rmsd: 2.8300
+  sequence_identity: 0.2370
+  aligned_length: 156
+  length_1: 605
+  length_2: 166
+
+Input parameters:
+  mobile_pdb_filename: 
+boltz2_cholix_fullprotein_t10_mutconserved_6_structure.pdb
+  target_pdb_filename: cholix_translocation_2q5tA02.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+

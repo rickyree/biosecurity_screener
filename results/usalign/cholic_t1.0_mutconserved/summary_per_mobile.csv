@@ -1,0 +1,9 @@
+mobile,max_tm2,best_target,n_flagged,n_borderline,n_targets
+cholix_fullprotein_t10_mutconserved_1,0.9275,cholix_catalytic_2q5tA03,3,0,3
+cholix_fullprotein_t10_mutconserved_14,0.9061,cholix_catalytic_2q5tA03,3,0,3
+cholix_fullprotein_t10_mutconserved_21,0.8871,cholix_translocation_2q5tA02,3,0,3
+cholix_fullprotein_t10_mutconserved_19,0.8637,cholix_catalytic_2q5tA03,3,0,3
+cholix_fullprotein_t10_mutconserved_30,0.8607,cholix_receptor_binding_2q5tA01,2,1,3
+cholix_fullprotein_t10_mutconserved_6,0.8555,cholix_catalytic_2q5tA03,3,0,3
+cholix_fullprotein_t10_mutconserved_11,0.8536,cholix_catalytic_2q5tA03,3,0,3
+cholix_fullprotein_t10_mutconserved_28,0.8025,cholix_catalytic_2q5tA03,2,1,3
