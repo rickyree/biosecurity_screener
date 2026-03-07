@@ -1,0 +1,17 @@
+#                                                                                         --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name                        accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- -----              -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+VFG043673gbAAW80252  -            666 cholix_catalytic_mutconserved_4_1 -            201   5.6e-07   25.1   0.0   1   1   3.1e-10   7.6e-07   24.7   0.0   606   644   147   185   127   197 0.83 -
+VFG043673gbAAW80252  -            666 cholix_catalytic_mutconserved_4_3 -            200   3.9e-12   42.1   0.0   1   1     2e-15   4.9e-12   41.8   0.0   556   606     2    52     1    58 0.96 -
+VFG043673gbAAW80252  -            666 cholix_catalytic_mutconserved_4_4 -            201   1.1e-13   47.3   0.1   1   1   5.7e-17   1.4e-13   46.9   0.1   456   553    56   148    49   154 0.92 -
+VFG017877gbWP011988506 -            361 cholix_catalytic_mutconserved_4_5 -            200     0.013   11.5   0.0   1   1     8e-06     0.019   11.0   0.0   171   204    52    85    45    96 0.90 -
+#
+# Program:         hmmscan
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SCAN
+# Query file:      /home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_catalytic/input_cholix_catalytic_mutconserved_4/cholix_catalytic_mutconserved_4.faa
+# Target file:     /home/zyl22/biosecurity_screener/commec-dbs/biorisk/biorisk.hmm
+# Option settings: hmmscan --domtblout /home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_catalytic/output_cholix_catalytic_mutconserved_4/cholix_catalytic_mutconserved_4.biorisk.hmmscan --cpu 4 /home/zyl22/biosecurity_screener/commec-dbs/biorisk/biorisk.hmm /home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_catalytic/input_cholix_catalytic_mutconserved_4/cholix_catalytic_mutconserved_4.faa 
+# Current dir:     /home/zyl22/biosecurity_screener
+# Date:            Fri Mar  6 19:39:41 2026
+# [ok]

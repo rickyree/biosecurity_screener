@@ -1,0 +1,21 @@
+#                                                                                      --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name                     accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- -----           -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+VFG043673gbAAW80252  -            666 cholix_unbound_mutoutside_19_1 -            605   1.9e-06   23.3   0.0   1   1   1.1e-09   2.7e-06   22.9   0.0   332   408   270   346   266   353 0.95 -
+VFG043673gbAAW80252  -            666 cholix_unbound_mutoutside_19_2 -            604     1e-33  113.5   0.0   1   2   5.8e-16   1.4e-12   43.6   0.0   543   595   189   241   169   251 0.89 -
+VFG043673gbAAW80252  -            666 cholix_unbound_mutoutside_19_2 -            604     1e-33  113.5   0.0   2   2   3.3e-23   7.9e-20   67.6   0.0   487   543   420   476   414   484 0.96 -
+VFG043673gbAAW80252  -            666 cholix_unbound_mutoutside_19_3 -            604     1e-14   50.7   0.0   1   1   6.3e-18   1.5e-14   50.1   0.0   593   646   551   604   542   604 0.94 -
+VFG043673gbAAW80252  -            666 cholix_unbound_mutoutside_19_4 -            605   7.3e-21   71.0   0.0   1   2   7.2e-17   1.7e-13   46.6   0.0    35   118   185   261   170   272 0.92 -
+VFG043673gbAAW80252  -            666 cholix_unbound_mutoutside_19_4 -            605   7.3e-21   71.0   0.0   2   2   1.8e-09   4.2e-06   22.2   0.0   114   156   319   361   312   366 0.93 -
+VFG043673gbAAW80252  -            666 cholix_unbound_mutoutside_19_5 -            604     2e-36  122.4   0.0   1   2   7.7e-15   1.9e-11   39.9   0.0   410   489    53   132    47   143 0.92 -
+VFG043673gbAAW80252  -            666 cholix_unbound_mutoutside_19_5 -            604     2e-36  122.4   0.0   2   2   1.3e-26   3.2e-23   78.8   0.0   158   345   416   589   405   593 0.95 -
+#
+# Program:         hmmscan
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SCAN
+# Query file:      /home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.3/input_cholix_unbound_mutoutside_19/cholix_unbound_mutoutside_19.faa
+# Target file:     /home/zyl22/biosecurity_screener/commec-dbs/biorisk/biorisk.hmm
+# Option settings: hmmscan --domtblout /home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.3/output_cholix_unbound_mutoutside_19/cholix_unbound_mutoutside_19.biorisk.hmmscan --cpu 4 /home/zyl22/biosecurity_screener/commec-dbs/biorisk/biorisk.hmm /home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.3/input_cholix_unbound_mutoutside_19/cholix_unbound_mutoutside_19.faa 
+# Current dir:     /home/zyl22/biosecurity_screener
+# Date:            Sat Mar  7 01:28:45 2026
+# [ok]

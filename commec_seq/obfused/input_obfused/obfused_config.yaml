@@ -1,0 +1,34 @@
+base_paths:
+  default: commec-dbs/
+databases:
+  biorisk:
+    annotations: commec-dbs/biorisk/biorisk_annotations.csv
+    path: commec-dbs/biorisk/biorisk.hmm
+    taxids: commec-dbs/biorisk/reg_taxids.txt
+  low_concern:
+    annotations: commec-dbs/low_concern/low_concern_annotations.tsv
+    dna:
+      path: commec-dbs/low_concern/dna/benign.fasta
+    protein:
+      path: commec-dbs/low_concern/protein/benign.hmm
+    rna:
+      path: commec-dbs/low_concern/rna/benign.cm
+    taxids: commec-dbs/low_concern/vax_taxids.txt
+  regulated_nt:
+    path: commec-dbs/nt_blast/core_nt
+  regulated_protein:
+    blast:
+      path: commec-dbs/nr_blast/nr
+    diamond:
+      path: commec-dbs/nr_dmnd/nr.dmnd
+  taxonomy:
+    path: commec-dbs/taxonomy/
+diamond_jobs: null
+do_cleanup: false
+force: false
+protein_search_tool: blastx
+resume: false
+skip_nt_search: false
+skip_taxonomy_search: true
+threads: 4
+verbose: false

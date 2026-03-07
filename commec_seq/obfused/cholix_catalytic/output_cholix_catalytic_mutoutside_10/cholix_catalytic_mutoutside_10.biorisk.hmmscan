@@ -1,0 +1,15 @@
+#                                                                                        --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name                       accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- -----             -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+VFG043673gbAAW80252  -            666 cholix_catalytic_mutoutside_10_1 -            201   5.7e-22   74.6   0.0   1   1     3e-25   7.2e-22   74.3   0.0   562   651    21   110    14   121 0.92 -
+VFG043673gbAAW80252  -            666 cholix_catalytic_mutoutside_10_6 -            200     5e-14   48.4   0.1   1   1   2.5e-17   6.1e-14   48.1   0.1   469   553     1    80     1   100 0.83 -
+#
+# Program:         hmmscan
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SCAN
+# Query file:      /home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_catalytic/input_cholix_catalytic_mutoutside_10/cholix_catalytic_mutoutside_10.faa
+# Target file:     /home/zyl22/biosecurity_screener/commec-dbs/biorisk/biorisk.hmm
+# Option settings: hmmscan --domtblout /home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_catalytic/output_cholix_catalytic_mutoutside_10/cholix_catalytic_mutoutside_10.biorisk.hmmscan --cpu 4 /home/zyl22/biosecurity_screener/commec-dbs/biorisk/biorisk.hmm /home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_catalytic/input_cholix_catalytic_mutoutside_10/cholix_catalytic_mutoutside_10.faa 
+# Current dir:     /home/zyl22/biosecurity_screener
+# Date:            Fri Mar  6 19:39:59 2026
+# [ok]

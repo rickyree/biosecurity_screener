@@ -1,0 +1,17 @@
+#                                                                               --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name              accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- -----    -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+VFG043673gbAAW80252  -            666 cholix_A_mutoutside_8_1 -            605   5.2e-11   38.4   0.0   1   1   3.2e-14   7.7e-11   37.9   0.0   556   614   459   517   438   535 0.89 -
+VFG043673gbAAW80252  -            666 cholix_A_mutoutside_8_3 -            604  7.7e-111  368.3   3.9   1   3   1.4e-12   3.4e-09   32.4   0.1   613   660     1    48     1    50 0.97 -
+VFG043673gbAAW80252  -            666 cholix_A_mutoutside_8_3 -            604  7.7e-111  368.3   3.9   2   3   3.2e-78   7.8e-75  249.3   0.0    35   471    49   464    48   467 0.95 -
+VFG043673gbAAW80252  -            666 cholix_A_mutoutside_8_3 -            604  7.7e-111  368.3   3.9   3   3   7.6e-29   1.8e-25   86.2   1.0   476   549   531   604   522   604 0.94 -
+#
+# Program:         hmmscan
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SCAN
+# Query file:      /home/zyl22/biosecurity_screener/commec_seq/obfused/input_cholix_A_mutoutside_8/cholix_A_mutoutside_8.faa
+# Target file:     /home/zyl22/biosecurity_screener/commec-dbs/biorisk/biorisk.hmm
+# Option settings: hmmscan --domtblout /home/zyl22/biosecurity_screener/commec_seq/obfused/output_cholix_A_mutoutside_8/cholix_A_mutoutside_8.biorisk.hmmscan --cpu 4 /home/zyl22/biosecurity_screener/commec-dbs/biorisk/biorisk.hmm /home/zyl22/biosecurity_screener/commec_seq/obfused/input_cholix_A_mutoutside_8/cholix_A_mutoutside_8.faa 
+# Current dir:     /home/zyl22/biosecurity_screener
+# Date:            Fri Mar  6 18:06:15 2026
+# [ok]

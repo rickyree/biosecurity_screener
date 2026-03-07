@@ -1,0 +1,29 @@
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.3/cholix_unbound_mutoutside_3.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisks in cholix_unbound_mutoutside_3:
+INFO    │        --> Virulence Factor found at coordinates: 374-733.
+INFO    │        --> Virulence Factor found at coordinates: 753-1061.
+INFO    │        --> Virulence Factor found at coordinates: 1199-1708, 269-385.
+INFO    │ STEP 1 completed at 2026-03-07 01:29:19
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_unbound_mutoutside_3
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 01:29:19
+INFO    │  >> Commec Screen completed at 2026-03-07 01:29:19
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_unbound_mutoutside      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_unbound_mutoutside : Warning      --> Matches sequence with virulence factor.
+

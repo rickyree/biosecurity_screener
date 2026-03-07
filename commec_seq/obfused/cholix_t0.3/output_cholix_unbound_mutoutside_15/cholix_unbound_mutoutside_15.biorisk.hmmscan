@@ -1,0 +1,20 @@
+#                                                                                      --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name                     accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- -----           -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+VFG043673gbAAW80252  -            666 cholix_unbound_mutoutside_15_1 -            605   2.2e-29   99.2   0.0   1   2   5.9e-29   1.4e-25   86.6   0.0   270   409   207   346   199   357 0.93 -
+VFG043673gbAAW80252  -            666 cholix_unbound_mutoutside_15_1 -            605   2.2e-29   99.2   0.0   2   2   5.8e-06     0.014   10.6   0.0   448   470   581   603   573   605 0.88 -
+VFG043673gbAAW80252  -            666 cholix_unbound_mutoutside_15_4 -            605   8.3e-52  173.2   0.1   1   2   1.2e-20   2.9e-17   59.1   0.0   120   237    59   176    53   181 0.93 -
+VFG043673gbAAW80252  -            666 cholix_unbound_mutoutside_15_4 -            605   8.3e-52  173.2   0.1   2   2   1.3e-36   3.2e-33  111.8   0.3   460   563   500   603   484   604 0.93 -
+VFG043673gbAAW80252  -            666 cholix_unbound_mutoutside_15_5 -            604   7.2e-33  110.6   0.1   1   1   4.3e-36     1e-32  110.1   0.1   564   660   162   258   153   261 0.97 -
+VFG043673gbAAW80252  -            666 cholix_unbound_mutoutside_15_6 -            604   8.7e-17   57.5   0.2   1   2   3.7e-17   8.9e-14   47.6   0.1    33   119   395   474   386   480 0.90 -
+VFG043673gbAAW80252  -            666 cholix_unbound_mutoutside_15_6 -            604   8.7e-17   57.5   0.2   2   2   2.4e-05     0.058    8.5   0.0   413   448   479   514   474   528 0.84 -
+#
+# Program:         hmmscan
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SCAN
+# Query file:      /home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.3/input_cholix_unbound_mutoutside_15/cholix_unbound_mutoutside_15.faa
+# Target file:     /home/zyl22/biosecurity_screener/commec-dbs/biorisk/biorisk.hmm
+# Option settings: hmmscan --domtblout /home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.3/output_cholix_unbound_mutoutside_15/cholix_unbound_mutoutside_15.biorisk.hmmscan --cpu 4 /home/zyl22/biosecurity_screener/commec-dbs/biorisk/biorisk.hmm /home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.3/input_cholix_unbound_mutoutside_15/cholix_unbound_mutoutside_15.faa 
+# Current dir:     /home/zyl22/biosecurity_screener
+# Date:            Sat Mar  7 01:28:33 2026
+# [ok]

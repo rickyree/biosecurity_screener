@@ -1,0 +1,16 @@
+#                                                                                       --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name                      accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- -----            -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+VFG043673gbAAW80252  -            666 cholix_catalytic_mutoutside_2_1 -            201   6.5e-35  117.4   0.2   1   2   1.3e-20   3.2e-17   59.0   0.0   542   600     2    60     1    68 0.97 -
+VFG043673gbAAW80252  -            666 cholix_catalytic_mutoutside_2_1 -            201   6.5e-35  117.4   0.2   2   2   6.7e-20   1.6e-16   56.6   0.3   598   658   139   199   128   201 0.93 -
+VFG043673gbAAW80252  -            666 cholix_catalytic_mutoutside_2_4 -            201     8e-15   51.0   0.0   1   1   4.2e-18     1e-14   50.7   0.0   456   510    76   130    63   147 0.89 -
+#
+# Program:         hmmscan
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SCAN
+# Query file:      /home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_catalytic/input_cholix_catalytic_mutoutside_2/cholix_catalytic_mutoutside_2.faa
+# Target file:     /home/zyl22/biosecurity_screener/commec-dbs/biorisk/biorisk.hmm
+# Option settings: hmmscan --domtblout /home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_catalytic/output_cholix_catalytic_mutoutside_2/cholix_catalytic_mutoutside_2.biorisk.hmmscan --cpu 4 /home/zyl22/biosecurity_screener/commec-dbs/biorisk/biorisk.hmm /home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_catalytic/input_cholix_catalytic_mutoutside_2/cholix_catalytic_mutoutside_2.faa 
+# Current dir:     /home/zyl22/biosecurity_screener
+# Date:            Fri Mar  6 19:40:18 2026
+# [ok]

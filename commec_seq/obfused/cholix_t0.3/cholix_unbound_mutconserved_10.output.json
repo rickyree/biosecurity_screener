@@ -1,0 +1,101 @@
+{
+  "commec_info": {
+    "commec_version": "1.0.3",
+    "json_output_version": "0.3",
+    "time_taken": "00:00:02",
+    "date_run": "2026-03-07 01:26:42",
+    "search_tool_info": {
+      "biorisk_search_info": {
+        "tool_info": "# HMMER 3.4 (Aug 2023); http://hmmer.org/",
+        "database_info": "HMMER3/f [3.3.2 | Nov 2020]"
+      },
+      "protein_search_info": {
+        "tool_info": "x.x.x",
+        "database_info": "x.x.x"
+      },
+      "nucleotide_search_info": {
+        "tool_info": "x.x.x",
+        "database_info": "x.x.x"
+      },
+      "low_concern_protein_search_info": {
+        "tool_info": "# HMMER 3.4 (Aug 2023); http://hmmer.org/",
+        "database_info": "HMMER3/f [3.1b2 | February 2015]"
+      },
+      "low_concern_rna_search_info": {
+        "tool_info": "INFERNAL 1.1.5 (Sep 2023)",
+        "database_info": "INFERNAL1/a [1.1.4 | Dec 2020]"
+      },
+      "low_concern_dna_search_info": {
+        "tool_info": "blastn: 2.17.0+\n Package: blast 2.17.0, build Aug 11 2025 09:46:06",
+        "database_info": "BLASTDB Version: 5Date: Nov 22, 2021  4:57 PM\tLongest sequence: 66,879 bases"
+      }
+    }
+  },
+  "query_info": {
+    "file": "/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.3/cholix_unbound_mutconserved_10.fasta",
+    "number_of_queries": 1,
+    "total_query_length": 1815
+  },
+  "queries": {
+    "cholix_unbound_mutconserved_10": {
+      "query": "cholix_unbound_mutconserved_10",
+      "length": 1815,
+      "status": {
+        "screen_status": "Warning",
+        "biorisk": "Warning",
+        "protein_taxonomy": "Skip",
+        "nucleotide_taxonomy": "Skip",
+        "low_concern": "Warning",
+        "rationale": "Matches sequence with virulence factor."
+      },
+      "hits": {
+        "VFG043673gbAAW80252": {
+          "recommendation": {
+            "status": "Warning",
+            "from_step": "Biorisk Search"
+          },
+          "name": "VFG043673gbAAW80252",
+          "description": "(toxA) hypothetical exotoxin A [ChxA (VF0614) - Exotoxin (VFC0235)] [Vibrio cholerae str. TP]",
+          "ranges": [
+            {
+              "e_value": 6.2e-62,
+              "match_start": 103,
+              "match_end": 197,
+              "query_start": 104,
+              "query_end": 388
+            },
+            {
+              "e_value": 6.2e-62,
+              "match_start": 527,
+              "match_end": 635,
+              "query_start": 389,
+              "query_end": 715
+            },
+            {
+              "e_value": 6.2e-62,
+              "match_start": 32,
+              "match_end": 82,
+              "query_start": 1622,
+              "query_end": 1774
+            },
+            {
+              "e_value": 3.9e-36,
+              "match_start": 202,
+              "match_end": 443,
+              "query_start": 748,
+              "query_end": 1431
+            }
+          ],
+          "annotations": {
+            "domain": [
+              "not assigned"
+            ],
+            "regulated": [
+              "Virulence Factor"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

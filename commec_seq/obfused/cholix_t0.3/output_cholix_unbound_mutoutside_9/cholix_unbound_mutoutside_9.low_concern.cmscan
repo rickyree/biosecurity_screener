@@ -1,0 +1,12 @@
+#target name         accession query name                  accession mdl mdl from   mdl to seq from   seq to strand trunc pass   gc  bias  score   E-value inc description of target
+#------------------- --------- --------------------------- --------- --- -------- -------- -------- -------- ------ ----- ---- ---- ----- ------ --------- --- ---------------------
+#
+# Program:         cmscan
+# Version:         1.1.5 (Sep 2023)
+# Pipeline mode:   SCAN
+# Query file:      /home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.3/input_cholix_unbound_mutoutside_9/cholix_unbound_mutoutside_9.cleaned.fasta
+# Target file:     /home/zyl22/biosecurity_screener/commec-dbs/low_concern/rna/benign.cm
+# Option settings: cmscan --tblout /home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.3/output_cholix_unbound_mutoutside_9/cholix_unbound_mutoutside_9.low_concern.cmscan --cpu 4 /home/zyl22/biosecurity_screener/commec-dbs/low_concern/rna/benign.cm /home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.3/input_cholix_unbound_mutoutside_9/cholix_unbound_mutoutside_9.cleaned.fasta 
+# Current dir:     /home/zyl22/biosecurity_screener
+# Date:            Sat Mar  7 01:29:38 2026
+# [ok]

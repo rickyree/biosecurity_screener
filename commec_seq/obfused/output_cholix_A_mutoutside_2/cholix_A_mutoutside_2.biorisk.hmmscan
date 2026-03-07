@@ -1,0 +1,18 @@
+#                                                                               --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name              accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- -----    -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+VFG043673gbAAW80252  -            666 cholix_A_mutoutside_2_1 -            605   9.6e-44  146.6   0.2   1   1   5.3e-47   1.3e-43  146.2   0.2    37   219     1   176     1   188 0.97 -
+VFG043673gbAAW80252  -            666 cholix_A_mutoutside_2_2 -            604   2.2e-25   85.9   0.0   1   1   1.3e-28   3.1e-25   85.4   0.0   507   592   478   563   470   584 0.89 -
+VFG043673gbAAW80252  -            666 cholix_A_mutoutside_2_4 -            605   5.9e-22   74.6   1.2   1   2   9.1e-16   2.2e-12   43.0   0.7   618   661     1    44     1    48 0.97 -
+VFG043673gbAAW80252  -            666 cholix_A_mutoutside_2_4 -            605   5.9e-22   74.6   1.2   2   2   7.5e-12   1.8e-08   30.0   0.0   573   624   106   157    98   165 0.86 -
+VFG043673gbAAW80252  -            666 cholix_A_mutoutside_2_5 -            604   1.9e-62  208.4   0.0   1   1   1.1e-65   2.7e-62  207.9   0.0   269   512   181   424   173   427 0.98 -
+#
+# Program:         hmmscan
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SCAN
+# Query file:      /home/zyl22/biosecurity_screener/commec_seq/obfused/input_cholix_A_mutoutside_2/cholix_A_mutoutside_2.faa
+# Target file:     /home/zyl22/biosecurity_screener/commec-dbs/biorisk/biorisk.hmm
+# Option settings: hmmscan --domtblout /home/zyl22/biosecurity_screener/commec_seq/obfused/output_cholix_A_mutoutside_2/cholix_A_mutoutside_2.biorisk.hmmscan --cpu 4 /home/zyl22/biosecurity_screener/commec-dbs/biorisk/biorisk.hmm /home/zyl22/biosecurity_screener/commec_seq/obfused/input_cholix_A_mutoutside_2/cholix_A_mutoutside_2.faa 
+# Current dir:     /home/zyl22/biosecurity_screener
+# Date:            Fri Mar  6 18:06:04 2026
+# [ok]

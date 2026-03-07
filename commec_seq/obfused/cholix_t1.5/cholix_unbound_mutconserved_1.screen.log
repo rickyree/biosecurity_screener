@@ -1,0 +1,22 @@
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t1.5/cholix_unbound_mutconserved_1.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │ STEP 1 completed at 2026-03-07 01:30:04
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │       ...no regulated regions to clear
+INFO    │ STEP 4 completed at 2026-03-07 01:30:04
+INFO    │  >> Commec Screen completed at 2026-03-07 01:30:04
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_unbound_mutconserv      Warning         Pass         Skip         Skip         Pass
+
+ >> RATIONALE : 
+cholix_unbound_mutconserv : Warning      --> No matches found during any stage of analysis. Sequence risk is unknown, possibly generated in silico. Matches may be found if re-run without skipping steps.
+

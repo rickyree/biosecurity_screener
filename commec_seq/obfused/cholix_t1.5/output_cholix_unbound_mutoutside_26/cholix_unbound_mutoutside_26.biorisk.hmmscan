@@ -1,0 +1,17 @@
+#                                                                                      --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name                     accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- -----           -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+VFG043673gbAAW80252  -            666 cholix_unbound_mutoutside_26_1 -            605   0.00022   16.5   0.1   1   1   1.3e-07   0.00032   16.0   0.1   489   512   267   290   259   300 0.91 -
+VFG043673gbAAW80252  -            666 cholix_unbound_mutoutside_26_2 -            604     2e-07   26.6   0.0   1   1   1.2e-10   2.8e-07   26.1   0.0   587   661   444   518   430   522 0.79 -
+VFG043673gbAAW80252  -            666 cholix_unbound_mutoutside_26_6 -            604   4.3e-08   28.8   0.0   1   2   1.8e-11   4.3e-08   28.8   0.0   512   574     1    63     1    75 0.91 -
+VFG043673gbAAW80252  -            666 cholix_unbound_mutoutside_26_6 -            604   4.3e-08   28.8   0.0   2   2     0.081   1.9e+02   -3.1   0.6   235   265   215   245   207   248 0.75 -
+#
+# Program:         hmmscan
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SCAN
+# Query file:      /home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t1.5/input_cholix_unbound_mutoutside_26/cholix_unbound_mutoutside_26.faa
+# Target file:     /home/zyl22/biosecurity_screener/commec-dbs/biorisk/biorisk.hmm
+# Option settings: hmmscan --domtblout /home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t1.5/output_cholix_unbound_mutoutside_26/cholix_unbound_mutoutside_26.biorisk.hmmscan --cpu 4 /home/zyl22/biosecurity_screener/commec-dbs/biorisk/biorisk.hmm /home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t1.5/input_cholix_unbound_mutoutside_26/cholix_unbound_mutoutside_26.faa 
+# Current dir:     /home/zyl22/biosecurity_screener
+# Date:            Sat Mar  7 01:32:03 2026
+# [ok]

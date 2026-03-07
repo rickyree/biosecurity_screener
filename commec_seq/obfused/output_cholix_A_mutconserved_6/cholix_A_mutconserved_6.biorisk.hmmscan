@@ -1,0 +1,16 @@
+#                                                                                 --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name                accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- -----      -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+VFG043673gbAAW80252  -            666 cholix_A_mutconserved_6_3 -            604   3.7e-35  118.2   0.0   1   2   1.8e-36   4.2e-33  111.4   0.0   457   612     2   157     1   171 0.97 -
+VFG043673gbAAW80252  -            666 cholix_A_mutconserved_6_3 -            604   3.7e-35  118.2   0.0   2   2   0.00032      0.76    4.8   0.0   613   629   587   603   576   604 0.89 -
+VFG043673gbAAW80252  -            666 cholix_A_mutconserved_6_6 -            604   2.8e-58  194.6   0.0   1   1   2.3e-60   5.6e-57  190.3   0.0    30   454    46   448    33   456 0.94 -
+#
+# Program:         hmmscan
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SCAN
+# Query file:      /home/zyl22/biosecurity_screener/commec_seq/obfused/input_cholix_A_mutconserved_6/cholix_A_mutconserved_6.faa
+# Target file:     /home/zyl22/biosecurity_screener/commec-dbs/biorisk/biorisk.hmm
+# Option settings: hmmscan --domtblout /home/zyl22/biosecurity_screener/commec_seq/obfused/output_cholix_A_mutconserved_6/cholix_A_mutconserved_6.biorisk.hmmscan --cpu 4 /home/zyl22/biosecurity_screener/commec-dbs/biorisk/biorisk.hmm /home/zyl22/biosecurity_screener/commec_seq/obfused/input_cholix_A_mutconserved_6/cholix_A_mutconserved_6.faa 
+# Current dir:     /home/zyl22/biosecurity_screener
+# Date:            Fri Mar  6 18:05:47 2026
+# [ok]

@@ -1,0 +1,16 @@
+#                                                                                         --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name                        accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- -----              -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+VFG043673gbAAW80252  -            666 cholix_catalytic_mutconserved_6_2 -            200   1.7e-08   30.1   0.0   1   1   8.6e-12   2.1e-08   29.8   0.0   451   555    82   181    70   198 0.84 -
+VFG043673gbAAW80252  -            666 cholix_catalytic_mutconserved_6_4 -            201   7.6e-17   57.7   0.0   1   2   6.2e-06     0.015   10.5   0.0   550   575     1    26     1    42 0.89 -
+VFG043673gbAAW80252  -            666 cholix_catalytic_mutconserved_6_4 -            201   7.6e-17   57.7   0.0   2   2   1.5e-16   3.7e-13   45.5   0.0   561   644   101   185    89   199 0.83 -
+#
+# Program:         hmmscan
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SCAN
+# Query file:      /home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_catalytic/input_cholix_catalytic_mutconserved_6/cholix_catalytic_mutconserved_6.faa
+# Target file:     /home/zyl22/biosecurity_screener/commec-dbs/biorisk/biorisk.hmm
+# Option settings: hmmscan --domtblout /home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_catalytic/output_cholix_catalytic_mutconserved_6/cholix_catalytic_mutconserved_6.biorisk.hmmscan --cpu 4 /home/zyl22/biosecurity_screener/commec-dbs/biorisk/biorisk.hmm /home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_catalytic/input_cholix_catalytic_mutconserved_6/cholix_catalytic_mutconserved_6.faa 
+# Current dir:     /home/zyl22/biosecurity_screener
+# Date:            Fri Mar  6 19:39:46 2026
+# [ok]

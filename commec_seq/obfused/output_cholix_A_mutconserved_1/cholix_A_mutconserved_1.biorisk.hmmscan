@@ -1,0 +1,17 @@
+#                                                                                 --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name                accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- -----      -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+VFG043673gbAAW80252  -            666 cholix_A_mutconserved_1_3 -            604    0.0029   12.8   0.0   1   1   2.1e-06     0.005   12.0   0.0   400   428     3    31     1    34 0.93 -
+VFG043673gbAAW80252  -            666 cholix_A_mutconserved_1_4 -            605   9.2e-06   21.1   0.0   1   1   5.2e-09   1.3e-05   20.6   0.0   322   396     4    78     2    97 0.93 -
+VFG043673gbAAW80252  -            666 cholix_A_mutconserved_1_5 -            604   5.1e-72  240.0   0.0   1   1   2.9e-75   6.9e-72  239.6   0.0   414   635   350   571   340   593 0.97 -
+VFG043673gbAAW80252  -            666 cholix_A_mutconserved_1_6 -            604   6.9e-47  157.0   0.0   1   1   1.2e-49   2.9e-46  154.9   0.0    37   317    79   338    73   345 0.96 -
+#
+# Program:         hmmscan
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SCAN
+# Query file:      /home/zyl22/biosecurity_screener/commec_seq/obfused/input_cholix_A_mutconserved_1/cholix_A_mutconserved_1.faa
+# Target file:     /home/zyl22/biosecurity_screener/commec-dbs/biorisk/biorisk.hmm
+# Option settings: hmmscan --domtblout /home/zyl22/biosecurity_screener/commec_seq/obfused/output_cholix_A_mutconserved_1/cholix_A_mutconserved_1.biorisk.hmmscan --cpu 4 /home/zyl22/biosecurity_screener/commec-dbs/biorisk/biorisk.hmm /home/zyl22/biosecurity_screener/commec_seq/obfused/input_cholix_A_mutconserved_1/cholix_A_mutconserved_1.faa 
+# Current dir:     /home/zyl22/biosecurity_screener
+# Date:            Fri Mar  6 18:05:36 2026
+# [ok]

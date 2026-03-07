@@ -1,0 +1,19 @@
+#                                                                                        --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name                       accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- -----             -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+VFG043673gbAAW80252  -            666 cholix_unbound_mutconserved_25_1 -            605   5.2e-17   58.2   0.1   1   2   7.7e-13   1.8e-09   33.3   0.0    46   127   226   298   219   306 0.90 -
+VFG043673gbAAW80252  -            666 cholix_unbound_mutconserved_25_1 -            605   5.2e-17   58.2   0.1   2   2   1.4e-09   3.3e-06   22.6   0.0   576   618   331   373   316   381 0.89 -
+VFG043673gbAAW80252  -            666 cholix_unbound_mutconserved_25_6 -            604   9.4e-95  315.1   0.0   1   4   1.5e-39   3.6e-36  121.6   0.0   447   573     3   129     1   129 0.97 -
+VFG043673gbAAW80252  -            666 cholix_unbound_mutconserved_25_6 -            604   9.4e-95  315.1   0.0   2   4   8.7e-14   2.1e-10   36.4   0.0   139   198   125   184   123   187 0.94 -
+VFG043673gbAAW80252  -            666 cholix_unbound_mutconserved_25_6 -            604   9.4e-95  315.1   0.0   3   4   1.4e-09   3.3e-06   22.6   0.3   616   660   183   227   182   232 0.91 -
+VFG043673gbAAW80252  -            666 cholix_unbound_mutconserved_25_6 -            604   9.4e-95  315.1   0.0   4   4   3.3e-42   7.9e-39  130.3   0.0   204   440   379   601   366   604 0.94 -
+#
+# Program:         hmmscan
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SCAN
+# Query file:      /home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.3/input_cholix_unbound_mutconserved_25/cholix_unbound_mutconserved_25.faa
+# Target file:     /home/zyl22/biosecurity_screener/commec-dbs/biorisk/biorisk.hmm
+# Option settings: hmmscan --domtblout /home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.3/output_cholix_unbound_mutconserved_25/cholix_unbound_mutconserved_25.biorisk.hmmscan --cpu 4 /home/zyl22/biosecurity_screener/commec-dbs/biorisk/biorisk.hmm /home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.3/input_cholix_unbound_mutconserved_25/cholix_unbound_mutconserved_25.faa 
+# Current dir:     /home/zyl22/biosecurity_screener
+# Date:            Sat Mar  7 01:27:33 2026
+# [ok]

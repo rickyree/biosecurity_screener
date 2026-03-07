@@ -1,0 +1,21 @@
+#                                                                                        --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name                       accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- -----             -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+VFG043673gbAAW80252  -            666 cholix_unbound_mutconserved_29_1 -            605   2.7e-43  145.1   0.2   1   4   2.2e-13   5.4e-10   35.1   0.1    37    84     1    48     1    61 0.93 -
+VFG043673gbAAW80252  -            666 cholix_unbound_mutconserved_29_1 -            605   2.7e-43  145.1   0.2   2   4   1.6e-25   3.9e-22   75.2   0.0   394   496    69   171    53   178 0.94 -
+VFG043673gbAAW80252  -            666 cholix_unbound_mutconserved_29_1 -            605   2.7e-43  145.1   0.2   3   4   8.9e-06     0.021   10.0   0.1   100   128   442   470   436   472 0.90 -
+VFG043673gbAAW80252  -            666 cholix_unbound_mutconserved_29_1 -            605   2.7e-43  145.1   0.2   4   4   3.7e-09     9e-06   21.1   0.0   499   570   470   540   469   550 0.73 -
+VFG043673gbAAW80252  -            666 cholix_unbound_mutconserved_29_2 -            604   8.6e-09   31.1   0.0   1   1     5e-12   1.2e-08   30.6   0.0   269   347   187   265   177   279 0.92 -
+VFG043673gbAAW80252  -            666 cholix_unbound_mutconserved_29_3 -            604   3.3e-15   52.3   0.0   1   1   1.9e-18   4.6e-15   51.8   0.0   127   226   503   602   499   604 0.97 -
+VFG043673gbAAW80252  -            666 cholix_unbound_mutconserved_29_6 -            604   5.6e-39  130.8   0.0   1   2   8.3e-40     2e-36  122.4   0.0   525   660   155   290   140   292 0.96 -
+VFG043673gbAAW80252  -            666 cholix_unbound_mutconserved_29_6 -            604   5.6e-39  130.8   0.0   2   2   9.1e-05      0.22    6.6   0.0   347   395   292   340   290   350 0.93 -
+#
+# Program:         hmmscan
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SCAN
+# Query file:      /home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.3/input_cholix_unbound_mutconserved_29/cholix_unbound_mutconserved_29.faa
+# Target file:     /home/zyl22/biosecurity_screener/commec-dbs/biorisk/biorisk.hmm
+# Option settings: hmmscan --domtblout /home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.3/output_cholix_unbound_mutconserved_29/cholix_unbound_mutconserved_29.biorisk.hmmscan --cpu 4 /home/zyl22/biosecurity_screener/commec-dbs/biorisk/biorisk.hmm /home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.3/input_cholix_unbound_mutconserved_29/cholix_unbound_mutconserved_29.faa 
+# Current dir:     /home/zyl22/biosecurity_screener
+# Date:            Sat Mar  7 01:27:44 2026
+# [ok]
