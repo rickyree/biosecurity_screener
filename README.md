@@ -49,7 +49,7 @@ A tool that screens user protein sequences to detect maliciously-redesigned liga
 
     - Then download the structures into `structural_db`:
       ```
-      python get_cath_structures.py
+      python scripts/fetch_cath_structures.py
       ```
     
 8. **Structural alignment**
@@ -64,15 +64,33 @@ A tool that screens user protein sequences to detect maliciously-redesigned liga
 
 9. **Obtain results**
 
-   - Edit `scripts/summarise_usalign_metrics.py` and modify the correct input and output file paths
-   - Edit `scripts/plot_tm_distributions.py` and modify the correct input and output file paths
+   Run the following scripts to summarise US-align metrics and generate visualisation of TM-score distribution.
+
+    ```
+    python scripts/summarise_usalign_metrics.py
+    ```
 
 
     ```
-    python summarise_usalign_metrics.py
+    python scripts/plot_tm_distributions.py
     ```
 
-    ```
-    python plot_tm_distributions.py
-    ```
+## Repository Structure
    
+
+```
+biosecurity_screener/
+│
+├── scripts/                 # Helper scripts for downloading structures and analysing results
+│   └── fetch_cath_structures.py
+│   └── plot_tm_distributions.py
+│   └── summarise_usalign_metrics.py
+│
+├── structural_db/           # Reference protein structures
+│
+├── results/                 # Output files and results
+│
+├── main.py                  # Main script to run Aegis
+│
+└── README.md
+```
