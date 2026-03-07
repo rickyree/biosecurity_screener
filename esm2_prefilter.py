@@ -14,6 +14,7 @@ Binding site identification integrated directly (no dMaSIF cache dependency):
   - PeSTo method: ML-based binding site predictions (automatic for --apo structures)
   - Explicit method: user-provided residue numbers (overrides automatic selection)
 """
+#final file
 import sys, os, argparse, hashlib, subprocess
 import numpy as np
 import pandas as pd
