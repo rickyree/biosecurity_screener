@@ -1,0 +1,2964 @@
+=== cholix_unbound_mutoutside_13_vs_cholix_catalytic_2q5tA03 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_13_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/cholix_catalytic_2q5tA03.pdb
+⠴ Downloading results... 0:00:15
+
+✓ Completed (3.0s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - usalign_cholix_unbound_mutoutside_13_vs_cholix_catalytic_2q5tA03_aligned.pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.2682
+  tm_score_2: 0.6990
+  rmsd: 3.4200
+  sequence_identity: 0.3200
+  aligned_length: 181
+  length_1: 605
+  length_2: 211
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_13_structure.pdb
+  target_pdb_filename: cholix_catalytic_2q5tA03.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_13_vs_cholix_catalytic_2q5tA03
+
+=== cholix_unbound_mutoutside_13_vs_cholix_receptor_binding_2q5tA01 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_13_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/cholix_receptor_binding_2q5tA01.p
+db
+⠹ Downloading results... 0:00:06
+
+✓ Completed (2.4s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_13_vs_cholix_receptor_binding_2q5tA01_aligned.
+pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.1728
+  tm_score_2: 0.3815
+  rmsd: 5.5700
+  sequence_identity: 0.0720
+  aligned_length: 139
+  length_1: 605
+  length_2: 216
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_13_structure.pdb
+  target_pdb_filename: cholix_receptor_binding_2q5tA01.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_13_vs_cholix_receptor_binding_2q5tA01
+
+=== cholix_unbound_mutoutside_13_vs_cholix_translocation_2q5tA02 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_13_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/cholix_translocation_2q5tA02.pdb
+⠋ Downloading results... 0:00:08
+
+✓ Completed (2.2s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_13_vs_cholix_translocation_2q5tA02_aligned.pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.1291
+  tm_score_2: 0.3472
+  rmsd: 5.8600
+  sequence_identity: 0.0470
+  aligned_length: 106
+  length_1: 605
+  length_2: 166
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_13_structure.pdb
+  target_pdb_filename: cholix_translocation_2q5tA02.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_13_vs_cholix_translocation_2q5tA02
+
+=== cholix_unbound_mutoutside_13_vs_diphtheria_catalytic_1f0lA01 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_13_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/diphtheria_catalytic_1f0lA01.pdb
+⠏ Downloading results... 0:00:07
+
+✓ Completed (2.5s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_13_vs_diphtheria_catalytic_1f0lA01_aligned.pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.1928
+  tm_score_2: 0.5430
+  rmsd: 3.8300
+  sequence_identity: 0.1570
+  aligned_length: 134
+  length_1: 605
+  length_2: 187
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_13_structure.pdb
+  target_pdb_filename: diphtheria_catalytic_1f0lA01.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_13_vs_diphtheria_catalytic_1f0lA01
+
+=== cholix_unbound_mutoutside_13_vs_diphtheria_receptor_binding_1f0lA03 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_13_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/diphtheria_receptor_binding_1f0lA
+03.pdb
+⠙ Downloading results... 0:00:06
+
+✓ Completed (2.3s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_13_vs_diphtheria_receptor_binding_1f0lA03_alig
+ned.pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.1381
+  tm_score_2: 0.3848
+  rmsd: 5.4300
+  sequence_identity: 0.0360
+  aligned_length: 110
+  length_1: 605
+  length_2: 154
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_13_structure.pdb
+  target_pdb_filename: diphtheria_receptor_binding_1f0lA03.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_13_vs_diphtheria_receptor_binding_1f0lA03
+
+=== cholix_unbound_mutoutside_13_vs_diphtheria_translocation_1f0lA02 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_13_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/diphtheria_translocation_1f0lA02.
+pdb
+⠸ Downloading results... 0:00:06
+
+✓ Completed (1.8s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_13_vs_diphtheria_translocation_1f0lA02_aligned
+.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.1613
+  tm_score_2: 0.4080
+  rmsd: 5.4200
+  sequence_identity: 0.0540
+  aligned_length: 129
+  length_1: 605
+  length_2: 177
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_13_structure.pdb
+  target_pdb_filename: diphtheria_translocation_1f0lA02.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_13_vs_diphtheria_translocation_1f0lA02
+
+=== cholix_unbound_mutoutside_16_vs_cholix_catalytic_2q5tA03 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_16_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/cholix_catalytic_2q5tA03.pdb
+⠋ Downloading results... 0:00:06
+
+✓ Completed (2.1s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - usalign_cholix_unbound_mutoutside_16_vs_cholix_catalytic_2q5tA03_aligned.pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.2913
+  tm_score_2: 0.7800
+  rmsd: 2.9100
+  sequence_identity: 0.3660
+  aligned_length: 191
+  length_1: 605
+  length_2: 211
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_16_structure.pdb
+  target_pdb_filename: cholix_catalytic_2q5tA03.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_16_vs_cholix_catalytic_2q5tA03
+
+=== cholix_unbound_mutoutside_16_vs_cholix_receptor_binding_2q5tA01 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_16_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/cholix_receptor_binding_2q5tA01.p
+db
+⠸ Downloading results... 0:00:06
+
+✓ Completed (2.1s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_16_vs_cholix_receptor_binding_2q5tA01_aligned.
+pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.2789
+  tm_score_2: 0.6904
+  rmsd: 3.4400
+  sequence_identity: 0.1620
+  aligned_length: 191
+  length_1: 605
+  length_2: 216
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_16_structure.pdb
+  target_pdb_filename: cholix_receptor_binding_2q5tA01.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_16_vs_cholix_receptor_binding_2q5tA01
+
+=== cholix_unbound_mutoutside_16_vs_cholix_translocation_2q5tA02 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_16_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/cholix_translocation_2q5tA02.pdb
+⠇ Downloading results... 0:00:07
+
+✓ Completed (2.4s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_16_vs_cholix_translocation_2q5tA02_aligned.pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.1324
+  tm_score_2: 0.3648
+  rmsd: 5.1000
+  sequence_identity: 0.0200
+  aligned_length: 102
+  length_1: 605
+  length_2: 166
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_16_structure.pdb
+  target_pdb_filename: cholix_translocation_2q5tA02.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_16_vs_cholix_translocation_2q5tA02
+
+=== cholix_unbound_mutoutside_16_vs_diphtheria_catalytic_1f0lA01 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_16_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/diphtheria_catalytic_1f0lA01.pdb
+⠧ Downloading results... 0:00:06
+
+✓ Completed (2.4s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_16_vs_diphtheria_catalytic_1f0lA01_aligned.pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.2083
+  tm_score_2: 0.5831
+  rmsd: 3.6700
+  sequence_identity: 0.1670
+  aligned_length: 144
+  length_1: 605
+  length_2: 187
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_16_structure.pdb
+  target_pdb_filename: diphtheria_catalytic_1f0lA01.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_16_vs_diphtheria_catalytic_1f0lA01
+
+=== cholix_unbound_mutoutside_16_vs_diphtheria_receptor_binding_1f0lA03 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_16_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/diphtheria_receptor_binding_1f0lA
+03.pdb
+⠴ Downloading results... 0:00:07
+
+✓ Completed (2.3s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_16_vs_diphtheria_receptor_binding_1f0lA03_alig
+ned.pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.1651
+  tm_score_2: 0.4929
+  rmsd: 4.7800
+  sequence_identity: 0.0650
+  aligned_length: 124
+  length_1: 605
+  length_2: 154
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_16_structure.pdb
+  target_pdb_filename: diphtheria_receptor_binding_1f0lA03.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_16_vs_diphtheria_receptor_binding_1f0lA03
+
+=== cholix_unbound_mutoutside_16_vs_diphtheria_translocation_1f0lA02 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_16_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/diphtheria_translocation_1f0lA02.
+pdb
+⠧ Downloading results... 0:00:07
+
+✓ Completed (2.2s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_16_vs_diphtheria_translocation_1f0lA02_aligned
+.pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.1655
+  tm_score_2: 0.4213
+  rmsd: 5.4900
+  sequence_identity: 0.0910
+  aligned_length: 132
+  length_1: 605
+  length_2: 177
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_16_structure.pdb
+  target_pdb_filename: diphtheria_translocation_1f0lA02.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_16_vs_diphtheria_translocation_1f0lA02
+
+=== cholix_unbound_mutoutside_17_vs_cholix_catalytic_2q5tA03 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_17_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/cholix_catalytic_2q5tA03.pdb
+⠸ Downloading results... 0:00:06
+
+✓ Completed (1.9s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - usalign_cholix_unbound_mutoutside_17_vs_cholix_catalytic_2q5tA03_aligned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.3189
+  tm_score_2: 0.8588
+  rmsd: 2.3900
+  sequence_identity: 0.3370
+  aligned_length: 205
+  length_1: 605
+  length_2: 211
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_17_structure.pdb
+  target_pdb_filename: cholix_catalytic_2q5tA03.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_17_vs_cholix_catalytic_2q5tA03
+
+=== cholix_unbound_mutoutside_17_vs_cholix_receptor_binding_2q5tA01 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_17_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/cholix_receptor_binding_2q5tA01.p
+db
+⠼ Downloading results... 0:00:07
+
+✓ Completed (2.7s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_17_vs_cholix_receptor_binding_2q5tA01_aligned.
+pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.2652
+  tm_score_2: 0.6349
+  rmsd: 4.4200
+  sequence_identity: 0.1190
+  aligned_length: 193
+  length_1: 605
+  length_2: 216
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_17_structure.pdb
+  target_pdb_filename: cholix_receptor_binding_2q5tA01.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_17_vs_cholix_receptor_binding_2q5tA01
+
+=== cholix_unbound_mutoutside_17_vs_cholix_translocation_2q5tA02 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_17_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/cholix_translocation_2q5tA02.pdb
+⠼ Downloading results... 0:00:06
+
+✓ Completed (2.8s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_17_vs_cholix_translocation_2q5tA02_aligned.pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.1889
+  tm_score_2: 0.5356
+  rmsd: 4.7600
+  sequence_identity: 0.1060
+  aligned_length: 142
+  length_1: 605
+  length_2: 166
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_17_structure.pdb
+  target_pdb_filename: cholix_translocation_2q5tA02.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_17_vs_cholix_translocation_2q5tA02
+
+=== cholix_unbound_mutoutside_17_vs_diphtheria_catalytic_1f0lA01 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_17_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/diphtheria_catalytic_1f0lA01.pdb
+⠸ Downloading results... 0:00:06
+
+✓ Completed (1.9s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_17_vs_diphtheria_catalytic_1f0lA01_aligned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.2157
+  tm_score_2: 0.6116
+  rmsd: 3.6500
+  sequence_identity: 0.1620
+  aligned_length: 148
+  length_1: 605
+  length_2: 187
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_17_structure.pdb
+  target_pdb_filename: diphtheria_catalytic_1f0lA01.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_17_vs_diphtheria_catalytic_1f0lA01
+
+=== cholix_unbound_mutoutside_17_vs_diphtheria_receptor_binding_1f0lA03 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_17_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/diphtheria_receptor_binding_1f0lA
+03.pdb
+⠹ Downloading results... 0:00:06
+
+✓ Completed (2.4s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_17_vs_diphtheria_receptor_binding_1f0lA03_alig
+ned.pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.1322
+  tm_score_2: 0.3733
+  rmsd: 5.6000
+  sequence_identity: 0.0470
+  aligned_length: 106
+  length_1: 605
+  length_2: 154
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_17_structure.pdb
+  target_pdb_filename: diphtheria_receptor_binding_1f0lA03.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_17_vs_diphtheria_receptor_binding_1f0lA03
+
+=== cholix_unbound_mutoutside_17_vs_diphtheria_translocation_1f0lA02 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_17_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/diphtheria_translocation_1f0lA02.
+pdb
+⠧ Downloading results... 0:00:07
+
+✓ Completed (2.1s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_17_vs_diphtheria_translocation_1f0lA02_aligned
+.pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.1588
+  tm_score_2: 0.3957
+  rmsd: 5.8300
+  sequence_identity: 0.0690
+  aligned_length: 131
+  length_1: 605
+  length_2: 177
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_17_structure.pdb
+  target_pdb_filename: diphtheria_translocation_1f0lA02.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_17_vs_diphtheria_translocation_1f0lA02
+
+=== cholix_unbound_mutoutside_19_vs_cholix_catalytic_2q5tA03 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_19_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/cholix_catalytic_2q5tA03.pdb
+⠙ Downloading results... 0:00:06
+
+✓ Completed (1.8s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - usalign_cholix_unbound_mutoutside_19_vs_cholix_catalytic_2q5tA03_aligned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.2876
+  tm_score_2: 0.7485
+  rmsd: 3.2500
+  sequence_identity: 0.3370
+  aligned_length: 193
+  length_1: 605
+  length_2: 211
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_19_structure.pdb
+  target_pdb_filename: cholix_catalytic_2q5tA03.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_19_vs_cholix_catalytic_2q5tA03
+
+=== cholix_unbound_mutoutside_19_vs_cholix_receptor_binding_2q5tA01 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_19_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/cholix_receptor_binding_2q5tA01.p
+db
+⠹ Downloading results... 0:00:07
+
+✓ Completed (2.7s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_19_vs_cholix_receptor_binding_2q5tA01_aligned.
+pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.1594
+  tm_score_2: 0.3379
+  rmsd: 6.2700
+  sequence_identity: 0.0290
+  aligned_length: 137
+  length_1: 605
+  length_2: 216
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_19_structure.pdb
+  target_pdb_filename: cholix_receptor_binding_2q5tA01.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_19_vs_cholix_receptor_binding_2q5tA01
+
+=== cholix_unbound_mutoutside_19_vs_cholix_translocation_2q5tA02 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_19_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/cholix_translocation_2q5tA02.pdb
+⠧ Downloading results... 0:00:13
+
+✓ Completed (1.8s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_19_vs_cholix_translocation_2q5tA02_aligned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.1606
+  tm_score_2: 0.4524
+  rmsd: 4.8400
+  sequence_identity: 0.1980
+  aligned_length: 121
+  length_1: 605
+  length_2: 166
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_19_structure.pdb
+  target_pdb_filename: cholix_translocation_2q5tA02.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_19_vs_cholix_translocation_2q5tA02
+
+=== cholix_unbound_mutoutside_19_vs_diphtheria_catalytic_1f0lA01 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_19_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/diphtheria_catalytic_1f0lA01.pdb
+⠇ Downloading results... 0:00:07
+
+✓ Completed (1.8s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_19_vs_diphtheria_catalytic_1f0lA01_aligned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.2162
+  tm_score_2: 0.5975
+  rmsd: 4.1300
+  sequence_identity: 0.1830
+  aligned_length: 153
+  length_1: 605
+  length_2: 187
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_19_structure.pdb
+  target_pdb_filename: diphtheria_catalytic_1f0lA01.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_19_vs_diphtheria_catalytic_1f0lA01
+
+=== cholix_unbound_mutoutside_19_vs_diphtheria_receptor_binding_1f0lA03 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_19_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/diphtheria_receptor_binding_1f0lA
+03.pdb
+⠸ Downloading results... 0:00:05
+
+✓ Completed (2.0s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_19_vs_diphtheria_receptor_binding_1f0lA03_alig
+ned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.1359
+  tm_score_2: 0.3997
+  rmsd: 4.9800
+  sequence_identity: 0.0670
+  aligned_length: 104
+  length_1: 605
+  length_2: 154
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_19_structure.pdb
+  target_pdb_filename: diphtheria_receptor_binding_1f0lA03.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_19_vs_diphtheria_receptor_binding_1f0lA03
+
+=== cholix_unbound_mutoutside_19_vs_diphtheria_translocation_1f0lA02 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_19_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/diphtheria_translocation_1f0lA02.
+pdb
+⠼ Downloading results... 0:00:06
+
+✓ Completed (2.4s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_19_vs_diphtheria_translocation_1f0lA02_aligned
+.pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.1473
+  tm_score_2: 0.3649
+  rmsd: 5.6100
+  sequence_identity: 0.0670
+  aligned_length: 120
+  length_1: 605
+  length_2: 177
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_19_structure.pdb
+  target_pdb_filename: diphtheria_translocation_1f0lA02.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_19_vs_diphtheria_translocation_1f0lA02
+
+=== cholix_unbound_mutoutside_20_vs_cholix_catalytic_2q5tA03 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_20_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/cholix_catalytic_2q5tA03.pdb
+⠏ Downloading results... 0:00:07
+
+✓ Completed (2.4s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - usalign_cholix_unbound_mutoutside_20_vs_cholix_catalytic_2q5tA03_aligned.pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.2923
+  tm_score_2: 0.7463
+  rmsd: 3.4100
+  sequence_identity: 0.2710
+  aligned_length: 199
+  length_1: 605
+  length_2: 211
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_20_structure.pdb
+  target_pdb_filename: cholix_catalytic_2q5tA03.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_20_vs_cholix_catalytic_2q5tA03
+
+=== cholix_unbound_mutoutside_20_vs_cholix_receptor_binding_2q5tA01 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_20_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/cholix_receptor_binding_2q5tA01.p
+db
+⠦ Downloading results... 0:00:07
+
+✓ Completed (1.9s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_20_vs_cholix_receptor_binding_2q5tA01_aligned.
+pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.1605
+  tm_score_2: 0.3487
+  rmsd: 5.8100
+  sequence_identity: 0.0530
+  aligned_length: 132
+  length_1: 605
+  length_2: 216
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_20_structure.pdb
+  target_pdb_filename: cholix_receptor_binding_2q5tA01.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_20_vs_cholix_receptor_binding_2q5tA01
+
+=== cholix_unbound_mutoutside_20_vs_cholix_translocation_2q5tA02 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_20_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/cholix_translocation_2q5tA02.pdb
+⠇ Downloading results... 0:00:06
+
+✓ Completed (2.4s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_20_vs_cholix_translocation_2q5tA02_aligned.pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.1489
+  tm_score_2: 0.4265
+  rmsd: 5.0700
+  sequence_identity: 0.1490
+  aligned_length: 114
+  length_1: 605
+  length_2: 166
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_20_structure.pdb
+  target_pdb_filename: cholix_translocation_2q5tA02.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_20_vs_cholix_translocation_2q5tA02
+
+=== cholix_unbound_mutoutside_20_vs_diphtheria_catalytic_1f0lA01 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_20_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/diphtheria_catalytic_1f0lA01.pdb
+⠹ Downloading results... 0:00:06
+
+✓ Completed (2.3s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_20_vs_diphtheria_catalytic_1f0lA01_aligned.pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.2094
+  tm_score_2: 0.5716
+  rmsd: 4.3900
+  sequence_identity: 0.1590
+  aligned_length: 151
+  length_1: 605
+  length_2: 187
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_20_structure.pdb
+  target_pdb_filename: diphtheria_catalytic_1f0lA01.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_20_vs_diphtheria_catalytic_1f0lA01
+
+=== cholix_unbound_mutoutside_20_vs_diphtheria_receptor_binding_1f0lA03 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_20_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/diphtheria_receptor_binding_1f0lA
+03.pdb
+⠋ Downloading results... 0:00:06
+
+✓ Completed (1.8s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_20_vs_diphtheria_receptor_binding_1f0lA03_alig
+ned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.1500
+  tm_score_2: 0.4278
+  rmsd: 5.4300
+  sequence_identity: 0.0420
+  aligned_length: 119
+  length_1: 605
+  length_2: 154
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_20_structure.pdb
+  target_pdb_filename: diphtheria_receptor_binding_1f0lA03.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_20_vs_diphtheria_receptor_binding_1f0lA03
+
+=== cholix_unbound_mutoutside_20_vs_diphtheria_translocation_1f0lA02 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_20_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/diphtheria_translocation_1f0lA02.
+pdb
+⠧ Downloading results... 0:00:06
+
+✓ Completed (2.5s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_20_vs_diphtheria_translocation_1f0lA02_aligned
+.pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.1416
+  tm_score_2: 0.3580
+  rmsd: 5.7800
+  sequence_identity: 0.0520
+  aligned_length: 116
+  length_1: 605
+  length_2: 177
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_20_structure.pdb
+  target_pdb_filename: diphtheria_translocation_1f0lA02.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_20_vs_diphtheria_translocation_1f0lA02
+
+=== cholix_unbound_mutoutside_21_vs_cholix_catalytic_2q5tA03 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_21_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/cholix_catalytic_2q5tA03.pdb
+⠸ Downloading results... 0:00:06
+
+✓ Completed (2.0s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - usalign_cholix_unbound_mutoutside_21_vs_cholix_catalytic_2q5tA03_aligned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.2802
+  tm_score_2: 0.7236
+  rmsd: 3.4400
+  sequence_identity: 0.2790
+  aligned_length: 190
+  length_1: 605
+  length_2: 211
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_21_structure.pdb
+  target_pdb_filename: cholix_catalytic_2q5tA03.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_21_vs_cholix_catalytic_2q5tA03
+
+=== cholix_unbound_mutoutside_21_vs_cholix_receptor_binding_2q5tA01 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_21_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/cholix_receptor_binding_2q5tA01.p
+db
+⠸ Downloading results... 0:00:07
+
+✓ Completed (2.3s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_21_vs_cholix_receptor_binding_2q5tA01_aligned.
+pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.2410
+  tm_score_2: 0.5845
+  rmsd: 4.6400
+  sequence_identity: 0.1420
+  aligned_length: 176
+  length_1: 605
+  length_2: 216
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_21_structure.pdb
+  target_pdb_filename: cholix_receptor_binding_2q5tA01.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_21_vs_cholix_receptor_binding_2q5tA01
+
+=== cholix_unbound_mutoutside_21_vs_cholix_translocation_2q5tA02 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_21_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/cholix_translocation_2q5tA02.pdb
+⠇ Downloading results... 0:00:07
+
+✓ Completed (1.8s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_21_vs_cholix_translocation_2q5tA02_aligned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.1641
+  tm_score_2: 0.4493
+  rmsd: 4.6800
+  sequence_identity: 0.0970
+  aligned_length: 124
+  length_1: 605
+  length_2: 166
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_21_structure.pdb
+  target_pdb_filename: cholix_translocation_2q5tA02.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_21_vs_cholix_translocation_2q5tA02
+
+=== cholix_unbound_mutoutside_21_vs_diphtheria_catalytic_1f0lA01 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_21_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/diphtheria_catalytic_1f0lA01.pdb
+⠸ Downloading results... 0:00:06
+
+✓ Completed (2.2s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_21_vs_diphtheria_catalytic_1f0lA01_aligned.pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.2073
+  tm_score_2: 0.5811
+  rmsd: 3.8000
+  sequence_identity: 0.1460
+  aligned_length: 144
+  length_1: 605
+  length_2: 187
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_21_structure.pdb
+  target_pdb_filename: diphtheria_catalytic_1f0lA01.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_21_vs_diphtheria_catalytic_1f0lA01
+
+=== cholix_unbound_mutoutside_21_vs_diphtheria_receptor_binding_1f0lA03 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_21_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/diphtheria_receptor_binding_1f0lA
+03.pdb
+⠏ Downloading results... 0:00:06
+
+✓ Completed (2.3s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_21_vs_diphtheria_receptor_binding_1f0lA03_alig
+ned.pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.1236
+  tm_score_2: 0.3456
+  rmsd: 5.2100
+  sequence_identity: 0.0620
+  aligned_length: 97
+  length_1: 605
+  length_2: 154
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_21_structure.pdb
+  target_pdb_filename: diphtheria_receptor_binding_1f0lA03.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_21_vs_diphtheria_receptor_binding_1f0lA03
+
+=== cholix_unbound_mutoutside_21_vs_diphtheria_translocation_1f0lA02 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_21_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/diphtheria_translocation_1f0lA02.
+pdb
+⠧ Downloading results... 0:00:13
+
+✓ Completed (2.6s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_21_vs_diphtheria_translocation_1f0lA02_aligned
+.pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.1385
+  tm_score_2: 0.3624
+  rmsd: 5.3800
+  sequence_identity: 0.0730
+  aligned_length: 109
+  length_1: 605
+  length_2: 177
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_21_structure.pdb
+  target_pdb_filename: diphtheria_translocation_1f0lA02.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_21_vs_diphtheria_translocation_1f0lA02
+
+=== cholix_unbound_mutoutside_24_vs_cholix_catalytic_2q5tA03 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_24_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/cholix_catalytic_2q5tA03.pdb
+⠹ Downloading results... 0:00:06
+
+✓ Completed (1.8s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - usalign_cholix_unbound_mutoutside_24_vs_cholix_catalytic_2q5tA03_aligned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.2797
+  tm_score_2: 0.7255
+  rmsd: 3.5300
+  sequence_identity: 0.3160
+  aligned_length: 190
+  length_1: 605
+  length_2: 211
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_24_structure.pdb
+  target_pdb_filename: cholix_catalytic_2q5tA03.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_24_vs_cholix_catalytic_2q5tA03
+
+=== cholix_unbound_mutoutside_24_vs_cholix_receptor_binding_2q5tA01 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_24_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/cholix_receptor_binding_2q5tA01.p
+db
+⠇ Downloading results... 0:00:06
+
+✓ Completed (2.5s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_24_vs_cholix_receptor_binding_2q5tA01_aligned.
+pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.1796
+  tm_score_2: 0.4092
+  rmsd: 5.3000
+  sequence_identity: 0.0860
+  aligned_length: 140
+  length_1: 605
+  length_2: 216
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_24_structure.pdb
+  target_pdb_filename: cholix_receptor_binding_2q5tA01.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_24_vs_cholix_receptor_binding_2q5tA01
+
+=== cholix_unbound_mutoutside_24_vs_cholix_translocation_2q5tA02 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_24_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/cholix_translocation_2q5tA02.pdb
+⠙ Downloading results... 0:00:06
+
+✓ Completed (2.2s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_24_vs_cholix_translocation_2q5tA02_aligned.pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.1348
+  tm_score_2: 0.3846
+  rmsd: 4.7800
+  sequence_identity: 0.2380
+  aligned_length: 101
+  length_1: 605
+  length_2: 166
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_24_structure.pdb
+  target_pdb_filename: cholix_translocation_2q5tA02.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_24_vs_cholix_translocation_2q5tA02
+
+=== cholix_unbound_mutoutside_24_vs_diphtheria_catalytic_1f0lA01 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_24_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/diphtheria_catalytic_1f0lA01.pdb
+⠸ Downloading results... 0:00:07
+
+✓ Completed (1.9s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_24_vs_diphtheria_catalytic_1f0lA01_aligned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.1851
+  tm_score_2: 0.5129
+  rmsd: 4.3300
+  sequence_identity: 0.1820
+  aligned_length: 132
+  length_1: 605
+  length_2: 187
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_24_structure.pdb
+  target_pdb_filename: diphtheria_catalytic_1f0lA01.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_24_vs_diphtheria_catalytic_1f0lA01
+
+=== cholix_unbound_mutoutside_24_vs_diphtheria_receptor_binding_1f0lA03 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_24_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/diphtheria_receptor_binding_1f0lA
+03.pdb
+⠴ Downloading results... 0:00:07
+
+✓ Completed (2.1s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_24_vs_diphtheria_receptor_binding_1f0lA03_alig
+ned.pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.1421
+  tm_score_2: 0.4360
+  rmsd: 4.4500
+  sequence_identity: 0.0480
+  aligned_length: 104
+  length_1: 605
+  length_2: 154
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_24_structure.pdb
+  target_pdb_filename: diphtheria_receptor_binding_1f0lA03.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_24_vs_diphtheria_receptor_binding_1f0lA03
+
+=== cholix_unbound_mutoutside_24_vs_diphtheria_translocation_1f0lA02 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_24_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/diphtheria_translocation_1f0lA02.
+pdb
+⠸ Downloading results... 0:00:06
+
+✓ Completed (2.0s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_24_vs_diphtheria_translocation_1f0lA02_aligned
+.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.1446
+  tm_score_2: 0.3689
+  rmsd: 5.1100
+  sequence_identity: 0.0350
+  aligned_length: 113
+  length_1: 605
+  length_2: 177
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_24_structure.pdb
+  target_pdb_filename: diphtheria_translocation_1f0lA02.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_24_vs_diphtheria_translocation_1f0lA02
+
+=== cholix_unbound_mutoutside_25_vs_cholix_catalytic_2q5tA03 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_25_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/cholix_catalytic_2q5tA03.pdb
+⠹ Downloading results... 0:00:06
+
+✓ Completed (2.3s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - usalign_cholix_unbound_mutoutside_25_vs_cholix_catalytic_2q5tA03_aligned.pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.2544
+  tm_score_2: 0.6689
+  rmsd: 3.1400
+  sequence_identity: 0.3250
+  aligned_length: 169
+  length_1: 605
+  length_2: 211
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_25_structure.pdb
+  target_pdb_filename: cholix_catalytic_2q5tA03.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_25_vs_cholix_catalytic_2q5tA03
+
+=== cholix_unbound_mutoutside_25_vs_cholix_receptor_binding_2q5tA01 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_25_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/cholix_receptor_binding_2q5tA01.p
+db
+⠹ Downloading results... 0:00:06
+
+✓ Completed (1.8s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_25_vs_cholix_receptor_binding_2q5tA01_aligned.
+pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.2621
+  tm_score_2: 0.6451
+  rmsd: 4.2500
+  sequence_identity: 0.1400
+  aligned_length: 186
+  length_1: 605
+  length_2: 216
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_25_structure.pdb
+  target_pdb_filename: cholix_receptor_binding_2q5tA01.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_25_vs_cholix_receptor_binding_2q5tA01
+
+=== cholix_unbound_mutoutside_25_vs_cholix_translocation_2q5tA02 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_25_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/cholix_translocation_2q5tA02.pdb
+⠧ Downloading results... 0:00:06
+
+✓ Completed (1.9s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_25_vs_cholix_translocation_2q5tA02_aligned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.1298
+  tm_score_2: 0.3474
+  rmsd: 5.4200
+  sequence_identity: 0.0490
+  aligned_length: 103
+  length_1: 605
+  length_2: 166
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_25_structure.pdb
+  target_pdb_filename: cholix_translocation_2q5tA02.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_25_vs_cholix_translocation_2q5tA02
+
+=== cholix_unbound_mutoutside_25_vs_diphtheria_catalytic_1f0lA01 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_25_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/diphtheria_catalytic_1f0lA01.pdb
+⠴ Downloading results... 0:00:06
+
+✓ Completed (2.4s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_25_vs_diphtheria_catalytic_1f0lA01_aligned.pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.2158
+  tm_score_2: 0.5972
+  rmsd: 3.8500
+  sequence_identity: 0.1790
+  aligned_length: 151
+  length_1: 605
+  length_2: 187
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_25_structure.pdb
+  target_pdb_filename: diphtheria_catalytic_1f0lA01.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_25_vs_diphtheria_catalytic_1f0lA01
+
+=== cholix_unbound_mutoutside_25_vs_diphtheria_receptor_binding_1f0lA03 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_25_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/diphtheria_receptor_binding_1f0lA
+03.pdb
+⠏ Downloading results... 0:00:07
+
+✓ Completed (1.7s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_25_vs_diphtheria_receptor_binding_1f0lA03_alig
+ned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.1678
+  tm_score_2: 0.5198
+  rmsd: 4.2200
+  sequence_identity: 0.0330
+  aligned_length: 121
+  length_1: 605
+  length_2: 154
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_25_structure.pdb
+  target_pdb_filename: diphtheria_receptor_binding_1f0lA03.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_25_vs_diphtheria_receptor_binding_1f0lA03
+
+=== cholix_unbound_mutoutside_25_vs_diphtheria_translocation_1f0lA02 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_25_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/diphtheria_translocation_1f0lA02.
+pdb
+⠹ Downloading results... 0:00:06
+
+✓ Completed (2.5s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_25_vs_diphtheria_translocation_1f0lA02_aligned
+.pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.1424
+  tm_score_2: 0.3586
+  rmsd: 5.6100
+  sequence_identity: 0.0960
+  aligned_length: 115
+  length_1: 605
+  length_2: 177
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_25_structure.pdb
+  target_pdb_filename: diphtheria_translocation_1f0lA02.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_25_vs_diphtheria_translocation_1f0lA02
+
+=== cholix_unbound_mutoutside_26_vs_cholix_catalytic_2q5tA03 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_26_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/cholix_catalytic_2q5tA03.pdb
+⠏ Downloading results... 0:00:06
+
+✓ Completed (1.8s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - usalign_cholix_unbound_mutoutside_26_vs_cholix_catalytic_2q5tA03_aligned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.2731
+  tm_score_2: 0.7072
+  rmsd: 3.7900
+  sequence_identity: 0.3560
+  aligned_length: 188
+  length_1: 605
+  length_2: 211
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_26_structure.pdb
+  target_pdb_filename: cholix_catalytic_2q5tA03.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_26_vs_cholix_catalytic_2q5tA03
+
+=== cholix_unbound_mutoutside_26_vs_cholix_receptor_binding_2q5tA01 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_26_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/cholix_receptor_binding_2q5tA01.p
+db
+⠏ Downloading results... 0:00:06
+
+✓ Completed (2.4s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_26_vs_cholix_receptor_binding_2q5tA01_aligned.
+pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.1793
+  tm_score_2: 0.4079
+  rmsd: 5.1700
+  sequence_identity: 0.0790
+  aligned_length: 139
+  length_1: 605
+  length_2: 216
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_26_structure.pdb
+  target_pdb_filename: cholix_receptor_binding_2q5tA01.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_26_vs_cholix_receptor_binding_2q5tA01
+
+=== cholix_unbound_mutoutside_26_vs_cholix_translocation_2q5tA02 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_26_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/cholix_translocation_2q5tA02.pdb
+⠙ Downloading results... 0:00:06
+
+✓ Completed (2.4s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_26_vs_cholix_translocation_2q5tA02_aligned.pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.1785
+  tm_score_2: 0.5017
+  rmsd: 4.6400
+  sequence_identity: 0.1130
+  aligned_length: 133
+  length_1: 605
+  length_2: 166
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_26_structure.pdb
+  target_pdb_filename: cholix_translocation_2q5tA02.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_26_vs_cholix_translocation_2q5tA02
+
+=== cholix_unbound_mutoutside_26_vs_diphtheria_catalytic_1f0lA01 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_26_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/diphtheria_catalytic_1f0lA01.pdb
+⠏ Downloading results... 0:00:06
+
+✓ Completed (2.5s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_26_vs_diphtheria_catalytic_1f0lA01_aligned.pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.2076
+  tm_score_2: 0.5729
+  rmsd: 4.2800
+  sequence_identity: 0.1420
+  aligned_length: 148
+  length_1: 605
+  length_2: 187
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_26_structure.pdb
+  target_pdb_filename: diphtheria_catalytic_1f0lA01.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_26_vs_diphtheria_catalytic_1f0lA01
+
+=== cholix_unbound_mutoutside_26_vs_diphtheria_receptor_binding_1f0lA03 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_26_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/diphtheria_receptor_binding_1f0lA
+03.pdb
+⠧ Downloading results... 0:00:06
+
+✓ Completed (1.8s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_26_vs_diphtheria_receptor_binding_1f0lA03_alig
+ned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.1574
+  tm_score_2: 0.4527
+  rmsd: 5.0300
+  sequence_identity: 0.0500
+  aligned_length: 121
+  length_1: 605
+  length_2: 154
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_26_structure.pdb
+  target_pdb_filename: diphtheria_receptor_binding_1f0lA03.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_26_vs_diphtheria_receptor_binding_1f0lA03
+
+=== cholix_unbound_mutoutside_26_vs_diphtheria_translocation_1f0lA02 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_26_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/diphtheria_translocation_1f0lA02.
+pdb
+⠋ Downloading results... 0:00:06
+
+✓ Completed (2.3s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_26_vs_diphtheria_translocation_1f0lA02_aligned
+.pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.1361
+  tm_score_2: 0.3491
+  rmsd: 5.4000
+  sequence_identity: 0.0740
+  aligned_length: 108
+  length_1: 605
+  length_2: 177
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_26_structure.pdb
+  target_pdb_filename: diphtheria_translocation_1f0lA02.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_26_vs_diphtheria_translocation_1f0lA02
+
+=== cholix_unbound_mutoutside_29_vs_cholix_catalytic_2q5tA03 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_29_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/cholix_catalytic_2q5tA03.pdb
+⠴ Downloading results... 0:00:06
+
+✓ Completed (1.9s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - usalign_cholix_unbound_mutoutside_29_vs_cholix_catalytic_2q5tA03_aligned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.2854
+  tm_score_2: 0.7342
+  rmsd: 3.7200
+  sequence_identity: 0.3060
+  aligned_length: 196
+  length_1: 605
+  length_2: 211
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_29_structure.pdb
+  target_pdb_filename: cholix_catalytic_2q5tA03.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_29_vs_cholix_catalytic_2q5tA03
+
+=== cholix_unbound_mutoutside_29_vs_cholix_receptor_binding_2q5tA01 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_29_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/cholix_receptor_binding_2q5tA01.p
+db
+⠋ Downloading results... 0:00:06
+
+✓ Completed (2.4s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_29_vs_cholix_receptor_binding_2q5tA01_aligned.
+pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.1494
+  tm_score_2: 0.3118
+  rmsd: 6.4100
+  sequence_identity: 0.0610
+  aligned_length: 131
+  length_1: 605
+  length_2: 216
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_29_structure.pdb
+  target_pdb_filename: cholix_receptor_binding_2q5tA01.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_29_vs_cholix_receptor_binding_2q5tA01
+
+=== cholix_unbound_mutoutside_29_vs_cholix_translocation_2q5tA02 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_29_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/cholix_translocation_2q5tA02.pdb
+⠼ Downloading results... 0:00:06
+
+✓ Completed (1.8s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_29_vs_cholix_translocation_2q5tA02_aligned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.1371
+  tm_score_2: 0.3571
+  rmsd: 5.6900
+  sequence_identity: 0.0540
+  aligned_length: 112
+  length_1: 605
+  length_2: 166
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_29_structure.pdb
+  target_pdb_filename: cholix_translocation_2q5tA02.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_29_vs_cholix_translocation_2q5tA02
+
+=== cholix_unbound_mutoutside_29_vs_diphtheria_catalytic_1f0lA01 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_29_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/diphtheria_catalytic_1f0lA01.pdb
+⠧ Downloading results... 0:00:06
+
+✓ Completed (2.5s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_29_vs_diphtheria_catalytic_1f0lA01_aligned.pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.2097
+  tm_score_2: 0.5805
+  rmsd: 4.0500
+  sequence_identity: 0.1690
+  aligned_length: 148
+  length_1: 605
+  length_2: 187
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_29_structure.pdb
+  target_pdb_filename: diphtheria_catalytic_1f0lA01.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_29_vs_diphtheria_catalytic_1f0lA01
+
+=== cholix_unbound_mutoutside_29_vs_diphtheria_receptor_binding_1f0lA03 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_29_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/diphtheria_receptor_binding_1f0lA
+03.pdb
+⠇ Downloading results... 0:00:06
+
+✓ Completed (1.9s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_29_vs_diphtheria_receptor_binding_1f0lA03_alig
+ned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.1211
+  tm_score_2: 0.3379
+  rmsd: 5.1900
+  sequence_identity: 0.0530
+  aligned_length: 95
+  length_1: 605
+  length_2: 154
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_29_structure.pdb
+  target_pdb_filename: diphtheria_receptor_binding_1f0lA03.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_29_vs_diphtheria_receptor_binding_1f0lA03
+
+=== cholix_unbound_mutoutside_29_vs_diphtheria_translocation_1f0lA02 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_29_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/diphtheria_translocation_1f0lA02.
+pdb
+⠼ Downloading results... 0:00:06
+
+✓ Completed (2.6s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_29_vs_diphtheria_translocation_1f0lA02_aligned
+.pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.1374
+  tm_score_2: 0.3590
+  rmsd: 5.3700
+  sequence_identity: 0.0740
+  aligned_length: 108
+  length_1: 605
+  length_2: 177
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_29_structure.pdb
+  target_pdb_filename: diphtheria_translocation_1f0lA02.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_29_vs_diphtheria_translocation_1f0lA02
+
+=== cholix_unbound_mutoutside_30_vs_cholix_catalytic_2q5tA03 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_30_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/cholix_catalytic_2q5tA03.pdb
+⠼ Downloading results... 0:00:06
+
+✓ Completed (1.8s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - usalign_cholix_unbound_mutoutside_30_vs_cholix_catalytic_2q5tA03_aligned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.2928
+  tm_score_2: 0.7609
+  rmsd: 3.4000
+  sequence_identity: 0.3180
+  aligned_length: 198
+  length_1: 605
+  length_2: 211
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_30_structure.pdb
+  target_pdb_filename: cholix_catalytic_2q5tA03.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_30_vs_cholix_catalytic_2q5tA03
+
+=== cholix_unbound_mutoutside_30_vs_cholix_receptor_binding_2q5tA01 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_30_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/cholix_receptor_binding_2q5tA01.p
+db
+⠙ Downloading results... 0:00:06
+
+✓ Completed (2.4s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_30_vs_cholix_receptor_binding_2q5tA01_aligned.
+pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.1700
+  tm_score_2: 0.3685
+  rmsd: 5.9200
+  sequence_identity: 0.0350
+  aligned_length: 141
+  length_1: 605
+  length_2: 216
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_30_structure.pdb
+  target_pdb_filename: cholix_receptor_binding_2q5tA01.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_30_vs_cholix_receptor_binding_2q5tA01
+
+=== cholix_unbound_mutoutside_30_vs_cholix_translocation_2q5tA02 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_30_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/cholix_translocation_2q5tA02.pdb
+⠏ Downloading results... 0:00:06
+
+✓ Completed (2.3s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_30_vs_cholix_translocation_2q5tA02_aligned.pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.1255
+  tm_score_2: 0.3373
+  rmsd: 5.3400
+  sequence_identity: 0.0510
+  aligned_length: 99
+  length_1: 605
+  length_2: 166
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_30_structure.pdb
+  target_pdb_filename: cholix_translocation_2q5tA02.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_30_vs_cholix_translocation_2q5tA02
+
+=== cholix_unbound_mutoutside_30_vs_diphtheria_catalytic_1f0lA01 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_30_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/diphtheria_catalytic_1f0lA01.pdb
+⠦ Downloading results... 0:00:06
+
+✓ Completed (2.2s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_30_vs_diphtheria_catalytic_1f0lA01_aligned.pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.2033
+  tm_score_2: 0.5582
+  rmsd: 4.0900
+  sequence_identity: 0.1460
+  aligned_length: 144
+  length_1: 605
+  length_2: 187
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_30_structure.pdb
+  target_pdb_filename: diphtheria_catalytic_1f0lA01.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_30_vs_diphtheria_catalytic_1f0lA01
+
+=== cholix_unbound_mutoutside_30_vs_diphtheria_receptor_binding_1f0lA03 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_30_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/diphtheria_receptor_binding_1f0lA
+03.pdb
+⠦ Downloading results... 0:00:07
+
+✓ Completed (1.7s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_30_vs_diphtheria_receptor_binding_1f0lA03_alig
+ned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.1309
+  tm_score_2: 0.3757
+  rmsd: 5.1900
+  sequence_identity: 0.0980
+  aligned_length: 102
+  length_1: 605
+  length_2: 154
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_30_structure.pdb
+  target_pdb_filename: diphtheria_receptor_binding_1f0lA03.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_30_vs_diphtheria_receptor_binding_1f0lA03
+
+=== cholix_unbound_mutoutside_30_vs_diphtheria_translocation_1f0lA02 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_30_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/diphtheria_translocation_1f0lA02.
+pdb
+⠹ Downloading results... 0:00:06
+
+✓ Completed (1.8s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_30_vs_diphtheria_translocation_1f0lA02_aligned
+.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.1420
+  tm_score_2: 0.3553
+  rmsd: 5.7400
+  sequence_identity: 0.0600
+  aligned_length: 116
+  length_1: 605
+  length_2: 177
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_30_structure.pdb
+  target_pdb_filename: diphtheria_translocation_1f0lA02.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_30_vs_diphtheria_translocation_1f0lA02
+
+=== cholix_unbound_mutoutside_4_vs_cholix_catalytic_2q5tA03 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_4_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/cholix_catalytic_2q5tA03.pdb
+⠏ Downloading results... 0:00:06
+
+✓ Completed (2.0s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - usalign_cholix_unbound_mutoutside_4_vs_cholix_catalytic_2q5tA03_aligned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.2947
+  tm_score_2: 0.7616
+  rmsd: 3.3400
+  sequence_identity: 0.3420
+  aligned_length: 199
+  length_1: 605
+  length_2: 211
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_4_structure.pdb
+  target_pdb_filename: cholix_catalytic_2q5tA03.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_4_vs_cholix_catalytic_2q5tA03
+
+=== cholix_unbound_mutoutside_4_vs_cholix_receptor_binding_2q5tA01 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_4_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/cholix_receptor_binding_2q5tA01.p
+db
+⠧ Downloading results... 0:00:06
+
+✓ Completed (2.3s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_4_vs_cholix_receptor_binding_2q5tA01_aligned.p
+db
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.2675
+  tm_score_2: 0.6648
+  rmsd: 3.5000
+  sequence_identity: 0.1750
+  aligned_length: 183
+  length_1: 605
+  length_2: 216
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_4_structure.pdb
+  target_pdb_filename: cholix_receptor_binding_2q5tA01.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_4_vs_cholix_receptor_binding_2q5tA01
+
+=== cholix_unbound_mutoutside_4_vs_cholix_translocation_2q5tA02 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_4_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/cholix_translocation_2q5tA02.pdb
+⠼ Downloading results... 0:00:06
+
+✓ Completed (2.3s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_4_vs_cholix_translocation_2q5tA02_aligned.pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.1579
+  tm_score_2: 0.4478
+  rmsd: 4.7000
+  sequence_identity: 0.1270
+  aligned_length: 118
+  length_1: 605
+  length_2: 166
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_4_structure.pdb
+  target_pdb_filename: cholix_translocation_2q5tA02.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_4_vs_cholix_translocation_2q5tA02
+
+=== cholix_unbound_mutoutside_4_vs_diphtheria_catalytic_1f0lA01 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_4_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/diphtheria_catalytic_1f0lA01.pdb
+⠋ Downloading results... 0:00:08
+
+✓ Completed (1.8s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_4_vs_diphtheria_catalytic_1f0lA01_aligned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.2009
+  tm_score_2: 0.5691
+  rmsd: 3.8600
+  sequence_identity: 0.1800
+  aligned_length: 139
+  length_1: 605
+  length_2: 187
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_4_structure.pdb
+  target_pdb_filename: diphtheria_catalytic_1f0lA01.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_4_vs_diphtheria_catalytic_1f0lA01
+
+=== cholix_unbound_mutoutside_4_vs_diphtheria_receptor_binding_1f0lA03 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_4_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/diphtheria_receptor_binding_1f0lA
+03.pdb
+⠸ Downloading results... 0:00:07
+
+✓ Completed (2.3s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_4_vs_diphtheria_receptor_binding_1f0lA03_align
+ed.pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.1759
+  tm_score_2: 0.5521
+  rmsd: 4.0100
+  sequence_identity: 0.0880
+  aligned_length: 125
+  length_1: 605
+  length_2: 154
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_4_structure.pdb
+  target_pdb_filename: diphtheria_receptor_binding_1f0lA03.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_4_vs_diphtheria_receptor_binding_1f0lA03
+
+=== cholix_unbound_mutoutside_4_vs_diphtheria_translocation_1f0lA02 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_4_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/diphtheria_translocation_1f0lA02.
+pdb
+⠴ Downloading results... 0:00:06
+
+✓ Completed (2.1s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_4_vs_diphtheria_translocation_1f0lA02_aligned.
+pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.1599
+  tm_score_2: 0.3773
+  rmsd: 6.0800
+  sequence_identity: 0.0880
+  aligned_length: 137
+  length_1: 605
+  length_2: 177
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_4_structure.pdb
+  target_pdb_filename: diphtheria_translocation_1f0lA02.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_4_vs_diphtheria_translocation_1f0lA02
+
+=== cholix_unbound_mutoutside_5_vs_cholix_catalytic_2q5tA03 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_5_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/cholix_catalytic_2q5tA03.pdb
+⠼ Downloading results... 0:00:06
+
+✓ Completed (2.5s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - usalign_cholix_unbound_mutoutside_5_vs_cholix_catalytic_2q5tA03_aligned.pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.2584
+  tm_score_2: 0.6521
+  rmsd: 4.1600
+  sequence_identity: 0.2620
+  aligned_length: 183
+  length_1: 605
+  length_2: 211
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_5_structure.pdb
+  target_pdb_filename: cholix_catalytic_2q5tA03.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_5_vs_cholix_catalytic_2q5tA03
+
+=== cholix_unbound_mutoutside_5_vs_cholix_receptor_binding_2q5tA01 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_5_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/cholix_receptor_binding_2q5tA01.p
+db
+⠼ Downloading results... 0:00:06
+
+✓ Completed (1.9s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_5_vs_cholix_receptor_binding_2q5tA01_aligned.p
+db
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.1586
+  tm_score_2: 0.3303
+  rmsd: 6.2000
+  sequence_identity: 0.0660
+  aligned_length: 137
+  length_1: 605
+  length_2: 216
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_5_structure.pdb
+  target_pdb_filename: cholix_receptor_binding_2q5tA01.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_5_vs_cholix_receptor_binding_2q5tA01
+
+=== cholix_unbound_mutoutside_5_vs_cholix_translocation_2q5tA02 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_5_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/cholix_translocation_2q5tA02.pdb
+⠹ Downloading results... 0:00:08
+
+✓ Completed (2.3s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_5_vs_cholix_translocation_2q5tA02_aligned.pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.1304
+  tm_score_2: 0.3730
+  rmsd: 4.6000
+  sequence_identity: 0.1240
+  aligned_length: 97
+  length_1: 605
+  length_2: 166
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_5_structure.pdb
+  target_pdb_filename: cholix_translocation_2q5tA02.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_5_vs_cholix_translocation_2q5tA02
+
+=== cholix_unbound_mutoutside_5_vs_diphtheria_catalytic_1f0lA01 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_5_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/diphtheria_catalytic_1f0lA01.pdb
+⠋ Downloading results... 0:00:09
+
+✓ Completed (1.8s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_5_vs_diphtheria_catalytic_1f0lA01_aligned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.2015
+  tm_score_2: 0.5613
+  rmsd: 3.7500
+  sequence_identity: 0.1360
+  aligned_length: 140
+  length_1: 605
+  length_2: 187
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_5_structure.pdb
+  target_pdb_filename: diphtheria_catalytic_1f0lA01.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_5_vs_diphtheria_catalytic_1f0lA01
+
+=== cholix_unbound_mutoutside_5_vs_diphtheria_receptor_binding_1f0lA03 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_5_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/diphtheria_receptor_binding_1f0lA
+03.pdb
+⠏ Downloading results... 0:00:10
+
+✓ Completed (1.8s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_5_vs_diphtheria_receptor_binding_1f0lA03_align
+ed.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.1241
+  tm_score_2: 0.3490
+  rmsd: 5.3500
+  sequence_identity: 0.0920
+  aligned_length: 98
+  length_1: 605
+  length_2: 154
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_5_structure.pdb
+  target_pdb_filename: diphtheria_receptor_binding_1f0lA03.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_5_vs_diphtheria_receptor_binding_1f0lA03
+
+=== cholix_unbound_mutoutside_5_vs_diphtheria_translocation_1f0lA02 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_5_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/diphtheria_translocation_1f0lA02.
+pdb
+⠼ Downloading results... 0:00:05
+
+✓ Completed (2.4s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_5_vs_diphtheria_translocation_1f0lA02_aligned.
+pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.1388
+  tm_score_2: 0.3576
+  rmsd: 4.9100
+  sequence_identity: 0.0650
+  aligned_length: 107
+  length_1: 605
+  length_2: 177
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_5_structure.pdb
+  target_pdb_filename: diphtheria_translocation_1f0lA02.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_5_vs_diphtheria_translocation_1f0lA02
+
+=== cholix_unbound_mutoutside_6_vs_cholix_catalytic_2q5tA03 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_6_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/cholix_catalytic_2q5tA03.pdb
+⠹ Downloading results... 0:00:06
+
+✓ Completed (2.4s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - usalign_cholix_unbound_mutoutside_6_vs_cholix_catalytic_2q5tA03_aligned.pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.2761
+  tm_score_2: 0.7198
+  rmsd: 3.6200
+  sequence_identity: 0.3240
+  aligned_length: 188
+  length_1: 605
+  length_2: 211
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_6_structure.pdb
+  target_pdb_filename: cholix_catalytic_2q5tA03.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_6_vs_cholix_catalytic_2q5tA03
+
+=== cholix_unbound_mutoutside_6_vs_cholix_receptor_binding_2q5tA01 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_6_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/cholix_receptor_binding_2q5tA01.p
+db
+⠇ Downloading results... 0:00:06
+
+✓ Completed (1.9s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_6_vs_cholix_receptor_binding_2q5tA01_aligned.p
+db
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.1704
+  tm_score_2: 0.3656
+  rmsd: 5.7600
+  sequence_identity: 0.0570
+  aligned_length: 141
+  length_1: 605
+  length_2: 216
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_6_structure.pdb
+  target_pdb_filename: cholix_receptor_binding_2q5tA01.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_6_vs_cholix_receptor_binding_2q5tA01
+
+=== cholix_unbound_mutoutside_6_vs_cholix_translocation_2q5tA02 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_6_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/cholix_translocation_2q5tA02.pdb
+⠏ Downloading results... 0:00:06
+
+✓ Completed (2.0s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_6_vs_cholix_translocation_2q5tA02_aligned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.1452
+  tm_score_2: 0.4086
+  rmsd: 4.8500
+  sequence_identity: 0.1180
+  aligned_length: 110
+  length_1: 605
+  length_2: 166
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_6_structure.pdb
+  target_pdb_filename: cholix_translocation_2q5tA02.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_6_vs_cholix_translocation_2q5tA02
+
+=== cholix_unbound_mutoutside_6_vs_diphtheria_catalytic_1f0lA01 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_6_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/diphtheria_catalytic_1f0lA01.pdb
+⠋ Downloading results... 0:00:08
+
+✓ Completed (2.4s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_6_vs_diphtheria_catalytic_1f0lA01_aligned.pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.2111
+  tm_score_2: 0.5770
+  rmsd: 4.1900
+  sequence_identity: 0.1130
+  aligned_length: 151
+  length_1: 605
+  length_2: 187
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_6_structure.pdb
+  target_pdb_filename: diphtheria_catalytic_1f0lA01.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_6_vs_diphtheria_catalytic_1f0lA01
+
+=== cholix_unbound_mutoutside_6_vs_diphtheria_receptor_binding_1f0lA03 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_6_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/diphtheria_receptor_binding_1f0lA
+03.pdb
+⠸ Downloading results... 0:00:05
+
+✓ Completed (2.4s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_6_vs_diphtheria_receptor_binding_1f0lA03_align
+ed.pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.1457
+  tm_score_2: 0.4242
+  rmsd: 4.9100
+  sequence_identity: 0.0450
+  aligned_length: 111
+  length_1: 605
+  length_2: 154
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_6_structure.pdb
+  target_pdb_filename: diphtheria_receptor_binding_1f0lA03.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_6_vs_diphtheria_receptor_binding_1f0lA03
+
+=== cholix_unbound_mutoutside_6_vs_diphtheria_translocation_1f0lA02 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_6_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/diphtheria_translocation_1f0lA02.
+pdb
+⠋ Downloading results... 0:00:06
+
+✓ Completed (1.8s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_6_vs_diphtheria_translocation_1f0lA02_aligned.
+pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.1680
+  tm_score_2: 0.4494
+  rmsd: 4.8600
+  sequence_identity: 0.0710
+  aligned_length: 127
+  length_1: 605
+  length_2: 177
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_6_structure.pdb
+  target_pdb_filename: diphtheria_translocation_1f0lA02.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_6_vs_diphtheria_translocation_1f0lA02
+
+=== cholix_unbound_mutoutside_9_vs_cholix_catalytic_2q5tA03 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_9_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/cholix_catalytic_2q5tA03.pdb
+⠴ Downloading results... 0:00:06
+
+✓ Completed (2.4s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - usalign_cholix_unbound_mutoutside_9_vs_cholix_catalytic_2q5tA03_aligned.pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.2836
+  tm_score_2: 0.7195
+  rmsd: 3.7900
+  sequence_identity: 0.3450
+  aligned_length: 197
+  length_1: 605
+  length_2: 211
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_9_structure.pdb
+  target_pdb_filename: cholix_catalytic_2q5tA03.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_9_vs_cholix_catalytic_2q5tA03
+
+=== cholix_unbound_mutoutside_9_vs_cholix_receptor_binding_2q5tA01 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_9_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/cholix_receptor_binding_2q5tA01.p
+db
+⠸ Downloading results... 0:00:06
+
+✓ Completed (1.9s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_9_vs_cholix_receptor_binding_2q5tA01_aligned.p
+db
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.1829
+  tm_score_2: 0.3963
+  rmsd: 5.7300
+  sequence_identity: 0.0600
+  aligned_length: 150
+  length_1: 605
+  length_2: 216
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_9_structure.pdb
+  target_pdb_filename: cholix_receptor_binding_2q5tA01.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_9_vs_cholix_receptor_binding_2q5tA01
+
+=== cholix_unbound_mutoutside_9_vs_cholix_translocation_2q5tA02 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_9_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/cholix_translocation_2q5tA02.pdb
+⠏ Downloading results... 0:00:06
+
+✓ Completed (1.7s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_9_vs_cholix_translocation_2q5tA02_aligned.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.1604
+  tm_score_2: 0.4727
+  rmsd: 4.1200
+  sequence_identity: 0.1300
+  aligned_length: 115
+  length_1: 605
+  length_2: 166
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_9_structure.pdb
+  target_pdb_filename: cholix_translocation_2q5tA02.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_9_vs_cholix_translocation_2q5tA02
+
+=== cholix_unbound_mutoutside_9_vs_diphtheria_catalytic_1f0lA01 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_9_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/diphtheria_catalytic_1f0lA01.pdb
+
+Warning: Could not download files automatically.
+
+Files available at:
+  aligned_pdb_filepath: 
+https://rpzmsqzybosbvnkqvgdo.supabase.co/storage/v1/object/sign/user-files/cli/a
+af06e98-8825-404b-b5e1-070b3593186d/usalign_cholix_unbound_mutoutside_9_vs_dipht
+heria_catalytic_1f0lA01_aligned.pdb?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLW
+tleV9lOGEzMzJhMS1lNDQzLTRhOTEtYTMwZC1hMWY4NmExZDQzNTkiLCJhbGciOiJIUzI1NiJ9.eyJ1c
+mwiOiJ1c2VyLWZpbGVzL2NsaS9hYWYwNmU5OC04ODI1LTQwNGItYjVlMS0wNzBiMzU5MzE4NmQvdXNhb
+Glnbl9jaG9saXhfdW5ib3VuZF9tdXRvdXRzaWRlXzlfdnNfZGlwaHRoZXJpYV9jYXRhbHl0aWNfMWYwb
+EEwMV9hbGlnbmVkLnBkYiIsImlhdCI6MTc3Mjg1NDMwMSwiZXhwIjoxNzcyODU3OTAxfQ.zt5zNonS7O
+v3pCw6eKZUAwQom2nPS6BTzFKtcXRDeXc
+⠧ Downloading results... 0:00:06
+
+✓ Completed (2.5s)
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.1977
+  tm_score_2: 0.5673
+  rmsd: 3.4300
+  sequence_identity: 0.1490
+  aligned_length: 134
+  length_1: 605
+  length_2: 187
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_9_structure.pdb
+  target_pdb_filename: diphtheria_catalytic_1f0lA01.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_9_vs_diphtheria_catalytic_1f0lA01
+
+=== cholix_unbound_mutoutside_9_vs_diphtheria_receptor_binding_1f0lA03 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_9_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/diphtheria_receptor_binding_1f0lA
+03.pdb
+⠏ Downloading results... 0:00:09
+
+✓ Completed (1.7s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_9_vs_diphtheria_receptor_binding_1f0lA03_align
+ed.pdb
+Cost: $0.0000
+
+Output data
+  tm_score_1: 0.1326
+  tm_score_2: 0.4120
+  rmsd: 3.9200
+  sequence_identity: 0.0640
+  aligned_length: 94
+  length_1: 605
+  length_2: 154
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_9_structure.pdb
+  target_pdb_filename: diphtheria_receptor_binding_1f0lA03.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_9_vs_diphtheria_receptor_binding_1f0lA03
+
+=== cholix_unbound_mutoutside_9_vs_diphtheria_translocation_1f0lA02 ===
+Read mobile structure from 
+/home/zyl22/biosecurity_screener/results/boltz2/cholix_t1.5_passed/boltz2_cholix
+_unbound_mutoutside_9_structure.pdb
+Read target structure from 
+/home/zyl22/biosecurity_screener/structural_db/diphtheria_translocation_1f0lA02.
+pdb
+⠹ Downloading results... 0:00:06
+
+✓ Completed (2.4s)
+✓ Downloaded 1 file(s) to 
+/home/zyl22/biosecurity_screener/results/usalign/cholix_t1.5_passed/
+  - 
+usalign_cholix_unbound_mutoutside_9_vs_diphtheria_translocation_1f0lA02_aligned.
+pdb
+Cost: $0.0001
+
+Output data
+  tm_score_1: 0.1393
+  tm_score_2: 0.3421
+  rmsd: 5.8000
+  sequence_identity: 0.0870
+  aligned_length: 115
+  length_1: 605
+  length_2: 177
+
+Input parameters:
+  mobile_pdb_filename: boltz2_cholix_unbound_mutoutside_9_structure.pdb
+  target_pdb_filename: diphtheria_translocation_1f0lA02.pdb
+  alignment_mode: monomer
+  ter_option: 1
+  mm_option: 2
+  job_name: cholix_unbound_mutoutside_9_vs_diphtheria_translocation_1f0lA02
+
