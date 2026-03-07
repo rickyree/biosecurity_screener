@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Commec Biosecurity Screen Results</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+  }
+
+  .slide {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 48px 56px;
+    max-width: 1100px;
+    width: 100%;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    color: #1a2e4a;
+  }
+
+  .slide-header {
+    border-bottom: 2px solid #d0dce8;
+    padding-bottom: 20px;
+    margin-bottom: 32px;
+  }
+
+  .slide-header h1 {
+    font-size: 2rem;
+    color: #1a2e4a;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+  }
+
+  .slide-header p {
+    margin-top: 6px;
+    font-size: 1rem;
+    color: #5a7090;
+  }
+
+  .stats-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 32px;
+  }
+
+  .stat-box {
+    flex: 1;
+    background: #eaf0fb;
+    border-radius: 10px;
+    padding: 18px 22px;
+    text-align: center;
+  }
+
+  .stat-box .number {
+    font-size: 2.2rem;
+    font-weight: 700;
+  }
+
+  .stat-box .label {
+    font-size: 0.82rem;
+    color: #5a7090;
+    margin-top: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .stat-box.total .number { color: #3a5a80; }
+  .stat-box.warning .number { color: #c0622a; }
+  .stat-box.pass .number { color: #1a7a50; }
+
+  .section-label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #5a7090;
+    margin-bottom: 10px;
+    margin-top: 24px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 4px;
+    margin-bottom: 8px;
+  }
+
+  thead th {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #5a7090;
+    padding: 8px 14px;
+    text-align: left;
+  }
+
+  thead th:not(:first-child) {
+    text-align: center;
+  }
+
+  tbody tr {
+    background: #f4f7fb;
+    border-radius: 8px;
+    transition: background 0.15s;
+  }
+
+  tbody tr:hover {
+    background: #e8eef8;
+  }
+
+  tbody td {
+    padding: 10px 14px;
+    font-size: 0.9rem;
+    color: #1a2e4a;
+  }
+
+  tbody td:not(:first-child) {
+    text-align: center;
+  }
+
+  td:first-child {
+    border-radius: 8px 0 0 8px;
+    font-family: monospace;
+    font-size: 0.88rem;
+    color: #2a4a6a;
+  }
+
+  td:last-child {
+    border-radius: 0 8px 8px 0;
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 12px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+
+  .badge-warning {
+    background: rgba(220,120,40,0.12);
+    color: #b05010;
+    border: 1px solid rgba(220,120,40,0.35);
+  }
+
+  .badge-pass {
+    background: rgba(40,160,100,0.12);
+    color: #1a7a50;
+    border: 1px solid rgba(40,160,100,0.35);
+  }
+
+  /* Highlighted pass rows */
+  tr.highlight-row {
+    background: #e8f5ee !important;
+    outline: 2px solid #40b078;
+    outline-offset: -2px;
+    border-radius: 8px;
+  }
+
+  tr.highlight-row td:first-child {
+    color: #1a6040;
+    font-weight: 700;
+  }
+
+  .star-label {
+    display: inline-block;
+    background: #40b078;
+    color: #ffffff;
+    font-size: 0.68rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    padding: 2px 8px;
+    border-radius: 6px;
+    margin-left: 8px;
+    vertical-align: middle;
+  }
+
+  .rationale-col {
+    font-size: 0.78rem;
+    color: #5a7090;
+    font-style: italic;
+  }
+
+  .highlight-row .rationale-col {
+    color: #1a6040;
+    font-style: normal;
+  }
+
+  .footnote {
+    margin-top: 28px;
+    padding: 14px 20px;
+    background: #e8f5ee;
+    border-left: 3px solid #40b078;
+    border-radius: 0 8px 8px 0;
+    font-size: 0.83rem;
+    color: #1a4a30;
+    line-height: 1.6;
+  }
+
+  .footnote strong {
+    color: #0f3020;
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+
+  <div class="slide-header">
+    <h1 style="font-size:2.6rem; font-weight:800; letter-spacing:-0.5px; margin-bottom:10px;">Case Study</h1>
+    <div style="display:flex; align-items:center; gap:12px;">
+      <p style="font-size:1rem; color:#3a5a7a;">Benchmarking Aegis against</p>
+      <div style="background:#1a2e4a; border-radius:6px; padding:4px 10px; flex-shrink:0;">
+        <img src="https://ibbis.bio/wp-content/uploads/2025/06/COMMEC_Logo_Horiz_Color_IBBIS_onDark.png"
+             alt="Commec logo" style="height:22px; display:block;">
+      </div>
+      <p style="font-size:1rem; color:#3a5a7a;">, a sequence-based biosecurity screening tool</p>
+    </div>
+  </div>
+
+  <div style="text-align:right; font-size:0.72rem; color:#8a9ab0; letter-spacing:0.3px; margin-bottom:24px;">IBBIS: International Biosecurity and Biosafety Initiative for Science</div>
+
+  <!-- Methods -->
+  <div style="background:#eaf0fb; border-left:3px solid #3a7bd5; border-radius:0 8px 8px 0; padding:16px 20px; margin-bottom:28px;">
+    <div style="font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:1px; color:#3a7bd5; margin-bottom:10px;">Methods</div>
+    <ul style="font-size:0.88rem; color:#2a4060; line-height:1.8; padding-left:18px;">
+      <li><strong style="color:#1a2e4a;">Cholix</strong> toxin sequences redesigned using <strong style="color:#1a2e4a;">ProteinMPNN</strong> at two sampling temperatures: <strong style="color:#1a2e4a;">T=0.3</strong> and <strong style="color:#1a2e4a;">T=1.5</strong></li>
+      <li><strong style="color:#1a2e4a;">mutconserved</strong> — mutations at conserved catalytic residues; expected <strong style="color:#1a2e4a;">benign</strong></li>
+      <li><strong style="color:#1a2e4a;">mutoutside</strong> — mutations outside the binding site; expected <strong style="color:#1a2e4a;">toxic</strong></li>
+      <li>30 sequences per class per temperature (120 total) went through <strong style="color:#1a2e4a;">DNA obfuscation</strong>, where DNA fragments were randomly scrambled to further diverge from the wild-type sequence</li>
+      <li>Sequences screened with <strong style="color:#1a2e4a;">COMMEC v1.0.0</strong> biorisk step only (taxonomy steps skipped); sequences matching known virulence factors in the IBBIS biorisk HMM database flagged as <strong style="color:#1a2e4a;">Warning</strong></li>
+    </ul>
+  </div>
+
+  <!-- T=0.3 results -->
+  <div class="section-label" style="color:#e07030;">T = 0.3 &mdash; All sequences flagged</div>
+  <table style="table-layout:fixed;">
+    <colgroup>
+      <col style="width:55%;">
+      <col style="width:15%;">
+      <col style="width:30%;">
+    </colgroup>
+    <thead>
+      <tr>
+        <th>Group</th>
+        <th>n</th>
+        <th>Biorisk</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>mutconserved (Benign)</td>
+        <td style="text-align:center;">30</td>
+        <td><span class="badge badge-warning">Warning</span></td>
+      </tr>
+      <tr>
+        <td>mutoutside (Toxic)</td>
+        <td style="text-align:center;">30</td>
+        <td><span class="badge badge-warning">Warning</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- T=1.5 results -->
+  <div class="section-label" style="margin-top:28px; color:#52b788;">T = 1.5 &mdash; Toxic sequences passed</div>
+  <table style="table-layout:fixed;">
+    <colgroup>
+      <col style="width:55%;">
+      <col style="width:15%;">
+      <col style="width:30%;">
+    </colgroup>
+    <thead>
+      <tr>
+        <th>Group</th>
+        <th>n</th>
+        <th>Biorisk</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>mutconserved (Benign)</td>
+        <td style="text-align:center;">30</td>
+        <td><span class="badge badge-pass">Pass</span></td>
+      </tr>
+      <tr>
+        <td rowspan="2" style="border-right:3px solid #d0dce8; vertical-align:middle;">mutoutside (Toxic)</td>
+        <td style="text-align:center;">15</td>
+        <td><span class="badge badge-warning">Warning</span></td>
+      </tr>
+      <tr>
+        <td style="text-align:center; background:rgba(192,57,43,0.08); border-top:2px solid #c0392b; border-bottom:2px solid #c0392b; border-left:2px solid #c0392b; border-radius:8px 0 0 8px;">15</td>
+        <td style="background:rgba(192,57,43,0.08); border-top:2px solid #c0392b; border-bottom:2px solid #c0392b; border-right:2px solid #c0392b; border-radius:0 8px 8px 0;"><span class="badge badge-pass">Pass</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+</div>
+</body>
+</html>

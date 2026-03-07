@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      height: 100%;
+      overflow: hidden;
+    }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f0f4f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 32px;
+    }
+
+    .slide {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 40px 56px 32px;
+      max-width: 1000px;
+      width: 100%;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+      color: #1a2e4a;
+    }
+
+    h2 {
+      color: #1a2e4a;
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin: 0 0 6px 0;
+      letter-spacing: -0.3px;
+    }
+
+    .subtitle {
+      color: #5a7090;
+      font-size: 0.9rem;
+      margin: 0 0 20px 0;
+      font-family: monospace;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+    }
+
+    thead tr {
+      border-bottom: 2px solid #d0dce8;
+    }
+
+    th {
+      color: #5a7090;
+      font-weight: 600;
+      text-align: left;
+      padding: 8px 14px;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+    }
+
+    th.num { text-align: right; }
+
+    td {
+      padding: 8px 14px;
+      color: #1a2e4a;
+      border-bottom: 1px solid #e8eef8;
+    }
+
+    td.num { text-align: right; font-family: monospace; font-size: 0.9rem; }
+
+    td.domain {
+      font-family: monospace;
+      font-size: 0.88rem;
+      color: #3a5a7a;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 3px 11px;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    .badge-high   { background: rgba(220,38,38,0.10); color: #b91c1c; border: 1px solid rgba(220,38,38,0.30); }
+    .badge-medium { background: rgba(217,119,6,0.10);  color: #b45309; border: 1px solid rgba(217,119,6,0.30); }
+    .badge-low    { background: #f1f5f9; color: #64748b; border: 1px solid #cbd5e1; }
+
+    .tm-high   { color: #b91c1c; font-weight: 700; }
+    .tm-medium { color: #b45309; font-weight: 600; }
+    .tm-low    { color: #94a3b8; }
+
+    .legend {
+      margin-top: 16px;
+      display: flex;
+      gap: 24px;
+      font-size: 0.82rem;
+      color: #5a7090;
+    }
+
+    .legend-item { display: flex; align-items: center; gap: 8px; }
+    .legend-dot {
+      width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0;
+    }
+    .dot-high   { background: #b91c1c; }
+    .dot-medium { background: #b45309; }
+    .dot-low    { background: #94a3b8; }
+
+    .note {
+      margin-top: 8px;
+      font-size: 0.78rem;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <h2>Structural Homology: Measuring TM-score against cholix domain targets</h2>
+    <p class="subtitle">3 domains: catalytic, translocation, receptor-binding &nbsp;</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Sequence</th>
+          <th class="num">Max TM-score₂</th>
+          <th>Best Target</th>
+          <th>Detection</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="domain">Toxic sequence 17</td>
+          <td class="num tm-high">0.859</td>
+          <td class="domain">catalytic domain</td>
+          <td><span class="badge badge-high">FLAGGED</span></td>
+        </tr>
+        <tr>
+          <td class="domain">Toxic sequence 16</td>
+          <td class="num tm-high">0.780</td>
+          <td class="domain">catalytic domain</td>
+          <td><span class="badge badge-high">FLAGGED</span></td>
+        </tr>
+        <tr>
+          <td class="domain">Toxic sequence 4</td>
+          <td class="num tm-high">0.762</td>
+          <td class="domain">catalytic domain</td>
+          <td><span class="badge badge-high">FLAGGED</span></td>
+        </tr>
+        <tr>
+          <td class="domain">Toxic sequence 30</td>
+          <td class="num tm-high">0.761</td>
+          <td class="domain">catalytic domain</td>
+          <td><span class="badge badge-high">FLAGGED</span></td>
+        </tr>
+        <tr>
+          <td class="domain">Toxic sequence 19</td>
+          <td class="num tm-high">0.749</td>
+          <td class="domain">catalytic domain</td>
+          <td><span class="badge badge-high">FLAGGED</span></td>
+        </tr>
+        <tr>
+          <td class="domain">Toxic sequence 20</td>
+          <td class="num tm-high">0.746</td>
+          <td class="domain">catalytic domain</td>
+          <td><span class="badge badge-high">FLAGGED</span></td>
+        </tr>
+        <tr>
+          <td class="domain">Toxic sequence 29</td>
+          <td class="num tm-high">0.734</td>
+          <td class="domain">catalytic domain</td>
+          <td><span class="badge badge-high">FLAGGED</span></td>
+        </tr>
+        <tr>
+          <td class="domain">Toxic sequence 24</td>
+          <td class="num tm-high">0.726</td>
+          <td class="domain">catalytic domain</td>
+          <td><span class="badge badge-high">FLAGGED</span></td>
+        </tr>
+        <tr>
+          <td class="domain">Toxic sequence 21</td>
+          <td class="num tm-high">0.724</td>
+          <td class="domain">catalytic domain</td>
+          <td><span class="badge badge-high">FLAGGED</span></td>
+        </tr>
+        <tr>
+          <td class="domain">Toxic sequence 6</td>
+          <td class="num tm-high">0.720</td>
+          <td class="domain">catalytic domain</td>
+          <td><span class="badge badge-high">FLAGGED</span></td>
+        </tr>
+        <tr>
+          <td class="domain">Toxic sequence 9</td>
+          <td class="num tm-high">0.720</td>
+          <td class="domain">catalytic domain</td>
+          <td><span class="badge badge-high">FLAGGED</span></td>
+        </tr>
+        <tr>
+          <td class="domain">Toxic sequence 26</td>
+          <td class="num tm-high">0.707</td>
+          <td class="domain">catalytic domain</td>
+          <td><span class="badge badge-high">FLAGGED</span></td>
+        </tr>
+        <tr>
+          <td class="domain">Toxic sequence 13</td>
+          <td class="num tm-medium">0.699</td>
+          <td class="domain">catalytic domain</td>
+          <td><span class="badge badge-medium">BORDERLINE</span></td>
+        </tr>
+        <tr>
+          <td class="domain">Toxic sequence 25</td>
+          <td class="num tm-medium">0.669</td>
+          <td class="domain">catalytic domain</td>
+          <td><span class="badge badge-medium">BORDERLINE</span></td>
+        </tr>
+        <tr>
+          <td class="domain">Toxic sequence 5</td>
+          <td class="num tm-medium">0.652</td>
+          <td class="domain">catalytic domain</td>
+          <td><span class="badge badge-medium">BORDERLINE</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="legend">
+      <div class="legend-item"><div class="legend-dot dot-high"></div> Max TM-score₂ &ge; 0.7 — same fold (flagged)</div>
+      <div class="legend-item"><div class="legend-dot dot-medium"></div> Max TM-score₂ 0.5–0.7 — borderline</div>
+      <div class="legend-item"><div class="legend-dot dot-low"></div> Max TM-score₂ &lt; 0.5 — dissimilar</div>
+    </div>
+    <p class="note">TM-score₂: normalised by target domain length &nbsp;</p>
+  </div>
+</body>
+</html>

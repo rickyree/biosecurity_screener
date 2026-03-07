@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conclusion</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+
+  .slide {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 48px 56px;
+    max-width: 1100px;
+    width: 100%;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    color: #1a2e4a;
+  }
+
+  .slide-header {
+    border-bottom: 2px solid #d0dce8;
+    padding-bottom: 20px;
+    margin-bottom: 36px;
+  }
+
+  .slide-header h1 {
+    font-size: 2.6rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    color: #1a2e4a;
+  }
+
+  .slide-header p {
+    margin-top: 6px;
+    font-size: 1rem;
+    color: #5a7090;
+  }
+
+  .points {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 36px;
+  }
+
+  .point {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    border-radius: 12px;
+    padding: 18px 22px;
+  }
+
+  .point.point-red   { background: rgba(185,28,28,0.07);  border: 1px solid rgba(185,28,28,0.18); }
+  .point.point-green { background: rgba(26,122,80,0.07);  border: 1px solid rgba(26,122,80,0.18); }
+  .point.point-blue  { background: rgba(58,123,213,0.07); border: 1px solid rgba(58,123,213,0.18); }
+
+  .point-icon {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-weight: 800;
+    margin-top: 1px;
+  }
+
+  .icon-red   { background: rgba(185,28,28,0.12); color: #b91c1c; }
+  .icon-green { background: rgba(26,122,80,0.12); color: #1a7a50; }
+  .icon-blue  { background: rgba(58,123,213,0.12); color: #3a7bd5; }
+
+  .point-text {
+    font-size: 1rem;
+    color: #1a2e4a;
+    line-height: 1.6;
+  }
+
+  .point-text strong {
+    color: #1a2e4a;
+  }
+
+  .point-text .muted {
+    font-size: 0.85rem;
+    color: #5a7090;
+    display: block;
+    margin-top: 3px;
+  }
+
+  .metrics-row {
+    display: flex;
+    gap: 16px;
+  }
+
+  .metric-box {
+    flex: 1;
+    border-radius: 10px;
+    padding: 16px 20px;
+    text-align: center;
+  }
+
+  .metric-box.green  { background: rgba(40,160,100,0.10); border: 1px solid rgba(40,160,100,0.25); }
+  .metric-box.yellow { background: rgba(217,119,6,0.10);  border: 1px solid rgba(217,119,6,0.25); }
+  .metric-box.blue   { background: rgba(58,123,213,0.10); border: 1px solid rgba(58,123,213,0.25); }
+
+  .metric-box .val {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1;
+  }
+  .green .val  { color: #1a7a50; }
+  .yellow .val { color: #b45309; }
+  .blue .val   { color: #3a7bd5; }
+
+  .metric-box .label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #5a7090;
+    margin-top: 5px;
+  }
+
+  .metric-box .desc {
+    font-size: 0.78rem;
+    color: #7a90a8;
+    margin-top: 3px;
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+
+  <div class="slide-header">
+    <h1>Conclusions</h1>
+  </div>
+
+  <div class="points">
+
+    <div class="point point-red">
+      <div class="point-icon icon-red">!</div>
+      <div class="point-text">
+        <strong>Sequence-based screening alone can be evaded with sequence obfuscation</strong>
+      </div>
+    </div>
+
+    <div class="point point-green">
+      <div class="point-icon icon-green">&#10003;</div>
+      <div class="point-text">
+        <strong>Structure-based screening catches what sequence screening misses</strong>
+      </div>
+    </div>
+
+    <div class="point point-blue">
+      <div class="point-icon icon-blue">+</div>
+      <div class="point-text">
+        <strong>Combined interface signature detection + structural homology by Aegis detected Cholix toxic sequences successfully</strong>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+</body>
+</html>

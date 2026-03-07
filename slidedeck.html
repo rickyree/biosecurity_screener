@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aegis | Advanced Biosecurity Screening</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* ===========================================
+           THEME: Cyber-Bio (Deep Slate & Emerald/Cyan)
+           =========================================== */
+        :root {
+            --bg-base: #050914;
+            --surface: #0f172a;
+            --surface-elevated: #1e293b;
+            --border: #334155;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent-start: #10b981; /* Emerald */
+            --accent-end: #0ea5e9;   /* Sky Blue */
+            --accent-gradient: linear-gradient(135deg, var(--accent-start), var(--accent-end));
+            --glow: rgba(16, 185, 129, 0.2);
+            
+            --font-sans: 'Outfit', sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-base);
+            color: var(--text-main);
+            font-family: var(--font-sans);
+            overflow: hidden;
+            /* Subtle tech grid background */
+            background-image: 
+                linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+
+        /* Typography */
+        h1, h2, h3 { font-weight: 700; line-height: 1.1; }
+        h1 { font-size: clamp(3rem, 6vw, 5rem); margin-bottom: 0.5em; }
+        h2 { font-size: clamp(2rem, 4vw, 3.5rem); margin-bottom: 0.5em; color: var(--text-main); }
+        p { font-size: clamp(1.1rem, 2vw, 1.5rem); line-height: 1.6; color: var(--text-muted); margin-bottom: 1em; }
+        
+        .gradient-text {
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+
+        .mono { font-family: var(--font-mono); font-size: 0.9em; letter-spacing: -0.5px; }
+
+        /* Slide Container */
+        #deck {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .slide {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            padding: 5vw 8vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            transform: translateY(20px) scale(0.98);
+        }
+
+        .slide.active {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateY(0) scale(1);
+            z-index: 10;
+        }
+
+        /* Layout Utilities */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            height: 100%;
+        }
+
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; height: 4px;
+            background: var(--accent-gradient);
+        }
+
+        ul { list-style: none; }
+        ul li {
+            font-size: clamp(1.1rem, 2vw, 1.5rem);
+            color: var(--text-muted);
+            margin-bottom: 1.2rem;
+            padding-left: 2rem;
+            position: relative;
+        }
+        ul li::before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            color: var(--accent-start);
+            font-weight: bold;
+        }
+
+        /* Graph Placeholder Styling */
+        .graph-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            width: 100%;
+            height: 60vh;
+            margin-top: 2rem;
+        }
+
+        .graph-placeholder {
+            border: 2px dashed var(--border);
+            border-radius: 12px;
+            background: rgba(15, 23, 42, 0.5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: var(--border);
+            text-align: center;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .graph-placeholder:hover {
+            border-color: var(--accent-start);
+            color: var(--accent-start);
+            box-shadow: 0 0 20px var(--glow);
+        }
+
+        .graph-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            opacity: 0.5;
+        }
+
+        /* Navigation Controls */
+        .controls {
+            position: fixed;
+            bottom: 2rem;
+            right: 3rem;
+            display: flex;
+            gap: 1rem;
+            z-index: 100;
+        }
+
+        .btn-nav {
+            background: var(--surface-elevated);
+            border: 1px solid var(--border);
+            color: var(--text-main);
+            width: 50px; height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            transition: all 0.2s ease;
+        }
+
+        .btn-nav:hover {
+            background: var(--border);
+            color: var(--accent-end);
+            transform: scale(1.1);
+        }
+
+        /* Progress Bar */
+        .progress-bar {
+            position: fixed;
+            top: 0; left: 0; height: 4px;
+            background: var(--accent-gradient);
+            width: 0%;
+            transition: width 0.3s ease;
+            z-index: 100;
+            box-shadow: 0 0 10px var(--glow);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="progress-bar" id="progress"></div>
+
+    <div id="deck">
+        
+        <div class="slide active">
+            <div style="max-width: 900px;">
+                <p class="mono" style="color: var(--accent-start); margin-bottom: 1rem;">// SYSTEM_ONLINE</p>
+                <h1>Next-Gen <br><span class="gradient-text">Biosecurity Screening</span></h1>
+                <p style="font-size: 1.5rem; color: var(--text-main); margin-top: 1rem;">
+                    Detecting AI-generated malicious proteins and synthetic toxins beyond simple sequence homology.
+                </p>
+            </div>
+        </div>
+
+        <div class="slide">
+            <h2>Two-Stage <span class="gradient-text">Detection Architecture</span></h2>
+            <p>A scalable, highly sensitive approach designed to catch stealthy synthetic homologs.</p>
+            <div class="grid-2" style="margin-top: 3rem; align-items: stretch;">
+                <div class="card">
+                    <h3 style="margin-bottom: 1rem;">Stage 1: Sequence Attention</h3>
+                    <p style="font-size: 1rem;">Fast, scalable deep-learning pass over raw nucleotide/amino acid sequences.</p>
+                    <div style="margin-top: auto; font-size: 0.8rem; color: var(--accent-end);" class="mono">SPEED: MILLIONS/HR</div>
+                </div>
+                <div class="card">
+                    <h3 style="margin-bottom: 1rem;">Stage 2: Structural Verification</h3>
+                    <p style="font-size: 1rem;">In-silico folding and structural homology assessment for flagged anomalies.</p>
+                    <div style="margin-top: auto; font-size: 0.8rem; color: var(--accent-start);" class="mono">ACCURACY: HIGH-FIDELITY</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="grid-2">
+                <div>
+                    <h2>Stage 1: <br><span class="gradient-text">Attention Embeddings</span></h2>
+                    <p>Traditional screening relies on exact sequence matches (BLAST/k-mers), which AI-designed homologs easily evade.</p>
+                    <ul>
+                        <li><strong>Latent Inference:</strong> Transformer-based models read the sequence and generate high-dimensional embeddings.</li>
+                        <li><strong>Structural Context:</strong> Attention mechanisms infer structural motifs and catalytic relationships directly from 1D sequences.</li>
+                        <li><strong>Scalable Filtering:</strong> Acts as a highly sensitive dragnet to flag sequences that "look structurally suspicious" without the compute cost of full folding.</li>
+                    </ul>
+                </div>
+                <div class="card" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                    <svg width="100%" height="200" viewBox="0 0 400 200">
+                        <path d="M50,100 Q150,20 350,100" fill="none" stroke="var(--accent-start)" stroke-width="2" stroke-dasharray="5,5" opacity="0.6"/>
+                        <path d="M50,100 Q200,180 350,100" fill="none" stroke="var(--accent-end)" stroke-width="2" opacity="0.8"/>
+                        <circle cx="50" cy="100" r="10" fill="var(--text-main)"/>
+                        <circle cx="150" cy="100" r="8" fill="var(--border)"/>
+                        <circle cx="250" cy="100" r="8" fill="var(--border)"/>
+                        <circle cx="350" cy="100" r="10" fill="var(--text-main)"/>
+                        <text x="50" y="140" fill="var(--text-muted)" class="mono" text-anchor="middle">Input Seq</text>
+                        <text x="350" y="140" fill="var(--text-muted)" class="mono" text-anchor="middle">Embedding</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="grid-2">
+                <div class="card">
+                    <h3 style="margin-bottom: 1.5rem; color: var(--accent-end);">Evaluation Metrics</h3>
+                    <ul>
+                        <li><strong>TM-Score:</strong> Measures topological similarity between the predicted variant and known wild-type threats.</li>
+                        <li><strong>ΔpLDDT:</strong> Compares confidence scores to determine if the generated sequence is realistic and stable.</li>
+                        <li><strong>Active Site Geometry:</strong> Verifies the spatial arrangement of catalytic residues (e.g., Ser-His-Asp triads).</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Stage 2: <br><span class="gradient-text">Structural Verification</span></h2>
+                    <p>Once Stage 1 flags a potentially malicious embedding, the sequence is passed to predictive folding models (e.g., OpenFold).</p>
+                    <p>By comparing the predicted 3D coordinates against a database of known threat architectures, we establish the true functional risk of heavily mutated synthetic proteins.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <h2>Case Study: <span class="gradient-text">Cholix Toxin (ChxA)</span></h2>
+            <p>Testing the pipeline against a highly specific, monomeric threat.</p>
+            <div class="grid-2">
+                <ul>
+                    <li><strong>Architecture:</strong> Monomeric AB toxin produced by <em>Vibrio cholerae</em> (approx. 634 residues).</li>
+                    <li><strong>Mechanism:</strong> Domain III acts as a catalytic pocket, binding <strong>NAD+</strong> to perform toxic ADP-ribosylation of elongation factor 2 (eEF2).</li>
+                    <li><strong>Evasion Risk:</strong> Because its function relies on a defined structural pocket rather than a multimeric complex, it is a prime candidate for AI-driven sequence reformulation.</li>
+                </ul>
+                <div class="card" style="text-align: center;">
+                    <div class="mono" style="color: var(--accent-start); font-size: 1.2rem; margin-bottom: 1rem;">TARGET: eEF2</div>
+                    <div class="mono" style="color: var(--accent-end); font-size: 1.2rem;">LIGAND: NAD+</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <h2>Results: <span class="gradient-text">Cholix Toxin Screening</span></h2>
+            <p>Evaluating evasion rates of reformulated ChxA against unpatched vs. structurally-aware screening.</p>
+            
+            <div class="graph-container">
+                <div class="graph-placeholder">
+                    <div class="graph-icon">📊</div>
+                    <h3 style="color: var(--text-main); margin-bottom: 0.5rem;">[ INSERT GRAPH 1 HERE ]</h3>
+                    <p class="mono" style="font-size: 0.85rem;">e.g., Obscuration Rate / TM-Score Distribution</p>
+                </div>
+                
+                <div class="graph-placeholder">
+                    <div class="graph-icon">📈</div>
+                    <h3 style="color: var(--text-main); margin-bottom: 0.5rem;">[ INSERT GRAPH 2 HERE ]</h3>
+                    <p class="mono" style="font-size: 0.85rem;">e.g., Revealment Rate / ΔpLDDT Correlation</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="controls">
+        <button class="btn-nav" id="prevBtn">←</button>
+        <button class="btn-nav" id="nextBtn">→</button>
+    </div>
+
+    <script>
+        class DeckManager {
+            constructor() {
+                this.slides = document.querySelectorAll('.slide');
+                this.currentIndex = 0;
+                this.totalSlides = this.slides.length;
+                this.progressBar = document.getElementById('progress');
+                
+                this.initEvents();
+                this.updateDeck();
+            }
+
+            initEvents() {
+                document.getElementById('nextBtn').addEventListener('click', () => this.next());
+                document.getElementById('prevBtn').addEventListener('click', () => this.prev());
+                
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'ArrowRight' || e.key === 'Space') this.next();
+                    if (e.key === 'ArrowLeft') this.prev();
+                });
+            }
+
+            next() {
+                if (this.currentIndex < this.totalSlides - 1) {
+                    this.currentIndex++;
+                    this.updateDeck();
+                }
+            }
+
+            prev() {
+                if (this.currentIndex > 0) {
+                    this.currentIndex--;
+                    this.updateDeck();
+                }
+            }
+
+            updateDeck() {
+                this.slides.forEach((slide, index) => {
+                    if (index === this.currentIndex) {
+                        slide.classList.add('active');
+                    } else {
+                        slide.classList.remove('active');
+                    }
+                });
+
+                // Update Progress Bar
+                const progress = ((this.currentIndex) / (this.totalSlides - 1)) * 100;
+                this.progressBar.style.width = `${progress}%`;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            new DeckManager();
+        });
+    </script>
+</body>
+</html>

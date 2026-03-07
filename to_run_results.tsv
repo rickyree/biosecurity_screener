@@ -1,0 +1,74 @@
+candidate	seq_len	contact_score	chem_sim	contact_pass	chem_pass	pass_filter
+cholix_unbound_mutoutside_lowtemp_1	605	0.0281	0.8559	True	True	True
+cholix_unbound_mutoutside_lowtemp_2	605	0.0332	0.8831	True	True	True
+cholix_unbound_mutoutside_lowtemp_3	605	0.0242	0.8595	True	True	True
+cholix_unbound_mutoutside_lowtemp_4	605	0.0322	0.8801	True	True	True
+cholix_unbound_mutoutside_lowtemp_5	605	0.0254	0.8654	True	True	True
+cholix_unbound_mutoutside_lowtemp_6	605	0.0282	0.8509	True	True	True
+cholix_unbound_mutoutside_lowtemp_7	605	0.0325	0.8339	True	True	True
+cholix_unbound_mutoutside_lowtemp_8	605	0.0276	0.8553	True	True	True
+cholix_unbound_mutoutside_lowtemp_9	605	0.0327	0.8727	True	True	True
+cholix_unbound_mutoutside_lowtemp_10	605	0.0414	0.8697	True	True	True
+cholix_unbound_mutoutside_lowtemp_11	605	0.0283	0.8562	True	True	True
+cholix_unbound_mutoutside_lowtemp_12	605	0.0382	0.8747	True	True	True
+cholix_unbound_mutoutside_lowtemp_13	605	0.031	0.8585	True	True	True
+cholix_unbound_mutoutside_lowtemp_14	605	0.0351	0.8802	True	True	True
+cholix_unbound_mutoutside_lowtemp_15	605	0.0254	0.8643	True	True	True
+cholix_unbound_mutoutside_lowtemp_16	605	0.0409	0.8554	True	True	True
+cholix_unbound_mutoutside_lowtemp_17	605	0.0269	0.8545	True	True	True
+cholix_unbound_mutoutside_lowtemp_18	605	0.0354	0.8713	True	True	True
+cholix_unbound_mutoutside_lowtemp_19	605	0.0293	0.8754	True	True	True
+cholix_unbound_mutoutside_lowtemp_20	605	0.0403	0.8695	True	True	True
+cholix_unbound_mutoutside_lowtemp_21	605	0.0278	0.887	True	True	True
+cholix_unbound_mutoutside_lowtemp_22	605	0.0356	0.8797	True	True	True
+cholix_unbound_mutoutside_lowtemp_23	605	0.0219	0.8782	True	True	True
+cholix_unbound_mutoutside_lowtemp_24	605	0.0343	0.8756	True	True	True
+cholix_unbound_mutoutside_lowtemp_25	605	0.0281	0.8521	True	True	True
+cholix_unbound_mutoutside_lowtemp_26	605	0.0323	0.8788	True	True	True
+cholix_unbound_mutoutside_lowtemp_27	605	0.0441	0.8646	True	True	True
+cholix_unbound_mutoutside_lowtemp_28	605	0.0246	0.8616	True	True	True
+cholix_unbound_mutoutside_lowtemp_29	605	0.0315	0.8704	True	True	True
+cholix_unbound_mutoutside_lowtemp_30	605	0.0291	0.8804	True	True	True
+cholix_unbound_mutconserved_lowtemp_1	605	0.0299	0.8491	True	True	True
+cholix_unbound_mutconserved_lowtemp_2	605	0.0272	0.8427	True	True	True
+cholix_unbound_mutconserved_lowtemp_3	605	0.0298	0.8518	True	True	True
+cholix_unbound_mutconserved_lowtemp_4	605	0.0323	0.8461	True	True	True
+cholix_unbound_mutconserved_lowtemp_5	605	0.0274	0.8547	True	True	True
+cholix_unbound_mutconserved_lowtemp_6	605	0.0278	0.8465	True	True	True
+cholix_unbound_mutconserved_lowtemp_7	605	0.0334	0.842	True	True	True
+cholix_unbound_mutconserved_lowtemp_8	605	0.0367	0.849	True	True	True
+cholix_unbound_mutconserved_lowtemp_9	605	0.0288	0.8394	True	True	True
+cholix_unbound_mutconserved_lowtemp_10	605	0.0364	0.8429	True	True	True
+cholix_unbound_mutconserved_lowtemp_11	605	0.0368	0.8398	True	True	True
+cholix_unbound_mutconserved_lowtemp_12	605	0.0388	0.849	True	True	True
+cholix_unbound_mutconserved_lowtemp_13	605	0.0312	0.8286	True	True	True
+cholix_unbound_mutconserved_lowtemp_14	605	0.0328	0.8502	True	True	True
+cholix_unbound_mutconserved_lowtemp_15	605	0.0333	0.8469	True	True	True
+cholix_unbound_mutconserved_lowtemp_16	605	0.0293	0.8293	True	True	True
+cholix_unbound_mutconserved_lowtemp_17	605	0.0323	0.8301	True	True	True
+cholix_unbound_mutconserved_lowtemp_18	605	0.0308	0.8438	True	True	True
+cholix_unbound_mutconserved_lowtemp_19	605	0.0301	0.8366	True	True	True
+cholix_unbound_mutconserved_lowtemp_20	605	0.0284	0.8445	True	True	True
+cholix_unbound_mutconserved_lowtemp_21	605	0.0389	0.8325	True	True	True
+cholix_unbound_mutconserved_lowtemp_22	605	0.0528	0.8296	True	True	True
+cholix_unbound_mutconserved_lowtemp_23	605	0.0342	0.8444	True	True	True
+cholix_unbound_mutconserved_lowtemp_24	605	0.03	0.8491	True	True	True
+cholix_unbound_mutconserved_lowtemp_25	605	0.0307	0.8316	True	True	True
+cholix_unbound_mutconserved_lowtemp_26	605	0.0321	0.8247	True	True	True
+cholix_unbound_mutconserved_lowtemp_27	605	0.0323	0.8577	True	True	True
+cholix_unbound_mutconserved_lowtemp_28	605	0.0264	0.8414	True	True	True
+cholix_unbound_mutconserved_lowtemp_29	605	0.0317	0.8308	True	True	True
+cholix_unbound_mutconserved_lowtemp_30	605	0.0296	0.8327	True	True	True
+proteinmpnn_1lyz TVYSRCDIAKALLALGMASMGHYKLGWFVCMSTVTGGGNSKTKKKNANGVQRYGLMQLGTDWYCTKGDEPKATNWGNTHCWDLRELNLVTQVDVLRIIISHSNGMTEFPGYNEVCKGTDVEKYVEGCSI	3			True	False	False
+proteinmpnn_1mbo GMSRTEWGLVRSLWEEVAKRVPEIGSAVLTNLFIMHPRIIDLFGDNRHLQTVKEMEASEVLKSKGVKVLNQLRQVLSNRGHNEELLRPVSELHAEHMKAPVASFNMFAESVQNVAVEQFPQKFDMETQYAFTRSLENEITDYAAILKELGHYG	3			True	False	False
+proteinmpnn_1ubq MNIRVATNNGRVLVLNVVSTDVSRDKVKKIYQQEGIPPEHQLLEHMGRRLVADDTLEDYDIEEDDTLRLALREKGS	3			True	False	False
+proteinmpnn_2rf5 RTTTLIQLKPESMGYIMAVKKAQNSIVAGVSGGKYGGNYSSYNILEVHLIRHEVIRANFLRRAQEIAGSNGGNVNRRQLWYGSRFIANIIMNGFDERKNELSGIGGSGLNFFPEVSKATRYVYGPNGGTGCPGYNNRDCHHCNRTLLLCDFNLGNVSSRNTKASGTMAEAGTHSELMNTXXXXGDKPIYRVFDGDQVYPVTKITFRITKPP	3			True	False	False
+proteinmpnn_3hkv LIKGKTLSTNSSAYESVRALLFHELGNRLGRMEIDEIIEVIDPCLEKTYHINLEEAEKLHKERPVELTLFHVTSEGLMRRGNEYGMTTNFSGPNVIPLGVGVVFQAKAAYGSIDWVSFPDRKGQIWVKTCKVIIGEVGVGNTGMTAPVPRGSGFEQEWMNSAVDSQELPSIFTIFRNTKALISVMTLVSFIV	3			True	False	False
+proteinmpnn_4dqy KRKFRAETARRGSINCDMCGAQIPNHSLRLVYYRWEPGKNKQAPAWFAFDCIRKTGRTVQNPSEMIDGFFLLDWEKRQQITIRASLARVLEEGKKSYEVAFRLTVEGRQALVDFLANHRSEVSIQKLLEYNNLEWPRGNHALFRTTAFAIMYGALLKQRQCNWFLRYTETSIPRTGICTPMTPCQQSTKFPERVPFLNPHSDPFWMELEGLIVEDSTILFAK	3			True	False	False
+proteinmpnn_1ddt GKSSVIDASKSSVQTNLEFFHGVVPGRINTMTVGLFEPVGGPKGAIDPDWQGWRGTNSEQQAALYSQDPENPLTGVAQGVITGTFPGKTFVLTLKTNNPKAIKEKLELSQTQPLMKQVGTRDFIVKWGNGASRVVYKVSYGPGSSADEYVINWDNAKFIKVRILQNFQSQGLPGMYAYFSFLAGMSQSCINLDWDVIRDKGINLNWQLVDKLSMMVIMSLRENPAVKECRQELPTRRVPPEEAIQSLERFTEVLREHPILRNLRTENDHHMISKGRNLALFACGVARVLDVDMQANEEKTYSRLSQLKGMDTIFGIGQGKLWFNNEQLVAQSIALACEIVAAAMPLVGRGVGRTPAAITVLTSLILLYQVRALQKNQPRNGRGHKTTQHVDNGYAVAFVTNEDSVIQSGFRGKQYSNITVSAEGTDLPIQGIITPYVRGKLNIDMEGTCLKTIGLRTLVKCEIAVGHMLFCRFQQYGDVGRGVTAVITVRYIKTVKEKLKSKEIDIINFTVLGEQSKKIGKNNFTALNLNFVVRS	3			True	False	False
+proteinmpnn_1dtp DNDSVIDTSESFKQKNFTSYHGIAVGELDASKMANSIRTDGRIGHRDGEFRGHYVTDNKFEAANYSIEGGGTDQGRAGGVLKREVSGEVEVLALKVNDHITIKKNMGLPLDQRLMQVVDTKEFVERYGNGASIVILQRPVKPTDGAKEYWVPWQKAQSAKVKVAVTFEEMKGTGAAKLNQYRQQMVASQN	3			True	False	False
+proteinmpnn_1sgk IKSKVIDASKSYVQTNLEVFHGVVPGRATTLEVGLTEPVGGPKGAQDPDWQGFRGFNSEQQAALYSQDPENPLAGVSQGVITLTFPGKTFVLTLKTNNPKAIKTYLELSKDQPLMKQAGTRDFIVKWGNNASRVVYSVSYGPGSSASEYVHNWDNAKFYVVRQLLNFESQGLPGTYAMFSFLAGMSQSCINLDWDVIRDKGYQLNWQLIDKLSMMVIMSLREFPAVKECRQELPHRKVDPEEAIQSLRRFTEVLRFHPCLRNLRTENDHHMISSGENLALFALGVARVIDVDMQANLEKTYSALSQLEGMDTIFGIGQGKLWFNNELLVAQSIALACEIVAAAMPMNGDGDGKTAAAITVLTSLILLFQVRTLQKNQPRNGRGHKTTPHLKNGYAVSFVTREDSVIQSGFRGKQYSNITVSAEGTDLPIQGIITPTKRGKLGVDMEGTSLNTIGLRTAFKCEKAVGNMVFCRFQQYVDVGRSVTAVITVRYMKTVKEKLKSKEIDKIYFEVLGEQLKKIGKNNFIRLRLNYVVRS	3			True	False	False
+1v3d_A	431	0.0723	0.7537	True	False	False
+2vsk_A	400	0.0075	0.7359	False	False	False
+3d12_A	428	0.0243	0.7571	True	False	False
+1iko_A	141	0.0174	0.5625	False	False	False
