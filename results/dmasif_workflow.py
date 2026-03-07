@@ -490,7 +490,7 @@ def load_or_build_A_fingerprints(pdb_parser, apo_ref, bound_ref=None,
         suffix = '_union'
     else:
         suffix = ''
-    cache = f'results/dmasif/A_interface_cache_{apo_stem}_{bound_stem}{suffix}.npz'
+    cache = f'results/dmasif_cache/A_interface_cache_{apo_stem}_{bound_stem}{suffix}.npz'
     if os.path.exists(cache):
         print(f"  Loading cached A-interface fingerprints from {cache}")
         d = np.load(cache)
@@ -578,17 +578,21 @@ def load_or_build_A_fingerprints(pdb_parser, apo_ref, bound_ref=None,
         print(f"  Superimposed {apo_label} onto {os.path.basename(bound_ref)} "
               f"chain {receptor_chain} ({len(apo_idx)} Cα pairs, RMSD={rmsd_sup:.2f} Å)")
 
-        R_inv = R_sup.T
-        t_inv = -R_inv @ t_sup
-        partner_in_apo = (R_inv @ partner_coords.T).T + t_inv
-
-        partner_tree = KDTree(partner_in_apo)
-        iface_res = []
-        for res in apo_residues:
+        # Identify interface residues directly in holo frame, then map to apo
+        # via sequence alignment — avoids querying apo atoms in a transformed frame.
+        partner_tree = KDTree(partner_coords)
+        holo_iface_idx = []
+        for i, res in enumerate(bound_residues):
             for atom in res:
                 if partner_tree.query_ball_point(atom.coord, r=5.0):
-                    iface_res.append(res)
+                    holo_iface_idx.append(i)
                     break
+
+        bnd_to_apo = {bi: ai for ai, bi in zip(apo_idx, bnd_idx)}
+        iface_res = []
+        for hi in holo_iface_idx:
+            if hi in bnd_to_apo:
+                iface_res.append(apo_residues[bnd_to_apo[hi]])
 
     if plddt_thresh > 0:
         iface_res = [res for res in iface_res
@@ -702,7 +706,7 @@ def screen_candidates(candidates, A_fps, A_iface_coords, B_pos, B_vdw, pdb_parse
         else:
             n_clash, clash_r = 0, 0.0
 
-        out_pdb = f"results/dmasif/{name}_docked.pdb"
+        out_pdb = f"results/dmasif/structures/{name}_docked.pdb"
         save_docked(c_struct, R, t, out_pdb)
         print(f"  Saved docked pose → {out_pdb}  ({time.time()-tc:.0f}s)")
 
@@ -826,7 +830,7 @@ def main():
         suffix = '_union'
     else:
         suffix = ''
-    cache  = f'results/dmasif/A_interface_cache_{apo_stem}_{bound_stem}{suffix}.npz'
+    cache  = f'results/dmasif_cache/A_interface_cache_{apo_stem}_{bound_stem}{suffix}.npz'
     if args.clear_cache and os.path.exists(cache):
         os.remove(cache)
         print(f"Removed cache: {cache}")
@@ -860,7 +864,7 @@ def main():
     print_summary(results, tsv_path=args.rankings_tsv)
 
     print(f"Total runtime: {time.time()-t0:.0f}s")
-    print(f"Docked PDB files saved in: results/dmasif/")
+    print(f"Docked PDB files saved in: results/dmasif/structures/")
 
 
 if __name__ == '__main__':

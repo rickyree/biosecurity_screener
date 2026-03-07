@@ -1,0 +1,5 @@
+chain_id,residue_number,residue_identifier,amino_acid_3letter,amino_acid_1letter,binding_probability
+A,33,A33,LYS,K,0.5908361077308655
+A,38,A38,PRO,P,0.6605718731880188
+A,39,A39,LYS,K,0.6487540602684021
+A,40,A40,SER,S,0.5342534780502319

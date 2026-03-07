@@ -220,7 +220,7 @@ def main():
         suffix = '_union'
     else:
         suffix = ''
-    cache_path = f'results/dmasif/A_interface_cache_{apo_stem}_{bound_stem}{suffix}.npz'
+    cache_path = f'results/dmasif_cache/A_interface_cache_{apo_stem}_{bound_stem}{suffix}.npz'
     out_path   = args.out or f'results/dmasif/esm2_prefilter_{apo_stem}{suffix}.tsv'
 
     print("Loading ESM2 650M...", flush=True)

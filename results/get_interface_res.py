@@ -24,7 +24,7 @@ Output:
 
 import os, sys, argparse, subprocess, tempfile, json
 import numpy as np
-from Bio.PDB import PDBParser, Superimposer
+from Bio.PDB import PDBParser
 from Bio.SeqUtils import seq1
 from Bio import pairwise2
 from scipy.spatial import KDTree
@@ -160,24 +160,23 @@ def workflow_5a(apo_path, holo_path, bound_ligand=None, cutoff=5.0):
     if len(apo_idx) < 10:
         sys.exit(f"ERROR: only {len(apo_idx)} aligned Cα pairs — cannot superpose.")
 
-    holo_ca = [holo_res_list[i]['CA'] for i in holo_idx]
-    apo_ca  = [apo_res_list[i]['CA']  for i in apo_idx]
+    print(f"  Sequence alignment: {len(apo_idx)} aligned Cα pairs")
 
-    sup = Superimposer()
-    sup.set_atoms(holo_ca, apo_ca)   # fixed=holo, moving=apo
-    sup.apply(list(apo.get_atoms()))
-    print(f"  Superposition: {len(apo_idx)} aligned Cα pairs, RMSD = {sup.rms:.3f} Å")
-
-    apo_res = ca_residues(apo)
-
-    # Partner is already in holo frame; apo is now also in holo frame
-    tree = KDTree(partner_coords)
-    interface = []
-    for resnum, res in sorted(apo_res.items()):
+    # Identify interface residues directly in holo frame, then map to apo
+    # via sequence alignment — avoids querying apo atoms in a transformed frame.
+    partner_tree = KDTree(partner_coords)
+    holo_iface_idx = []
+    for i, res in enumerate(holo_res_list):
         for atom in res:
-            if tree.query_ball_point(atom.coord, r=cutoff):
-                interface.append(resnum)
+            if partner_tree.query_ball_point(atom.coord, r=cutoff):
+                holo_iface_idx.append(i)
                 break
+
+    bnd_to_apo = {hi: ai for ai, hi in zip(apo_idx, holo_idx)}
+    interface = []
+    for hi in holo_iface_idx:
+        if hi in bnd_to_apo:
+            interface.append(apo_res_list[bnd_to_apo[hi]].id[1])
 
     return sorted(interface)
 

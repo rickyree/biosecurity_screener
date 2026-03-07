@@ -112,13 +112,13 @@ def find_protein_interface(pdb_path, chain_id, partner_chain_id, cutoff=5.0):
 
 # ── Job submission ─────────────────────────────────────────────────────────────
 
-def submit_job(pdb_path, chain_id, fixed_str, temperature, job_name):
+def submit_job(pdb_path, chain_id, fixed_str, temperature, job_name, n=1):
     """Submit a background ProteinMPNN job and return the job ID."""
     cmd = [
-        'amina', 'run', 'proteinmpnn',
+        'myenv/bin/amina', 'run', 'proteinmpnn',
         '--pdb', str(pdb_path),
         '--chains', chain_id,
-        '-n', '1',
+        '-n', str(n),
         '--temperature', str(round(temperature, 2)),
         '--job-name', job_name,
         '--background',
@@ -139,7 +139,7 @@ def submit_job(pdb_path, chain_id, fixed_str, temperature, job_name):
 def wait_for_jobs(job_ids, poll_interval=10):
     """Block until all job IDs complete."""
     result = subprocess.run(
-        ['amina', 'jobs', 'wait'] + job_ids + ['--poll-interval', str(poll_interval)],
+        ['myenv/bin/amina', 'jobs', 'wait'] + job_ids + ['--poll-interval', str(poll_interval)],
         capture_output=True, text=True
     )
     print(result.stdout[-1000:])
@@ -151,7 +151,7 @@ def download_job(job_id, out_dir):
     """Download job artifacts to out_dir."""
     out_dir.mkdir(parents=True, exist_ok=True)
     subprocess.run(
-        ['amina', 'jobs', 'download', job_id, '-o', str(out_dir)],
+        ['myenv/bin/amina', 'jobs', 'download', job_id, '-o', str(out_dir)],
         capture_output=True
     )
 
@@ -159,15 +159,16 @@ def download_job(job_id, out_dir):
 # ── Sequence parsing ──────────────────────────────────────────────────────────
 
 def parse_fasta(job_dir):
-    """Return the designed sequence from a ProteinMPNN job directory."""
+    """Return all designed sequences from a ProteinMPNN job directory."""
     fastas = list(job_dir.rglob('*.fasta')) + list(job_dir.rglob('*.fa'))
     if not fastas:
-        return None
+        return []
     recs = list(SeqIO.parse(str(fastas[0]), 'fasta'))
     designed = [r for r in recs
                 if 'original' not in r.id.lower() and 'native' not in r.id.lower()]
-    seq = str(designed[0].seq) if designed else str(recs[0].seq)
-    return re.sub(r'[^A-Z]', '', seq)
+    if not designed:
+        designed = recs
+    return [re.sub(r'[^A-Z]', '', str(r.seq)) for r in designed]
 
 
 # ── TSV update ────────────────────────────────────────────────────────────────
@@ -216,16 +217,16 @@ def main():
                             help='Comma-separated residue numbers to use as the binding site '
                                  '(e.g. 32,64,65,68). Bypasses proximity detection; '
                                  'useful when --pdb is an apo and residues were identified from a holo.')
-    ap.add_argument('--n-outside',    type=int, default=15,
-                    help='Number of mutoutside sequences (default: 15)')
-    ap.add_argument('--n-conserved',  type=int, default=10,
-                    help='Number of mutconserved sequences (default: 10)')
+    ap.add_argument('--n-outside',    type=int, default=30,
+                    help='Number of mutoutside sequences (default: 30)')
+    ap.add_argument('--n-conserved',  type=int, default=30,
+                    help='Number of mutconserved sequences (default: 30)')
     ap.add_argument('--cutoff',       type=float, default=5.0,
                     help='Distance cutoff in Å for binding site (default: 5.0)')
-    ap.add_argument('--temp-min',     type=float, default=0.1,
-                    help='Minimum sampling temperature (default: 0.1)')
-    ap.add_argument('--temp-max',     type=float, default=1.5,
-                    help='Maximum sampling temperature (default: 1.5)')
+    ap.add_argument('--temp-min',     type=float, default=0.3,
+                    help='Minimum sampling temperature (default: 0.3)')
+    ap.add_argument('--temp-max',     type=float, default=0.3,
+                    help='Maximum sampling temperature (default: 0.3)')
     ap.add_argument('--output-tsv',   default='results/dmasif/candidate_sequences.tsv',
                     help='TSV file to append sequences to')
     ap.add_argument('--output-dir',   default='results/proteinmpnn',
@@ -262,28 +263,27 @@ def main():
     print(f"  Fixed string: {fixed_str}")
 
     # ── Step 2: Submit jobs ───────────────────────────────────────────────────
-    temps_outside  = np.round(np.linspace(args.temp_min, args.temp_max, args.n_outside),  2).tolist()
-    temps_conserved= np.round(np.linspace(args.temp_min, args.temp_max, args.n_conserved), 2).tolist()
+    temperature = round((args.temp_min + args.temp_max) / 2, 2)
 
-    print(f"\n Submitting {args.n_outside} mutoutside jobs (T={args.temp_min}–{args.temp_max})")
-    print(f" Submitting {args.n_conserved} mutconserved jobs (T={args.temp_min}–{args.temp_max})")
+    print(f"\n Submitting 1 mutoutside job  (n={args.n_outside}, T={temperature})")
+    print(f" Submitting 1 mutconserved job (n={args.n_conserved}, T={temperature})")
     print()
 
     jobs = {}
 
-    for i, t in enumerate(temps_outside, 1):
-        name = f'{args.prefix}_mutoutside_{i}'
-        jid  = submit_job(pdb_path, args.chain, fixed_str, t, name)
+    if args.n_outside > 0:
+        name = f'{args.prefix}_mutoutside'
+        jid  = submit_job(pdb_path, args.chain, fixed_str, temperature, name, n=args.n_outside)
         if jid:
             jobs[name] = jid
-            print(f"  [mutoutside  {i:>2}/{args.n_outside}] T={t:.2f}  job={jid[:8]}")
+            print(f"  [mutoutside ] n={args.n_outside}  T={temperature}  job={jid[:8]}")
 
-    for i, t in enumerate(temps_conserved, 1):
-        name = f'{args.prefix}_mutconserved_{i}'
-        jid  = submit_job(pdb_path, args.chain, None, t, name)
+    if args.n_conserved > 0:
+        name = f'{args.prefix}_mutconserved'
+        jid  = submit_job(pdb_path, args.chain, None, temperature, name, n=args.n_conserved)
         if jid:
             jobs[name] = jid
-            print(f"  [mutconserved {i:>2}/{args.n_conserved}] T={t:.2f}  job={jid[:8]}")
+            print(f"  [mutconserved] n={args.n_conserved}  T={temperature}  job={jid[:8]}")
 
     with open(jobs_file, 'w') as f:
         json.dump(jobs, f, indent=2)
@@ -300,15 +300,17 @@ def main():
     print(f" Downloading and parsing results")
     print(f"{'='*60}")
     sequences = {}
-    for name, jid in jobs.items():
-        jdir = out_root / name
+    for job_name, jid in jobs.items():
+        jdir = out_root / job_name
         download_job(jid, jdir)
-        seq  = parse_fasta(jdir)
-        if seq:
-            sequences[name] = seq
-            print(f"  {name}: {len(seq)} residues")
+        seqs = parse_fasta(jdir)
+        if seqs:
+            for i, seq in enumerate(seqs, 1):
+                name = f'{job_name}_{i}'
+                sequences[name] = seq
+            print(f"  {job_name}: {len(seqs)} sequences × {len(seqs[0])} residues")
         else:
-            print(f"  WARNING: no sequence parsed for {name}")
+            print(f"  WARNING: no sequences parsed for {job_name}")
 
     # ── Step 5: Validation summary ────────────────────────────────────────────
     native_seqres = list(SeqIO.parse(str(pdb_path), 'pdb-seqres'))
@@ -318,15 +320,12 @@ def main():
     if native_rec:
         native_seq = str(native_rec.seq)
         fixed_idx  = [r - 1 for r in iface_rnums]
-        print(f"\n{'Name':<40} {'T':>5} {'Total mut':>10} {'Site mut':>9} {'Conserved?':>11}")
+        print(f"\n{'Name':<44} {'Total mut':>10} {'Site mut':>9} {'Conserved?':>11}")
         print('-' * 80)
-        t_map = {f'{args.prefix}_mutoutside_{i+1}':  t for i,t in enumerate(temps_outside)}
-        t_map.update({f'{args.prefix}_mutconserved_{i+1}': t for i,t in enumerate(temps_conserved)})
         for name, seq in sequences.items():
-            t       = t_map.get(name, '?')
-            tot_mut = sum(1 for a, b in zip(native_seq, seq) if a != b and b != 'X' and a != 'X')
-            site_mut= sum(1 for i in fixed_idx if i < len(seq) and seq[i] != native_seq[i] and seq[i] != 'X')
-            print(f"{name:<40} {t:>5} {tot_mut:>10} {site_mut:>9} {str(site_mut==0):>11}")
+            tot_mut  = sum(1 for a, b in zip(native_seq, seq) if a != b and b != 'X' and a != 'X')
+            site_mut = sum(1 for i in fixed_idx if i < len(seq) and seq[i] != native_seq[i] and seq[i] != 'X')
+            print(f"{name:<44} {tot_mut:>10} {site_mut:>9} {str(site_mut==0):>11}")
 
     # ── Step 6: Append to TSV ─────────────────────────────────────────────────
     total = append_to_tsv(args.output_tsv, sequences)

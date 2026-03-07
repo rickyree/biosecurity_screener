@@ -1,0 +1,222 @@
+>query
+GSHMAVITPQGVTNWTYQELEATHQALTREGYVFVGYHGTNHVAAQTIVNRIAPVTENEEKWGGLYVATHAEVAHGYARIKEGTGEYGLPTRAERDARGVMLRVYIPRASLERFYRTNTPLENAEEHITQVIGHSLPLRNEAFTGPESAGGEDETVIGWDMAIHAVAIPSTIPGNAYEELAIDEEAVAKEQSISTKPPYKE
+>UniRef90_Q5EK40/457-660 [subseq from] Cholix toxin n=164 Tax=Vibrio TaxID=662 RepID=CHXA_VIBCL
+--NRAVITPQGVTNWTYQELEATHQALTREGYVFVGYHGTNHVAAQTIVNRIAPVprgnnTENEEKWGGLYVATHAEVAHGYARIKEGTGEYGLPTRAERDARGVMLRVYIPRASLERFYRTNTPLENAEEHITQVIGHSLPLRNEAFTGPESAGGEDETVIGWDMAIHAVAIPSTIPGNAYEELAIDEEAVAKEQSISTKPPYKE
+>UniRef90_UPI000E0B6DFF/279-482 [subseq from] cholix toxin ChxA n=1 Tax=Vibrio cholerae TaxID=666 RepID=UPI000E0B6DFF
+--NRAVITPQGVTNWTYQELEATHQALTREGYVFVGYHGTNHVAAQTIVNRIAPVprgnnTENEEKWGGLYVATHAEVAHGYARIKEGTGEYGLPTRAERDARGVMLRVYIPRASLERFYRTNTPLENAEEHITQVIGHSLPLRNEAFTGPESAGGEDETVIGWDMAIHAVAIPSTIPGNAYEELAIDEEAVAKEQSISAKPPYKE
+>UniRef90_E9JRT6/405-577 [subseq from] Cholix toxin (Fragment) n=7 Tax=Vibrionaceae TaxID=641 RepID=E9JRT6_VIBCL
+--NRAVITQQGVTNWTYQELEATHQALTQEGYVFVGYHGTNHVAAQSIVNRISPVprgsdTESERAWGGLYVSTDASVAYGYARIQEGTADGGGLTPAERKARGVMLRVYLPQASLERFYRINADLEKERNLVERVIGHPLPLRNEAFTGTDAEEGSDETAIGWDMAIHGVAIPS-------------------------------
+>UniRef90_UPI001B83BAE8/445-634 [subseq from] hypothetical protein n=1 Tax=Aeromonas popoffii TaxID=70856 RepID=UPI001B83BAE8
+-------TLTGTTNWDENRLLLTHQRLLREGYVFVGYHGTNHDSARALTSAITvwqrgSGSAQDELWGGLYVSTDPEVAYGYALP--ASGSFG------RNNRGAMLRVYIPSASLSRLHRTNTTLSpSVVEHVEGIIGHRMPLANSSITGPESEGGSDETLLGWDMAIRSVAIPSMIRGNTGMGEEVD--VPNYEEKISPKPPYKE
+>UniRef90_A0A2A9JQY3/447-640 [subseq from] Exotoxin A-like protein n=3 Tax=Collimonas TaxID=202907 RepID=A0A2A9JQY3_9BURK
+-----SFTVQGTQNWNLNRLQAAHLRLQVQGYVFAGYHGTSLEGAQSIVfGGIHNrQQDLEEIWRGLYVAGDPALAYGYAQDAEGD-ERG------RIRNGTMLRVYVPRSALPRLFATSLPLDHpgASQEVARLIGHPLPLLYESITGPEAAGGNRlETILGWQLAEQAVAIPSMIPTNSRTvGNPLDPATVTlEEKQISSLPGY--
+>UniRef90_Q9KIR7/24-213 [subseq from] Exotoxin A (Fragment) n=10 Tax=Pseudomonas aeruginosa TaxID=287 RepID=Q9KIR7_PSEAI
+--------TRGTQNWTVERLLQAHRQLEERGYVFVGYHGTFLEAAQSIVFGgVrARSQDLDAIWRGFYIAGDPELAYGYAQDQE-------PDARGRIRNGALLRVYVPRSSLPGFYRTGLTLAapEAAGEVERLIGHPLPLRLDAITGPEEEGGRLETILGWPLAERTVVIPSAIPTDPRNVgGDLDPSSIpDKEQAISALPDY--
+>UniRef90_P11439/435-625 [subseq from] Exotoxin A n=619 Tax=Bacteria TaxID=2 RepID=TOXA_PSEAE
+-------STRGTQNWTVERLLQAHRQLEERGYVFVGYHGTFLEAAQSIVFGgVrARSQDLDAIWRGFYIAGDPALAYGYAQDQE-------PDARGRIRNGALLRVYVPRSSLPGFYRTGLTLAapEAAGEVERLIGHPLPLRLDAITGPEEEGGRLETILGWPLAERTVVIPSAIPTDPRNVgGDLDPSSIpDKEQAISALPDY--
+>UniRef90_A0A5N8UHV3/452-619 [subseq from] Exotoxin n=1 Tax=Shewanella sp. YLB-07 TaxID=2601268 RepID=A0A5N8UHV3_9GAMM
+------FTTRGTRNWSSARLNHAHQQLIARGYVFVGYHGSSLEGAQSIVfGGIRTRTQAlDDVWQGLYISGDPAVAYGYAQDQE-------PDSRGRIRNGTMLRVYVPGTATAYLYETPLTLADPEavDAVGHLIGHPLPLQTEAITGPEEAGGRPETILGWELAEQAVAIPSTIPTDPS------------------------
+>UniRef90_K1JNX2/442-631 [subseq from] Exotoxin n=86 Tax=Aeromonadaceae TaxID=84642 RepID=K1JNX2_9GAMM
+--------TAGTRNWSVTRLEQAHRQLLARGYLFVGYHGTFLEAAHSIVFEGVHERDQSsiAPWQGFYVAGDPALAYGYAQDQEADAR-------GRIRNGVLLRVYVPRAALPRLYATQQTLADpgAVDGVGRLIGHPLPLQLEAITGPEEEGGRLETILGWRLAEQAVVIPSTIPTDPRNVgGDLDPASVPQEESaISSLPDY--
+>UniRef90_A0A327QJF2/440-631 [subseq from] Exotoxin A n=12 Tax=Aeromonas TaxID=642 RepID=A0A327QJF2_AERSA
+------FTTAGTQNWSMARLSQAHQQLIDSGYAFVGYHGTFIEAAHSIVFEGVHERDQSsiAPWQGFYVAGDPALAYGYAQDQDA-DERG------RIRNGVLLRVYVPRTALPRLYATSLTLAspDAVDEVSRLIGHPLPLQLDAITGPEEEGGRLETILGWRLAEQAVVIPSTIPTDPRNVGgNLDPATVLqEERAISTLPDY--
+>UniRef90_UPI001415534A/434-626 [subseq from] exotoxin n=1 Tax=Serratia fonticola TaxID=47917 RepID=UPI001415534A
+------FTTRGTQNWTTDRLIAAHQQLTSQGYVFVGYHGTFLEAAHSIVFEgVRARSqSLDNAWHGFYIAGDPAVSYGYALDQDPDPN------TGRIRNGVMLRVYVRQESLPNFYQTNVALSSpdAVNAVSSLIGHTLPLQLDSITGQEDEEGRLETIIGWPLAEQLVVIPSTISTDPRNPGgVLDPSSIPEaEKAISVLPNY--
+>UniRef90_A0A5S9HJY3/477-660 [subseq from] Exotoxin A n=20 Tax=Chromobacterium TaxID=535 RepID=A0A5S9HJY3_9NEIS
+-----------TRNWSQERLLATHQRLLDQGYVFAGYHGGSTIAARSIVTgGITPRTQElPPIWKGFYIAGNPEVAYGYALDNDN------P-----RSRGIMMRIYVPRTALPQLFRTSQPLSDeaaALREMSRLFGRNVTLDStlgyESITGPQAPDEADETVLGWLMARHSVAIPSMIQGNGNNAGKIDVPD--YEKKISALPDY--
+>UniRef90_A0A0X8GM05/479-653 [subseq from] SCP domain-containing protein n=1 Tax=Janthinobacterium sp. B9-8 TaxID=1236179 RepID=A0A0X8GM05_9BURK
+-------LPNGTTrNWSQDRLLATHQRLLDLGYVFAGYHGGSIAAARSIVTGgITRRSQDlQPIWRGLYIASDPEVAYGYAL-DNNTG-----------ATGTMMRVYVPGTALSRLFRTNQALSDeaaALREIGRLLGRNITLADtlgyESITGPQDPGDPDETILGWDLAEHAVVIPSMIRGNNGSQLNVPD-----------------
+>UniRef90_A0A0N9X392/447-517 [subseq from] Truncated cholix toxin n=1 Tax=Vibrio cholerae TaxID=666 RepID=A0A0N9X392_VIBCL
+--NRAVITPQGVTNWTYQELEAKHQTLTREGYVFVGYHGTNHVAAQSIVNRITPVprgnnTEKEEEWGGYMLQ-------------------------------------------------------------------------------------------------------------------------------------
+>UniRef90_UPI00193BC458/44-223 [subseq from] hypothetical protein n=1 Tax=Archangium violaceum TaxID=83451 RepID=UPI00193BC458
+------------TRFSHQQLSQAHDRLTNDGYSFVGFKGTTRPGAQHIVNNGLSA-NRTDKWSGIYVSDHPEVAAGYTADDMGNS-----------RGGQLLRIYVPNRDAERLQNLATPLDNPKAEDEFRRAFSFPLgddRSYIIRGAENSEDphRTETILSAKVADRAVGIPSTVRvDQKYGSGAIDAYPDA-EKLLSTPPPG--
+>UniRef90_A0A840MSR9/39-209 [subseq from] Exotox-A_cataly domain-containing protein n=1 Tax=Chitinivorax tropicus TaxID=714531 RepID=A0A840MSR9_9PROT
+-----------------------EAALKEKGYVFVGYHGTNIAAAKSIAEDgVrDPGTRSETDPNNvFYTSPSAEVAHGYSLPSvDDPARGGDPaerARALGDSRGVLLRVYLPADVVQKYgYQfdASTDAHtsLGDTDVQALLSH-MQSKGEPFllSGPQGSAADDlshrlpATLINYRMAERAIAIPSTVVGT--------------------------
+>UniRef90_S9NZM2/50-199 [subseq from] Exotoxin A (NAD-dependent ADP-ribosyltransferase) n=2 Tax=Cystobacter fuscus TaxID=43 RepID=S9NZM2_9DELT
+----------------DQQLADAHNELTRRGYAFVGFKGSSEQGAMNAVNGGLR-AQGGDKWSGIYVSDQTAVAAGYTADEMG-----------RSKGGQLVRVYVPQQDAEKLQNLATPMDNprVENEFRKNMGFRLGdDRSYIIRGQETTDDKyrTETVLSPKVAERAVAIPSTVL----------------------------
+>UniRef90_A0A840MNT6/39-203 [subseq from] Calpain catalytic domain-containing protein n=1 Tax=Chitinivorax tropicus TaxID=714531 RepID=A0A840MNT6_9PROT
+-----------------------EAALKEKDYVFVGYHGTNIAAAKSIAEDgVrDPGTRSKTDPnNVFYTSPSAEVAHGYSL--PGVANTEKEIKALGNSRGVLLRVYLPAEVVQKYgYQfdasTDAHISLGDADVQDLLRHM-QSKGEPFllSGPQGSAAEDmshrlpETLINYRMAEQAIAIPSTVVGT--------------------------
+>UniRef90_A0A2S1JU27/440-591 [subseq from] Exotox-A_cataly domain-containing protein n=1 Tax=Microbulbifer sp. A4B17 TaxID=359370 RepID=A0A2S1JU27_9GAMM
+-----------------ELIESAHAALERAGYRFVGYHGTTASNAVSIVNQgIEAISgfPEGQAWRGFYFADSPEVAAGYTIDQE-TAS---------LSGGQLLRVYLPTAEANAMQNIGIALDQGE-AITEVVnlyGEDVwDAGNFLIRGVETTGeASTESIMGFNLAKRAVVIPSSI-----------------------------
+>UniRef90_S9P266/7-148 [subseq from] Exotoxin A (NAD-dependent ADP-ribosyltransferase) n=1 Tax=Cystobacter fuscus DSM 2262 TaxID=1242864 RepID=S9P266_9DELT
+-------------------------RLRDNGYVFVGFKGAPKHKAMDAVNNGLHA-RMGKDWSGLYVADNPQVAAGYTADDE-TGS------A---KGGQLVRVYVPRQDAKNLVNMETPLSkesTAKKEFKDTFGFRIGeDRSYAIRGYEREDREStETILSGKVAARAVAIPSTIK----------------------------
+>UniRef90_UPI001EDA1883/596-650 [subseq from] InlB B-repeat-containing protein n=1 Tax=Prevotella sp. E13-17 TaxID=2913616 RepID=UPI001EDA1883
+-------MPEGVTNATTYTIESqpiTLDAPIREGYTFAGWTGTGLNEATTSVIIATGSTENR----------------------------------------------------------------------------------------------------------------------------------------------
+>UniRef90_UPI001EDA1883/734-788 [subseq from] InlB B-repeat-containing protein n=1 Tax=Prevotella sp. E13-17 TaxID=2913616 RepID=UPI001EDA1883
+-------MPEGVTNATTYTIESqpiTLNAPIREGYTFAGWTGTGLNEATTSVIIATGSTENR----------------------------------------------------------------------------------------------------------------------------------------------
+>UniRef90_UPI00106C782C/435-497 [subseq from] exotoxin A n=3 Tax=Pseudomonas aeruginosa TaxID=287 RepID=UPI00106C782C
+-------STRGTQNWTVERLLQAHRQLEERGYVFVGYHGTFLEAAQSIVFGgVrARSQDLDAIWRGFYIA-------------------------------------------------------------------------------------------------------------------------------------
+>SRR3989344_6013533/274-302 [subseq from] SRR3989344_6013533
+-----AYTPQGIANLLYRPLESQNQAGFGEAISF-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+>SRR5437667_11634073/3-134 [subseq from] SRR5437667_11634073
+-----------------------------HGYQFAGWHGTSTSAAESMINGDPprPTAYGDPLWDGFYTGASPDIAAGYATQDDGR------------RPGKIIRIYVPAADIQgNVYEYPNDINDAktDPHLPDPIKNH-GTGNYVISGHD-ATGRTETVLSPSVVAHAVAIPS-------------------------------
+>A0A0L0BKK0_LUCCU/1817-1853 [subseq from] A0A0L0BKK0_LUCCU
+-------------------------------------------------------------------------------------------------------------------------------TLEVIGHSLGAHVAGFTGKNIANGKAHAIIGLDPALP-------------------------------------
+>A0A0L0BKK0_LUCCU/2157-2191 [subseq from] A0A0L0BKK0_LUCCU
+--------------------------------------------------------------------------------------------------------------------------------LEIIGHSLGAHVAGFTGKNIKSGKAHTIVGLDPAL--------------------------------------
+>MGYP001505570684/435-625 [subseq from] FL=1
+-------STRGTQNWTVERLLQAHRQLEERGYVFVGYHGTFLEAAQSIVFGgVrARSQDLDAIWRGFYIAGDPALAYGYAQDQE-------PDARGRIRNGALLRVYVPRSSLPGFYRTSLTLAapEAAGEVERLIGHPLPLRLDAITGPEEEGGRLETILGWPLAERTVVIPSAIPTDPRNVgGDLDPSSIpDKEQAISALPDY--
+>MGYP002885272564/91-281 [subseq from] FL=0
+-------STRGTQNWTVERLLQAHRQLEERGYVFVGYHGTFLEAAQSIVFGgVrARSQDLDAIWRGFYIAGDPALAYGYAQDQE-------PDARGRIRNGALLRVYVPRSSLPGFYRTGLTLAapEAAGEVERLIGHPLPLRLDAITGPEEEGGRLETILGWPLAERTVVIPSAIPTDPRNVgGDLDPSSIPdQEQAISALPDY--
+>MGYP000335306624/442-631 [subseq from] MGYP000335306624
+--------TAGTRNWSVTRLEQAHRQLLARGYLFVGYHGTFLEAAHSIVFEGVHERDQSsiAPWQGFYVAGDPALAYGYAQDQEADAR-------GRIRNGVLLRVYVPRAALPHLYATQQTLADpgAVDEVGRLIGHPLPLQLEAITGPEEEGGRLETILGWRLAEQAVVIPSTIPTDPRNVgGDLDLASVPQEESaISALPDY--
+>MGYP001578940457/440-631 [subseq from] FL=1
+------FTTAGTQNWSMARLNQAHQQLIDSGYAFVGYHGTFIEAAHSIVFEGVHERDQSsiAPWQGFYVAGDPALAYGYAQDQDA-DERG------RIRNGVLLRVYVPRTALPRLYATSLTLAspDAVDEVSRLIGHPLPLQLNSITGPEEEGGRLETILGWRLAEQAVVIPSTIPTDPRNVGgNLDPATVLqEERAISTLPDY--
+>MGYP000702211183/198-379 [subseq from] FL=1
+-----------IINWSLQQLISAHSQLLRDDYVFVGYHGTSSISARSIVLDGVRAREQalSAIWEGFYIAGDPSVAYGYALNE--TGH-----------AGAMLRVYVPRSTLNNFFQTDMSLDapRAQQEIARLIGHMLPLELDSITGPENDdddGRRLETILGWSLAERTVVIPSAIRVDNP-GGSLNPSSVPKeEEAISSLPNY--
+>MGYP001065173522/135-272 [subseq from] FL=0
+----------------------------------------------------------DAIWRGFYIAGDPALAYGYAQDQE-------PDARGRIRNGALLRVYVPRSSLPGFYRTGLTLAapEAAGEVERLIGHPLPLRLDAITGPEEEGGRLETILGWPLAERTVVIPSAIPTDPRNVgGDLDPSSIPdQEQAISALPDY--
+>MGYP000632350865/504-610 [subseq from] MGYP000632350865
+-------STRGTQNWTVERLLQAHRQLEERGYVFVGYHGTFLEAAQSIVFGgVrARSQDLDAIWRGFYIAGDPALAYGYAQDQE-------PDARGRIRNGALLRVYVPRSSLPGFYRTGL----------------------------------------------------------------------------------
+>MGYP003087556343/102-138 [subseq from] FL=0
+-------NPNTVASYTVLDADITVSSATRPGYTFLGWYDNPGLT-------------------------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP003087556343/349-404 [subseq from] FL=0
+------TNPNTVSNYTVADADITVNPAARNGYTFLGWYDNAGLTGAP-VTRIRTMdAENKQYY-------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP003087556343/511-564 [subseq from] FL=0
+------TNPNTVSNYTVEDTDITINPATRTGYGFLGWYDNASLTGTPVTNLHTMDAENKQ---------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP003087556343/759-812 [subseq from] FL=0
+------TNPNTVASYTVLDADVAIQPATRTGYDFLGWYDNAALTGTPITNLHTMDAENKH---------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP003087556343/841-893 [subseq from] FL=0
+-------NPNTVTSYTVLDADVTIQPATRTGYTFLGWYDNAGFTGTPVTNLHTMDAENKQ---------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP003087556343/1088-1125 [subseq from] FL=0
+------TNPNSVANYTVLDADIAIQPATRTGYTFLGWYDNAALT-------------------------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP003087556343/1337-1388 [subseq from] FL=0
+-------NPNTVTSYTVTDADVAIQPATRTGYDFLGWYDNATFTGTPVTNLHTMDAENK----------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP001504612001/39-95 [subseq from] FL=0
+------TNPNTVSNYTVADADITVNPATRNGYTFLGWYDNAGL-TGTPVTRIRTMdAENKQYYA------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP001504612001/201-254 [subseq from] FL=0
+------TNPNMVSNYTVEDADITINPATRTGYGFLGWYDNASLTGSPVTNLHTMDAENKQ---------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP001504612001/449-501 [subseq from] FL=0
+------TNPNTVTSYTVLDADVTVQPATRTGYDFLGWYDNAALTGTPVTNLHTMDAENK----------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP001504612001/531-568 [subseq from] FL=0
+-------NPNTVTSYTVLDADVTIQPATRTGYTFLGWYDNAGFSG------------------------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP001504612001/860-893 [subseq from] FL=0
+-------NPNTVASYTVQDADVTIQPATRTGYTFLGWYDNV----------------------------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP001504612001/1762-1798 [subseq from] FL=0
+-------NPNTVANYTVLDADIAIQPATRTGYTFLGWYDNAALT-------------------------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP001504612001/2009-2062 [subseq from] FL=0
+------TNPNTVTSYTVTDADVTIQPATRTGFSFLGWYDNAALTGTPVTNLHTMDAENKQ---------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP000519140204/2036-2087 [subseq from] MGYP000519140204
+------TNPNTVTTYTVLDADVAIQPATRTGYSFLGWYADPAFTGSPVTNLHTMDAEN-----------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP000519140204/2361-2418 [subseq from] MGYP000519140204
+------TNPNTVSNYTVEDADITVNQATRNGYTFLGWYDNAG-LAGTPVTRIRTMdAENKQYYAK-----------------------------------------------------------------------------------------------------------------------------------------
+>MGYP000519140204/2523-2575 [subseq from] MGYP000519140204
+------TNPNTVSNYTVEDADITISPATRTGYGFLGWYDNASLTGTQVTSLRTMDAENK----------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP000519140204/2771-2825 [subseq from] MGYP000519140204
+------TNPNTVTSYTVLDADVSVQPATRTGYDFLGWYDNAALTGTPVTNLHTMDAENKQY--------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP002743946346/224-266 [subseq from] FL=0
+------TNPNSVANYTVLDADVAIQPATRTGYTFLGWYDNPGLSGSPVT--------------------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP002743946346/472-525 [subseq from] FL=0
+------TNPNTVTSYTVTDADMAIQPATRTGYDFLGWYDNAALTGSPVTNIHTMDAENKQ---------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP002743946346/553-606 [subseq from] FL=0
+------SSPNTVATYTVEDADVTIQPATRTGYTFLGWYDNAALTGTPITNLHTMDAENKQ---------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP002743946346/801-839 [subseq from] FL=0
+------TNPNSVANYTVLDADVAIQPATRTGYTFLGWYDNPGLSG------------------------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP002743946346/1049-1090 [subseq from] FL=0
+------TNPNTVTSYTVTDADVAIQPATRKGYDFLGWYDNAALTGTPV---------------------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP002743946346/2033-2086 [subseq from] FL=0
+-------NPNTVTSYTVTDADVTIQPATRTGYDFLGWYDNVALTGSPVTNLHTMDAENKQY--------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP001504553947/2358-2412 [subseq from] FL=0
+----AATNPNTVANYTVLDADIAIQPATRTGYTFLGWYDNPGLSGSPVTNLHTMDAENK----------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP001504553947/2608-2659 [subseq from] FL=0
+------TNPNTVSNYTVEDADITISPATRTGYGFLGWYDNASLTGTQVTSLRTMDAEN-----------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP001504553947/2856-2908 [subseq from] FL=0
+------TNPNTVTSYTVLDADVSVQPATRTGYDFLGWYDNAALTGTPVTNLHTMDAENK----------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP001504553947/2938-2974 [subseq from] FL=0
+-------NPNTVTSYTVLDADVTIQPATRTGYTFLGWYDNAGFS-------------------------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP001504553947/3840-3889 [subseq from] FL=0
+--HLA-TNPNTVTTYTVLDADVTIQPATRTGYNFLGWYVNPAFTGSPVTNLHT----------------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP001504553947/4416-4470 [subseq from] FL=0
+------TNPNTVTSYTVTDADMAIQPATRTGYDFLGWYDNVALTGSPVTNLHTMDAENKQY--------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP001504553947/4497-4550 [subseq from] FL=0
+------SSPNTVATYTVEDADVTIQPATRTGYTFLGWYDNAALTGTPVTNLHTMDAENKQ---------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP000734435170/775-828 [subseq from] MGYP000734435170
+------TNPNTVSNYTVEDADITINPATRTGYGFLGWYDNASLTGSPVTNLHTMDAENKQ---------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP000734435170/1352-1406 [subseq from] MGYP000734435170
+------TNPNTVASYTVLDADVTIRPATRTGYDFEGWYDNPGLTGTPITNLHTMDAENKQY--------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP000734435170/1434-1468 [subseq from] MGYP000734435170
+-------NPNTLASYTVQDADVTIQPATRTGYTFLGWYDNVG---------------------------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP001045667757/70-262 [subseq from] FL=0
+------------------DVSSLDQYLKDElGLVFVGYHGTAPEnVGRILQNGITDtgTRETDDVWSGLYVADDAETAKGYLVNQNDpvairQGAVGSQiFRAYAPADTVFLD--IKDISLEDLAKLpDTEINAIIRTQAEAQGIDIDSENVVVRGREANGEPaTETIIKWNFAEQTVFIPSSIEFDRYSDLtAAGAMALEQEKSLGGTPEYQ-
+>MGYP000280256066/224-266 [subseq from] MGYP000280256066
+------TNPNSVANYTVLDADIAIQPATRTGYTFLGWYDNPGLSGSPVT--------------------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP000280256066/473-525 [subseq from] MGYP000280256066
+-------NPNTVTSYTVTDADVTIQSATRTGYDFLGWYDNAALTGTPVTNLHTMDAENKQ---------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP000280256066/554-606 [subseq from] MGYP000280256066
+-------NPNTVATYTVEDADVTIQPATRTGYTFQGWYDNAALTGTPVTNLHTMDAENKQ---------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP000280256066/801-838 [subseq from] MGYP000280256066
+------TNPNTVANYTVLEADIAIQPATRTGYTFLGWYDNAALT-------------------------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP000280256066/1049-1101 [subseq from] MGYP000280256066
+------TNPNTVTSYTVTDADVVIHPATRTGYDFLGWYDNATFMGTPVTNLHTMDAENK----------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP000280256066/1131-1173 [subseq from] MGYP000280256066
+-------NPNTVATYTVEDADVTIQPATRTGYTFLGWYDNAALTGTPITN-------------------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP000011995922/1390-1443 [subseq from] MGYP000011995922
+------TNPNTVSNYTVEDADITIHPATRTGYGFLGWYDNASLTGSPVTNLHTMDAENKQ---------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP003876286381/294-331 [subseq from] FL=0
+----------------------------------------------------------------------------------------------------------------------------------LVGHADQVRTVAFSPDgrmVASGGFDKTIILWDMKNDA------------------------------------
+>MGYP003876286381/433-473 [subseq from] FL=0
+--------------------------------------------------------------------------------------------------------------------------------TPLTGHTGDINSVAFSpdGKTlASGSDDGTIIVWDVATHQP-----------------------------------
+>MGYP003876286381/518-557 [subseq from] FL=0
+--------------------------------------------------------------------------------------------------------------------------------TPLTGHTGPIRSVIFSPDGtllASGSDDGTVILWDVATHQ------------------------------------
+>MGYP003876286381/563-601 [subseq from] FL=0
+----------------------------------------------------------------------------------------------------------------------------------LTGHSEPVSRVVFSPDGtilASGSDDGTIILWDIVTHQP-----------------------------------
+>MGYP003876286381/704-740 [subseq from] FL=0
+-----------------------------------------------------------------------------------------------------------------------------------LGHALGIESIAWSpdGKMlATGSLDKTIIVWDMATHQ------------------------------------
+>MGYP003876286381/871-911 [subseq from] FL=0
+--------------------------------------------------------------------------------------------------------------------------------TPLTGHTAGINSVAFSPDGTllvSGGEDKTIIVWDVATHQP-----------------------------------
+>MGYP002754677971/96-147 [subseq from] FL=0
+------TNPNTVSNYTVEDADITISPATRTGYGFLGWYDNASLTGSPVTSIRTMDAEN-----------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP000410052705/1622-1676 [subseq from] MGYP000410052705
+-----AINPNTVSNYTVEDADITIHPATRTGYGFLGWYDNASLTGTPVTNLHTMDAENKQ---------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP000410052705/2281-2316 [subseq from] MGYP000410052705
+------SNPNTLASYTVQDADVTIQPATRTGYTFLGWYDNVG---------------------------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP000171241504/196-233 [subseq from] MGYP000171241504
+------TNPNTVANYTVLDADIAIQPATRTGYTFLGWYDNAALT-------------------------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP000171241504/444-497 [subseq from] MGYP000171241504
+------TNPNTVATYTVEDADVTIQPATRTGYTFQGWYDNAALTGTPITNLHTMDAENKQ---------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP000171241504/692-734 [subseq from] MGYP000171241504
+------MNPNSVANYTVLDADIAIQPATRTGYTFLGWYDNPGLSGSPVT--------------------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP000437727136/34-109 [subseq from] FL=0
+-----------------------------------------------------------------------------------------------------------------------------EISACLVGSEMCIRDSAITGPEEEGGRLETILGWPLAERTVVIPSAIPTdprNVGGDLAP-SSIPDKEQAISALPDY--
+>MGYP002741534988/2361-2414 [subseq from] FL=0
+------TNPNTVSNYTVEDAEITIHPATRTGYSFLGWYDNASLTGTPVTNLRTMDAENKQ---------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP002740283575/289-341 [subseq from] FL=0
+------TNPNTVTSYTVTDADVTIQSASRTGYDFLGWYDNAGFTGTPVTNLHTMDAENK----------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP002740283575/371-422 [subseq from] FL=0
+-------NPNTVASYTVLDADVAIHPATRTGYTFLGWYDNAALTGTPVTNLHTMDAENK----------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP002740283575/618-661 [subseq from] FL=0
+------TNPNTVANYTVEDADITVNPATRTGYTFEGWYDNAALTG-TPVTA------------------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP002740283575/867-898 [subseq from] FL=0
+-------NPNTVTSYTVTDADVAIQPATRTGYDFLGWYD------------------------------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP000050416765/1135-1168 [subseq from] MGYP000050416765
+------NNPNTLTNYTVLDLDTALRPATRTGYNFLGWYDN-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP000050416765/2122-2174 [subseq from] MGYP000050416765
+------TNPNTVSNYTVEDADITISPATRTGYGFLGWYDNASLTGTPVTSLRTMDAENK----------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP000050416765/2370-2411 [subseq from] MGYP000050416765
+------TNPNTVTSYTVLDADVTVQPATRTGYDFLGWYDNAALTGTPI---------------------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP000050416765/2452-2503 [subseq from] MGYP000050416765
+-------NPNTVSSYTVLDADVSIQPATRTGYTFLGWYDNAGFTGTPVTNLHTIDAENK----------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP000050416765/2699-2736 [subseq from] MGYP000050416765
+------SNPNTVASYTVLDSDVTIQPATRTGYTFLGWYDNVGFA-------------------------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP000050416765/2948-2986 [subseq from] MGYP000050416765
+-------NPNTVASYTVLEADVTIHPATRTGYTFLGWYDNSGFTGT-----------------------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP002754495775/1260-1320 [subseq from] FL=0
+-----AINPNTVTSYSVTDADVTIQPATRTGYDFLGWYDNAALTGTPVTNLHTMDAENKQYYAKWS---------------------------------------------------------------------------------------------------------------------------------------
+>MGYP002744862654/39-75 [subseq from] FL=0
+------TNPNTVANYTVEDADITVNPATRTGYTFEGWYDNASF--------------------------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP002744862654/201-254 [subseq from] FL=0
+------TNPNTVTSYTVLDADVTVQPATRTGYDFLGWYDNAALTGTPVTNLHTMDAENKH---------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP002744862654/530-584 [subseq from] FL=0
+------TNPNTVLSYTVLDADVTIRPATRTGYDFEGWYDNPGLTGTPVTNLHTMDAENKQY--------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP002744713300/143-185 [subseq from] FL=0
+------TNPNTVTSYTVVDPNVTLSSATRPGYDFLGWYENPALTGTPVT--------------------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP002744713300/224-276 [subseq from] FL=0
+------TNPNTVSNYTVEDAEITIHPATRTGYSFLGWYDNASLTGTPVTSLRTMDAENK----------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP002744713300/720-773 [subseq from] FL=0
+------TNPNTVTSYTVLDADVSVQPATRTGYDFLGWYDNAALTGTPVTNLHTMDAENKH---------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP001741375682/2-53 [subseq from] FL=0
+--------PNTVTSYTVTDADMAIQPATRTGYDFLGWYDNAALTGSPVTNIHTMDAENKQ---------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP000875485265/2767-2818 [subseq from] FL=0
+------TNPNTVSNYTVEDAEITIHPATRTGYSFLGWYDNASLTGTPVTSLRTMDAEN-----------------------------------------------------------------------------------------------------------------------------------------------
+>MGYP000875485265/3263-3301 [subseq from] FL=0
+------TNPNTVTSYTVLDADVTVQPATRTGYDFLGWYDNAALTG------------------------------------------------------------------------------------------------------------------------------------------------------------
