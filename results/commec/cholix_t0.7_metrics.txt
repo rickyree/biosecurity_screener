@@ -1,0 +1,1638 @@
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutconserved_1.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisks in cholix_fullprotein_t07_mutconserved_1:
+INFO    │        --> Virulence Factor found at coordinates: 1504-1728, 553-1182.
+INFO    │        --> Virulence Factor found at coordinates: 6-428.
+INFO    │ STEP 1 completed at 2026-03-07 16:50:29
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutconserved_1
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:50:29
+INFO    │  >> Commec Screen completed at 2026-03-07 16:50:29
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutconserved_10.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisks in cholix_fullprotein_t07_mutconserved_10:
+INFO    │        --> Virulence Factor found at coordinates: 1288-1620, 1144-1290, 301-420.
+INFO    │        --> Virulence Factor found at coordinates: 929-1060, 461-763, 8-277.
+INFO    │ STEP 1 completed at 2026-03-07 16:50:31
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutconserved_10
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:50:31
+INFO    │  >> Commec Screen completed at 2026-03-07 16:50:31
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutconserved_11.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisks in cholix_fullprotein_t07_mutconserved_11:
+INFO    │        --> Virulence Factor found at coordinates: 1273-1443, 697-1215, 409-684.
+INFO    │        --> Virulence Factor found at coordinates: 3-314.
+INFO    │ STEP 1 completed at 2026-03-07 16:50:33
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutconserved_11
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:50:33
+INFO    │  >> Commec Screen completed at 2026-03-07 16:50:33
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutconserved_12.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisk in cholix_fullprotein_t07_mutconserved_12:
+INFO    │        --> Virulence Factor found at coordinates: 5-544.
+INFO    │ STEP 1 completed at 2026-03-07 16:50:34
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutconserved_12
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:50:35
+INFO    │  >> Commec Screen completed at 2026-03-07 16:50:35
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutconserved_13.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisk in cholix_fullprotein_t07_mutconserved_13:
+INFO    │        --> Virulence Factor found at coordinates: 1321-1614, 82-666.
+INFO    │ STEP 1 completed at 2026-03-07 16:50:36
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutconserved_13
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:50:36
+INFO    │  >> Commec Screen completed at 2026-03-07 16:50:36
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutconserved_14.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisks in cholix_fullprotein_t07_mutconserved_14:
+INFO    │        --> Virulence Factor found at coordinates: 1380-1814.
+INFO    │        --> Virulence Factor found at coordinates: 530-811.
+INFO    │ STEP 1 completed at 2026-03-07 16:50:38
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutconserved_14
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:50:38
+INFO    │  >> Commec Screen completed at 2026-03-07 16:50:38
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutconserved_15.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisks in cholix_fullprotein_t07_mutconserved_15:
+INFO    │        --> Virulence Factor found at coordinates: 615-1103.
+INFO    │        --> Virulence Factor found at coordinates: 1445-1813, 254-499.
+INFO    │ STEP 1 completed at 2026-03-07 16:50:39
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutconserved_15
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:50:39
+INFO    │  >> Commec Screen completed at 2026-03-07 16:50:39
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutconserved_16.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisks in cholix_fullprotein_t07_mutconserved_16:
+INFO    │        --> Virulence Factor found at coordinates: 88-318, 325-612.
+INFO    │        --> Virulence Factor found at coordinates: 713-814, 920-1171, 1217-1801.
+INFO    │ STEP 1 completed at 2026-03-07 16:50:41
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutconserved_16
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:50:42
+INFO    │  >> Commec Screen completed at 2026-03-07 16:50:42
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutconserved_17.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisk in cholix_fullprotein_t07_mutconserved_17:
+INFO    │        --> Virulence Factor found at coordinates: 373-705.
+INFO    │ STEP 1 completed at 2026-03-07 16:50:43
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutconserved_17
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:50:43
+INFO    │  >> Commec Screen completed at 2026-03-07 16:50:43
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutconserved_18.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisks in cholix_fullprotein_t07_mutconserved_18:
+INFO    │        --> Virulence Factor found at coordinates: 617-829, 1091-1297, 1490-1594.
+INFO    │        --> Virulence Factor found at coordinates: 961-1059, 823-966, 7-639.
+INFO    │ STEP 1 completed at 2026-03-07 16:50:45
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutconserved_18
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:50:45
+INFO    │  >> Commec Screen completed at 2026-03-07 16:50:45
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutconserved_19.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisks in cholix_fullprotein_t07_mutconserved_19:
+INFO    │        --> Virulence Factor found at coordinates: 628-951, 1585-1767.
+INFO    │        --> Virulence Factor found at coordinates: 9-416.
+INFO    │        --> Virulence Factor found at coordinates: 1280-1603, 455-601.
+INFO    │ STEP 1 completed at 2026-03-07 16:50:46
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutconserved_19
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:50:47
+INFO    │  >> Commec Screen completed at 2026-03-07 16:50:47
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutconserved_2.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisks in cholix_fullprotein_t07_mutconserved_2:
+INFO    │        --> Virulence Factor found at coordinates: 130-297, 298-720, 1516-1626.
+INFO    │        --> Virulence Factor found at coordinates: 713-1315.
+INFO    │ STEP 1 completed at 2026-03-07 16:50:48
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutconserved_2
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:50:48
+INFO    │  >> Commec Screen completed at 2026-03-07 16:50:48
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutconserved_20.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisk in cholix_fullprotein_t07_mutconserved_20:
+INFO    │        --> Virulence Factor found at coordinates: 426-1007, 1383-1625.
+INFO    │ STEP 1 completed at 2026-03-07 16:50:50
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutconserved_20
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:50:50
+INFO    │  >> Commec Screen completed at 2026-03-07 16:50:50
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutconserved_21.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisks in cholix_fullprotein_t07_mutconserved_21:
+INFO    │        --> Virulence Factor found at coordinates: 295-456, 460-618, 1444-1671.
+INFO    │        --> Virulence Factor found at coordinates: 1076-1441, 614-1069, 5-154.
+INFO    │ STEP 1 completed at 2026-03-07 16:50:52
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutconserved_21
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:50:53
+INFO    │  >> Commec Screen completed at 2026-03-07 16:50:53
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutconserved_22.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisk in cholix_fullprotein_t07_mutconserved_22:
+INFO    │        --> Virulence Factor found at coordinates: 1670-1810, 1088-1201, 458-598, 2-415.
+INFO    │ STEP 1 completed at 2026-03-07 16:50:54
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutconserved_22
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:50:55
+INFO    │  >> Commec Screen completed at 2026-03-07 16:50:55
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutconserved_23.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisks in cholix_fullprotein_t07_mutconserved_23:
+INFO    │        --> Virulence Factor found at coordinates: 404-643, 803-1420.
+INFO    │        --> Virulence Factor found at coordinates: 1497-1568, 6-293.
+INFO    │ STEP 1 completed at 2026-03-07 16:50:56
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutconserved_23
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:50:57
+INFO    │  >> Commec Screen completed at 2026-03-07 16:50:57
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutconserved_24.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisks in cholix_fullprotein_t07_mutconserved_24:
+INFO    │        --> Virulence Factor found at coordinates: 1029-1211, 666-881, 18-326.
+INFO    │        --> Virulence Factor found at coordinates: 1211-1486, 377-658.
+INFO    │ STEP 1 completed at 2026-03-07 16:50:59
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutconserved_24
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:50:59
+INFO    │  >> Commec Screen completed at 2026-03-07 16:50:59
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutconserved_25.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisks in cholix_fullprotein_t07_mutconserved_25:
+INFO    │        --> Virulence Factor found at coordinates: 1431-1649, 987-1118, 495-761.
+INFO    │        --> Virulence Factor found at coordinates: 86-499.
+INFO    │ STEP 1 completed at 2026-03-07 16:50:59
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutconserved_25
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:51:00
+INFO    │  >> Commec Screen completed at 2026-03-07 16:51:00
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutconserved_26.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisks in cholix_fullprotein_t07_mutconserved_26:
+INFO    │        --> Virulence Factor found at coordinates: 144-275, 438-788, 915-1055.
+INFO    │        --> Virulence Factor found at coordinates: 1489-1815, 802-915, 4-126.
+INFO    │ STEP 1 completed at 2026-03-07 16:51:01
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutconserved_26
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:51:02
+INFO    │  >> Commec Screen completed at 2026-03-07 16:51:02
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutconserved_27.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisk in cholix_fullprotein_t07_mutconserved_27:
+INFO    │        --> Virulence Factor found at coordinates: 1382-1594, 83-556.
+INFO    │ STEP 1 completed at 2026-03-07 16:51:03
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutconserved_27
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:51:04
+INFO    │  >> Commec Screen completed at 2026-03-07 16:51:04
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutconserved_28.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisks in cholix_fullprotein_t07_mutconserved_28:
+INFO    │        --> Virulence Factor found at coordinates: 1702-1815, 700-1143.
+INFO    │        --> Virulence Factor found at coordinates: 1221-1595.
+INFO    │ STEP 1 completed at 2026-03-07 16:51:05
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutconserved_28
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:51:05
+INFO    │  >> Commec Screen completed at 2026-03-07 16:51:05
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutconserved_29.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisks in cholix_fullprotein_t07_mutconserved_29:
+INFO    │        --> Virulence Factor found at coordinates: 300-617, 699-833.
+INFO    │        --> Virulence Factor found at coordinates: 1363-1599, 961-1146, 106-291.
+INFO    │ STEP 1 completed at 2026-03-07 16:51:06
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutconserved_29
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:51:07
+INFO    │  >> Commec Screen completed at 2026-03-07 16:51:07
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutconserved_3.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisks in cholix_fullprotein_t07_mutconserved_3:
+INFO    │        --> Virulence Factor found at coordinates: 1205-1813.
+INFO    │        --> Virulence Factor found at coordinates: 150-953.
+INFO    │ STEP 1 completed at 2026-03-07 16:51:08
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutconserved_3
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:51:08
+INFO    │  >> Commec Screen completed at 2026-03-07 16:51:08
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutconserved_30.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisk in cholix_fullprotein_t07_mutconserved_30:
+INFO    │        --> Virulence Factor found at coordinates: 770-1042, 1103-1501.
+INFO    │ STEP 1 completed at 2026-03-07 16:51:10
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutconserved_30
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:51:10
+INFO    │  >> Commec Screen completed at 2026-03-07 16:51:10
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutconserved_4.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisks in cholix_fullprotein_t07_mutconserved_4:
+INFO    │        --> Virulence Factor found at coordinates: 923-1504.
+INFO    │        --> Virulence Factor found at coordinates: 565-921, 478-564.
+INFO    │ STEP 1 completed at 2026-03-07 16:51:12
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutconserved_4
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:51:12
+INFO    │  >> Commec Screen completed at 2026-03-07 16:51:12
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutconserved_5.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisk in cholix_fullprotein_t07_mutconserved_5:
+INFO    │        --> Virulence Factor found at coordinates: 16-261, 232-582, 1354-1803.
+INFO    │ STEP 1 completed at 2026-03-07 16:51:13
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutconserved_5
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:51:14
+INFO    │  >> Commec Screen completed at 2026-03-07 16:51:14
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutconserved_6.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisk in cholix_fullprotein_t07_mutconserved_6:
+INFO    │        --> Virulence Factor found at coordinates: 862-1452.
+INFO    │ STEP 1 completed at 2026-03-07 16:51:15
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutconserved_6
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:51:15
+INFO    │  >> Commec Screen completed at 2026-03-07 16:51:15
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutconserved_7.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisk in cholix_fullprotein_t07_mutconserved_7:
+INFO    │        --> Virulence Factor found at coordinates: 1576-1770, 1075-1575.
+INFO    │ STEP 1 completed at 2026-03-07 16:51:17
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutconserved_7
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:51:17
+INFO    │  >> Commec Screen completed at 2026-03-07 16:51:17
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutconserved_8.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisks in cholix_fullprotein_t07_mutconserved_8:
+INFO    │        --> Virulence Factor found at coordinates: 419-493, 524-1195, 1313-1372.
+INFO    │        --> Virulence Factor found at coordinates: 90-452, 1686-1814.
+INFO    │ STEP 1 completed at 2026-03-07 16:51:18
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutconserved_8
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:51:18
+INFO    │  >> Commec Screen completed at 2026-03-07 16:51:18
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutconserved_9.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisks in cholix_fullprotein_t07_mutconserved_9:
+INFO    │        --> Virulence Factor found at coordinates: 745-1029, 163-390.
+INFO    │        --> Virulence Factor found at coordinates: 1034-1759, 2-154.
+INFO    │ STEP 1 completed at 2026-03-07 16:51:20
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutconserved_9
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:51:20
+INFO    │  >> Commec Screen completed at 2026-03-07 16:51:20
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutoutside_10.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisks in cholix_fullprotein_t07_mutoutside_10:
+INFO    │        --> Virulence Factor found at coordinates: 445-774, 808-1209.
+INFO    │        --> Virulence Factor found at coordinates: 1167-1598.
+INFO    │ STEP 1 completed at 2026-03-07 16:51:22
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutoutside_10
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:51:22
+INFO    │  >> Commec Screen completed at 2026-03-07 16:51:22
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutoutside_11.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisks in cholix_fullprotein_t07_mutoutside_11:
+INFO    │        --> Virulence Factor found at coordinates: 2-160, 1136-1708, 1751-1813.
+INFO    │        --> Virulence Factor found at coordinates: 856-1086, 229-831, 139-228.
+INFO    │ STEP 1 completed at 2026-03-07 16:51:24
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutoutside_11
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:51:24
+INFO    │  >> Commec Screen completed at 2026-03-07 16:51:24
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutoutside_12.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisks in cholix_fullprotein_t07_mutoutside_12:
+INFO    │        --> Virulence Factor found at coordinates: 961-1206, 1354-1803.
+INFO    │        --> Virulence Factor found at coordinates: 412-609, 4-246.
+INFO    │ STEP 1 completed at 2026-03-07 16:51:25
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutoutside_12
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:51:25
+INFO    │  >> Commec Screen completed at 2026-03-07 16:51:25
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutoutside_13.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisks in cholix_fullprotein_t07_mutoutside_13:
+INFO    │        --> Virulence Factor found at coordinates: 164-451, 881-985.
+INFO    │        --> Virulence Factor found at coordinates: 1279-1794.
+INFO    │ STEP 1 completed at 2026-03-07 16:51:27
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutoutside_13
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:51:27
+INFO    │  >> Commec Screen completed at 2026-03-07 16:51:27
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutoutside_14.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisk in cholix_fullprotein_t07_mutoutside_14:
+INFO    │        --> Virulence Factor found at coordinates: 661-993, 1009-1314, 1336-1617, 1633-1698, 1696-1806.
+INFO    │ STEP 1 completed at 2026-03-07 16:51:29
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutoutside_14
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:51:29
+INFO    │  >> Commec Screen completed at 2026-03-07 16:51:29
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutoutside_15.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisk in cholix_fullprotein_t07_mutoutside_15:
+INFO    │        --> Virulence Factor found at coordinates: 6-122, 144-413, 978-1127, 1200-1493, 1491-1814.
+INFO    │ STEP 1 completed at 2026-03-07 16:51:30
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutoutside_15
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:51:29
+INFO    │  >> Commec Screen completed at 2026-03-07 16:51:29
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutoutside_16.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisks in cholix_fullprotein_t07_mutoutside_16:
+INFO    │        --> Virulence Factor found at coordinates: 1325-1666.
+INFO    │        --> Virulence Factor found at coordinates: 731-1258, 92-283.
+INFO    │ STEP 1 completed at 2026-03-07 16:51:31
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutoutside_16
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:51:31
+INFO    │  >> Commec Screen completed at 2026-03-07 16:51:31
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutoutside_17.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisk in cholix_fullprotein_t07_mutoutside_17:
+INFO    │        --> Virulence Factor found at coordinates: 1294-1815, 1171-1287, 586-1095, 406-552.
+INFO    │ STEP 1 completed at 2026-03-07 16:51:32
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutoutside_17
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:51:32
+INFO    │  >> Commec Screen completed at 2026-03-07 16:51:32
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutoutside_18.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisks in cholix_fullprotein_t07_mutoutside_18:
+INFO    │        --> Virulence Factor found at coordinates: 104-355, 1040-1501.
+INFO    │        --> Virulence Factor found at coordinates: 618-1010, 360-587.
+INFO    │ STEP 1 completed at 2026-03-07 16:51:34
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutoutside_18
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:51:34
+INFO    │  >> Commec Screen completed at 2026-03-07 16:51:34
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutoutside_19.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisks in cholix_fullprotein_t07_mutoutside_19:
+INFO    │        --> Virulence Factor found at coordinates: 1531-1812.
+INFO    │        --> Virulence Factor found at coordinates: 1245-1469, 249-722, 3-266.
+INFO    │ STEP 1 completed at 2026-03-07 16:51:35
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutoutside_19
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:51:36
+INFO    │  >> Commec Screen completed at 2026-03-07 16:51:36
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutoutside_2.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisks in cholix_fullprotein_t07_mutoutside_2:
+INFO    │        --> Virulence Factor found at coordinates: 212-574.
+INFO    │        --> Virulence Factor found at coordinates: 1188-1466, 855-1175, 135-215.
+INFO    │ STEP 1 completed at 2026-03-07 16:51:37
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutoutside_2
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:51:37
+INFO    │  >> Commec Screen completed at 2026-03-07 16:51:37
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutoutside_20.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisks in cholix_fullprotein_t07_mutoutside_20:
+INFO    │        --> Virulence Factor found at coordinates: 1137-1655, 1680-1808.
+INFO    │        --> Virulence Factor found at coordinates: 867-1136, 6-458.
+INFO    │ STEP 1 completed at 2026-03-07 16:51:38
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutoutside_20
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:51:39
+INFO    │  >> Commec Screen completed at 2026-03-07 16:51:39
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutoutside_21.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisks in cholix_fullprotein_t07_mutoutside_21:
+INFO    │        --> Virulence Factor found at coordinates: 11-190, 452-685.
+INFO    │        --> Virulence Factor found at coordinates: 1269-1580, 1032-1271.
+INFO    │ STEP 1 completed at 2026-03-07 16:51:40
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutoutside_21
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:51:40
+INFO    │  >> Commec Screen completed at 2026-03-07 16:51:40
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutoutside_22.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisks in cholix_fullprotein_t07_mutoutside_22:
+INFO    │        --> Virulence Factor found at coordinates: 864-1061, 1068-1223.
+INFO    │        --> Virulence Factor found at coordinates: 1495-1815, 1312-1467, 223-606.
+INFO    │ STEP 1 completed at 2026-03-07 16:51:42
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutoutside_22
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:51:42
+INFO    │  >> Commec Screen completed at 2026-03-07 16:51:42
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutoutside_23.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisks in cholix_fullprotein_t07_mutoutside_23:
+INFO    │        --> Virulence Factor found at coordinates: 1-633.
+INFO    │        --> Virulence Factor found at coordinates: 657-956.
+INFO    │        --> Virulence Factor found at coordinates: 1479-1811, 990-1127.
+INFO    │ STEP 1 completed at 2026-03-07 16:51:43
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutoutside_23
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:51:43
+INFO    │  >> Commec Screen completed at 2026-03-07 16:51:43
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutoutside_24.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisk in cholix_fullprotein_t07_mutoutside_24:
+INFO    │        --> Virulence Factor found at coordinates: 297-623, 630-785, 867-1457.
+INFO    │ STEP 1 completed at 2026-03-07 16:51:45
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutoutside_24
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:51:45
+INFO    │  >> Commec Screen completed at 2026-03-07 16:51:45
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutoutside_25.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisk in cholix_fullprotein_t07_mutoutside_25:
+INFO    │        --> Virulence Factor found at coordinates: 307-1179.
+INFO    │ STEP 1 completed at 2026-03-07 16:51:46
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutoutside_25
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:51:46
+INFO    │  >> Commec Screen completed at 2026-03-07 16:51:46
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutoutside_26.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisks in cholix_fullprotein_t07_mutoutside_26:
+INFO    │        --> Virulence Factor found at coordinates: 128-259, 1469-1780.
+INFO    │        --> Virulence Factor found at coordinates: 363-617, 840-1331.
+INFO    │ STEP 1 completed at 2026-03-07 16:51:48
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutoutside_26
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:51:48
+INFO    │  >> Commec Screen completed at 2026-03-07 16:51:48
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutoutside_27.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisks in cholix_fullprotein_t07_mutoutside_27:
+INFO    │        --> Virulence Factor found at coordinates: 6-443, 1065-1367.
+INFO    │        --> Virulence Factor found at coordinates: 1388-1564, 416-625.
+INFO    │ STEP 1 completed at 2026-03-07 16:51:51
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutoutside_27
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:51:51
+INFO    │  >> Commec Screen completed at 2026-03-07 16:51:51
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutoutside_28.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisks in cholix_fullprotein_t07_mutoutside_28:
+INFO    │        --> Virulence Factor found at coordinates: 427-876, 1510-1812.
+INFO    │        --> Virulence Factor found at coordinates: 994-1218, 877-939, 22-330.
+INFO    │ STEP 1 completed at 2026-03-07 16:51:53
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutoutside_28
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:51:53
+INFO    │  >> Commec Screen completed at 2026-03-07 16:51:53
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutoutside_29.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisks in cholix_fullprotein_t07_mutoutside_29:
+INFO    │        --> Virulence Factor found at coordinates: 103-600, 1636-1815.
+INFO    │        --> Virulence Factor found at coordinates: 1027-1350, 598-993, 10-105.
+INFO    │ STEP 1 completed at 2026-03-07 16:51:54
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutoutside_29
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:51:55
+INFO    │  >> Commec Screen completed at 2026-03-07 16:51:55
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutoutside_3.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisks in cholix_fullprotein_t07_mutoutside_3:
+INFO    │        --> Virulence Factor found at coordinates: 1374-1808.
+INFO    │        --> Virulence Factor found at coordinates: 848-1258, 2-655.
+INFO    │ STEP 1 completed at 2026-03-07 16:51:56
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutoutside_3
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:51:56
+INFO    │  >> Commec Screen completed at 2026-03-07 16:51:56
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutoutside_30.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisk in cholix_fullprotein_t07_mutoutside_30:
+INFO    │        --> Virulence Factor found at coordinates: 931-1659.
+INFO    │ STEP 1 completed at 2026-03-07 16:51:58
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutoutside_30
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:51:58
+INFO    │  >> Commec Screen completed at 2026-03-07 16:51:58
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutoutside_4.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisks in cholix_fullprotein_t07_mutoutside_4:
+INFO    │        --> Virulence Factor found at coordinates: 46-516, 976-1119, 1312-1527.
+INFO    │        --> Virulence Factor found at coordinates: 485-553, 746-1018.
+INFO    │ STEP 1 completed at 2026-03-07 16:51:59
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutoutside_4
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:52:00
+INFO    │  >> Commec Screen completed at 2026-03-07 16:52:00
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutoutside_5.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisks in cholix_fullprotein_t07_mutoutside_5:
+INFO    │        --> Virulence Factor found at coordinates: 223-717.
+INFO    │        --> Virulence Factor found at coordinates: 869-1297.
+INFO    │        --> Virulence Factor found at coordinates: 1352-1777, 80-163.
+INFO    │ STEP 1 completed at 2026-03-07 16:52:00
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutoutside_5
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:52:00
+INFO    │  >> Commec Screen completed at 2026-03-07 16:52:00
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutoutside_6.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisks in cholix_fullprotein_t07_mutoutside_6:
+INFO    │        --> Virulence Factor found at coordinates: 7-429, 745-915.
+INFO    │        --> Virulence Factor found at coordinates: 392-697.
+INFO    │ STEP 1 completed at 2026-03-07 16:52:02
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutoutside_6
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:52:02
+INFO    │  >> Commec Screen completed at 2026-03-07 16:52:02
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutoutside_7.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisks in cholix_fullprotein_t07_mutoutside_7:
+INFO    │        --> Virulence Factor found at coordinates: 55-162, 1021-1467.
+INFO    │        --> Virulence Factor found at coordinates: 418-834.
+INFO    │ STEP 1 completed at 2026-03-07 16:52:03
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutoutside_7
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:52:04
+INFO    │  >> Commec Screen completed at 2026-03-07 16:52:04
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutoutside_8.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisks in cholix_fullprotein_t07_mutoutside_8:
+INFO    │        --> Virulence Factor found at coordinates: 893-1150, 1202-1324.
+INFO    │        --> Virulence Factor found at coordinates: 1331-1738, 416-580, 65-358.
+INFO    │ STEP 1 completed at 2026-03-07 16:52:05
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutoutside_8
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:52:05
+INFO    │  >> Commec Screen completed at 2026-03-07 16:52:05
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
+INFO    │ Validating input query and databases...
+INFO    │ Input query file:
+────────┘
+/home/zyl22/biosecurity_screener/commec_seq/obfused/cholix_t0.7/cholix_fullprotein_t07_mutoutside_9.fasta
+────────┐
+INFO    │  >> STEP 1: Checking for biorisk genes...
+INFO    │  Biorisk in cholix_fullprotein_t07_mutoutside_9:
+INFO    │        --> Virulence Factor found at coordinates: 1021-1455, 772-1023, 106-201.
+INFO    │ STEP 1 completed at 2026-03-07 16:52:07
+INFO    │ SKIPPING STEP 2: Protein search
+INFO    │ SKIPPING STEP 3: Nucleotide search
+INFO    │  >> STEP 4: Checking any pathogen regions for low-concern components...
+INFO    │  Low-concern checks for cholix_fullprotein_t07_mutoutside_9
+INFO    │        ... no housekeeping protein hits.
+INFO    │        ... no low-concern RNA hits.
+INFO    │        ... no low-concern DNA hits.
+INFO    │ STEP 4 completed at 2026-03-07 16:52:07
+INFO    │  >> Commec Screen completed at 2026-03-07 16:52:07
+────────┘
+
+ >> SUMMARY : 
+                    query      overall      biorisk  taxonomy_aa  taxonomy_nt      cleared
+cholix_fullprotein_t07_mu      Warning      Warning         Skip         Skip      Warning
+
+ >> RATIONALE : 
+cholix_fullprotein_t07_mu : Warning      --> Matches sequence with virulence factor.
+
