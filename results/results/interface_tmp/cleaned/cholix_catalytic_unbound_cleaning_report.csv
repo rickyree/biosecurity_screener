@@ -1,0 +1,22 @@
+PDB Cleaning Report
+Generated:,2026-03-07 15:52:14
+Input File:,cholix_catalytic_unbound.pdb
+
+SUMMARY STATISTICS
+Metric,Count
+Water molecules removed,0
+Heterogens removed,0
+Nonstandard residues replaced,0
+Missing residues added,0
+Missing atoms added,0
+Hydrogens added,1498
+Disulfide bonds detected,0
+Original chains,A
+Chains modified,
+B-factor preservation enabled,True
+B-factors preserved from original,3061
+Atoms with default B-factors,0
+Biological assembly generated,False
+Biological assembly transformations,0
+Biological assembly chains,0
+
