@@ -95,10 +95,11 @@ PASS: 180  |  FILTERED: 60
 ### Structural homology validation
 
 5. **Generate histogram**
-      Run to_run_histogram.py, with the filename variable specified as your output file.
-      **All will show as flagged by commec unless the candidate is present in to_run_results_bsspassed.tsv.**
 
-6. **Predict structures for flagged proteins**
+    - Run to_run_histogram.py, with the filename variable specified as your output file.
+    - **All will show as flagged by commec unless the candidate is present in to_run_results_bsspassed.tsv.**
+
+7. **Predict structures for flagged proteins**
    
     Use Amina CLI to run structure prediction (e.g., **Boltz-2**)
 
@@ -109,7 +110,7 @@ PASS: 180  |  FILTERED: 60
    ```
    
 
-7. **Extend the structural database**
+8. **Extend the structural database**
 
     - To add reference structures: Edit `scripts/get_cath_structures.py` and specify the desired **CATH superfamily ID**
 
@@ -118,7 +119,7 @@ PASS: 180  |  FILTERED: 60
       python scripts/fetch_cath_structures.py
       ```
     
-8. **Structural alignment**
+9. **Structural alignment**
    
     Use Amina CLI to calculate the **TM-scores** between the predicted structures and the reference structures in `structural_db`.
 
@@ -128,7 +129,7 @@ PASS: 180  |  FILTERED: 60
    amina run usalign -m predicted.pdb -t reference.pdb -o results/usalign >> results/usalign/metrics.txt
    ```
 
-9. **Obtain results**
+10. **Obtain results**
 
    Run the following scripts to summarise US-align metrics and generate visualisation of TM-score distribution.
 
