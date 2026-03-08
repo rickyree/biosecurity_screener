@@ -11,12 +11,8 @@ A tool that screens user protein sequences to detect maliciously-redesigned liga
    ```
    cd biosecurity_screener
    ```
-2. **Create a conda environment**
-   
-    ```
-    conda create -n aegis python=3.12
-    conda activate aegis
-    ```
+2. **Create a virtual environment and install requirements.txt**
+
     
 3. **Install Amina CLI**
 
