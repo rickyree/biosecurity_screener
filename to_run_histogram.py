@@ -5,7 +5,7 @@ import matplotlib.lines as mlines
 import seaborn as sns
 
 # ── Data ──────────────────────────────────────────────────────────────────────
-df = pd.read_csv('results/to_run_results_all.tsv', sep='\t')
+df = pd.read_csv('output.tsv', sep='\t')
 
 with open('to_run_results_bsspassed.tsv') as f:
     passed = set(line.strip() for line in f if line.strip())
@@ -14,8 +14,8 @@ df['Commec'] = df['candidate'].apply(
     lambda x: 'Passed by Commec' if x in passed else 'Flagged by Commec'
 )
 
-mn, mx = df['pass_filter'].min(), df['pass_filter'].max()
-df['score'] = (df['pass_filter'] - mn) / (mx - mn)
+mn, mx = df['chem_sim'].min(), df['chem_sim'].max()
+df['score'] = (df['chem_sim'] - mn) / (mx - mn)
 
 THRESHOLD = 0.3
 
@@ -42,10 +42,7 @@ sns.histplot(
     ax=ax,
 )
 
-ax.axvline(THRESHOLD, color='#0f172a', linestyle='--', linewidth=1.8)
-ax.text(THRESHOLD + 0.01, ax.get_ylim()[1] * 0.95,
-        f'Aegis threshold ({THRESHOLD})',
-        color='#0f172a', fontsize=9, va='top')
+
 
 ax.set_xlim(0, 1)
 ax.set_title('Aegis scores of Cholix toxin synthetic homologues',
@@ -56,9 +53,8 @@ ax.tick_params(colors='#475569')
 
 patch_flagged = mpatches.Patch(color='#f87171', label='Flagged by Commec', ec='white')
 patch_passed  = mpatches.Patch(color='#60a5fa', label='Passed by Commec',  ec='white')
-line_thresh   = mlines.Line2D([], [], color='#0f172a', linestyle='--',
-                               linewidth=1.8, label=f'Aegis threshold ({THRESHOLD})')
-ax.legend(handles=[line_thresh, patch_passed, patch_flagged],
+
+ax.legend(handles=[patch_passed, patch_flagged],
           frameon=False, fontsize=9)
 
 plt.tight_layout()
