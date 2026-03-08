@@ -30,7 +30,7 @@ python esm2_prefilter.py --structure binding/cholix.pdb --bound-ligand NAD --can
 python esm2_prefilter.py --structure binding/cholix_unbound.pdb --apo --candidates-tsv candidate_sequences.tsv
 
 # Explicit residue list
-python esm2_prefilter.py --structure cholix.pdb --iface-residues "331, 335, 434, 435, 436, 437, 438, 441, 444, 445, 449, 450, 451, 452, 454, 455, 467, 468, 469, 470, 475, 476, 479, 483, 556, 557, 561" --candidates-tsv candidates.tsv
+python esm2_prefilter.py --structure cholix.pdb --iface-residues "331, 335, 434, 435, 436, 437, 438, 441, 444, 445, 449, 450, 451, 452, 454, 455, 467, 468, 469, 470, 475, 476, 479, 483, 556, 557, 561" --candidates-tsv candidate_sequences.tsv
 ```
 #### Arguments
 
