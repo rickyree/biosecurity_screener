@@ -94,7 +94,11 @@ PASS: 180  |  FILTERED: 60
    
 ### Structural homology validation
 
-5. **Predict structures for flagged proteins**
+5. **Generate histogram**
+   Run to_run_histogram.py, with the filename variable specified as your output file.
+   **All will show as flagged by commec unless the candidate is present in to_run_results_bsspassed.tsv.**
+
+6. **Predict structures for flagged proteins**
    
     Use Amina CLI to run structure prediction (e.g., **Boltz-2**)
 
