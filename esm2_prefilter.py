@@ -560,6 +560,7 @@ def main():
         rows.append({
             'candidate': name,
             'seq_len': len(seq),
+            'contact_score': round(cs, 4),
             'chem_sim': round(es, 4) if not np.isnan(es) else None,
         })
 
@@ -571,6 +572,7 @@ def main():
     out_dir = os.path.dirname(out_path)
     if out_dir:  # Only create directory if path contains one
         os.makedirs(out_dir, exist_ok=True)
+    results_df = results_df.drop('contact_score', axis=1)
     results_df.to_csv(out_path, sep='\t', index=False)
 
     print(f"\n{'='*70}")
@@ -580,11 +582,10 @@ def main():
     print(f"{'='*70}")
 
     # Compute pass/fail on the fly for console output only
-    contact_pass = results_df['contact_score'].apply(
-        lambda x: True if np.isnan(x) else x >= cs_thresh)
+
     chem_pass = results_df.apply(
         lambda r: True if r['chem_sim'] is None else r['chem_sim'] >= es_thresh, axis=1)
-    pass_filter = contact_pass & chem_pass
+    pass_filter =  chem_pass
 
     passed_count = pass_filter.sum()
     filtered_count = len(results_df) - passed_count
