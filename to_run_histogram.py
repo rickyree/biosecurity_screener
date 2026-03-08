@@ -63,5 +63,5 @@ ax.legend(handles=[patch_passed, patch_flagged],
           frameon=False, fontsize=9)
 
 plt.tight_layout()
-plt.savefig('aegis__histogram_.png', dpi=180, bbox_inches='tight')
+plt.savefig('aegis_histogram.png', dpi=180, bbox_inches='tight')
 print("Saved aegis_histogram.png")
