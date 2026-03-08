@@ -469,7 +469,7 @@ def main():
     ap.add_argument('--candidates-tsv', required=True, metavar='TSV',
                     help='TSV file of candidate sequences with columns "candidate" and "sequence_chain1".')
     ap.add_argument('--out', default=None, metavar='TSV',
-                    help='Output TSV path (default: results/esm2_prefilter_{structure_stem}[_apo|_explicit].tsv)')
+                    help='Output TSV path (default: output_{structure_stem}[_apo|_explicit].tsv)')
     ap.add_argument('--iface-residues', default=None, metavar='NUMS',
                     help='Comma-separated residue numbers to use as the binding site (e.g. 32,64,65).')
     ap.add_argument('--plddt-thresh', type=float, default=0.0, metavar='THRESH',
@@ -487,7 +487,7 @@ def main():
     else:
         suffix = ''
 
-    out_path = args.out or f'results/esm2_prefilter_{structure_stem}{suffix}.tsv'
+    out_path = args.out or f'output_{structure_stem}{suffix}.tsv'
 
     print("Loading ESM2 650M...", flush=True)
     model, alphabet = esmlib.pretrained.esm2_t33_650M_UR50D()
