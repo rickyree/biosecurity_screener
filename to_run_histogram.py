@@ -5,7 +5,12 @@ import matplotlib.lines as mlines
 import seaborn as sns
 
 # ── Data ──────────────────────────────────────────────────────────────────────
-df = pd.read_csv('output.tsv', sep='\t')
+
+
+filename = 'output.tsv'
+
+
+df = pd.read_csv(filename, sep='\t')
 
 with open('to_run_results_bsspassed.tsv') as f:
     passed = set(line.strip() for line in f if line.strip())
@@ -58,5 +63,5 @@ ax.legend(handles=[patch_passed, patch_flagged],
           frameon=False, fontsize=9)
 
 plt.tight_layout()
-plt.savefig('aegis_cholix_histogram_updated.png', dpi=180, bbox_inches='tight')
-print("Saved aegis_cholix_histogram_updated.png")
+plt.savefig('aegis__histogram_.png', dpi=180, bbox_inches='tight')
+print("Saved aegis_histogram.png")
