@@ -24,13 +24,13 @@ A tool that screens user protein sequences to detect maliciously-redesigned liga
    
 ```bash
 # Holo structure with ligand
-python esm2_prefilter.py --structure complex_AB.pdb --bound-ligand LIG --candidates-tsv candidates.tsv
+python esm2_prefilter.py --structure binding/cholix.pdb --bound-ligand NAD --candidates-tsv candidates.tsv
 
 # Apo structure (automatically uses PeSTo)
-python esm2_prefilter.py --structure protein_A.pdb --apo --candidates-tsv candidates.tsv
+python esm2_prefilter.py --structure binding/cholix_unbound.pdb --apo --candidates-tsv candidates.tsv
 
 # Explicit residue list
-python esm2_prefilter.py --structure protein_A.pdb --iface-residues "32,64,65,68" --candidates-tsv candidates.tsv
+python esm2_prefilter.py --structure cholix.pdb --iface-residues "331, 335, 434, 435, 436, 437, 438, 441, 444, 445, 449, 450, 451, 452, 454, 455, 467, 468, 469, 470, 475, 476, 479, 483, 556, 557, 561" --candidates-tsv candidates.tsv
 ```
 #### Arguments
 
