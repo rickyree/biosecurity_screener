@@ -560,7 +560,6 @@ def main():
         rows.append({
             'candidate': name,
             'seq_len': len(seq),
-            'contact_score': round(cs, 4),
             'chem_sim': round(es, 4) if not np.isnan(es) else None,
         })
 
@@ -595,8 +594,6 @@ def main():
     for i, r in results_df.iterrows():
         if not pass_filter.iloc[i]:
             reasons = []
-            if not contact_pass.iloc[i]:
-                reasons.append(f"contact={r['contact_score']:.4f}<{cs_thresh:.4f}")
             if not chem_pass.iloc[i] and r['chem_sim'] is not None:
                 reasons.append(f"chem_sim={r['chem_sim']:.4f}<{es_thresh:.2f}")
             print(f"  {r['candidate']:50s}  {', '.join(reasons)}")
