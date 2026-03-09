@@ -35,8 +35,8 @@ python esm2_prefilter.py --structure cholix.pdb --iface-residues "331, 335, 434,
 #### Arguments
 
 ##### Required
-- `--structure PDB` - Input protein structure (indicate with --apo if apo)
-- `--candidates-tsv TSV` - Candidates with `candidate` and `sequence_chain1` columns
+- `--structure PDB` - Input toxin protein structure (indicate with --apo if apo)
+- `--candidates-tsv TSV` - Candidate sequences with `candidate` and `sequence_chain1` columns
 
 ##### Interface Methods (auto-selected)
 - **Default (holo)**: <5Å from ligand/partner in structure
