@@ -46,7 +46,7 @@ python esm2_prefilter.py --structure cholix.pdb --iface-residues "331, 335, 434,
 ##### Optional
 - `--bound-chain ID` - Receptor chain in holo structure (auto-detect)
 - `--bound-ligand RES` - Ligand residue name (for single-chain holo, otherwise will look for bound protein)
-- `--out PATH` - Output TSV path (auto-generate)
+- `--out PATH` - Output TSV path (default: ./output_{name of input PDB file}_{suffix}.tsv, suffix indicating if holo, apo or explicitly defined interface residues)
 - `--plddt-thresh FLOAT` - Filter by B-factor/pLDDT (default: 0)
 
 #### Input Format
@@ -66,15 +66,8 @@ protein_2	MPLVQGDKIKIFVGIK...
 |--------|-------------|
 | `candidate` | Sequence identifier |
 | `seq_len` | Sequence length |
-| `chem_sim` | Chemistry similarity score |
+| `chem_sim` | Aegis score |
 
-**Console Summary**:
-```
-Reference contact score: 0.0398
-Contact threshold (50%): 0.0199
-Chemistry sim threshold: 0.80
-PASS: 180  |  FILTERED: 60
-```
 
 #### Interface Methods
 
