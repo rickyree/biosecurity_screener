@@ -66,7 +66,6 @@ protein_2	MPLVQGDKIKIFVGIK...
 |--------|-------------|
 | `candidate` | Sequence identifier |
 | `seq_len` | Sequence length |
-| `contact_score` | ESM2 inter-cluster contact score |
 | `chem_sim` | Chemistry similarity score |
 
 **Console Summary**:
