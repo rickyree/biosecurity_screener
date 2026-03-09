@@ -60,7 +60,7 @@ protein_2	MPLVQGDKIKIFVGIK...
 
 #### Output
 
-**Results TSV**: `results/esm2_prefilter_{structure_stem}[_apo|_explicit].tsv`
+**Results TSV**: stored as defined in --out PATH
 
 | Column | Description |
 |--------|-------------|
