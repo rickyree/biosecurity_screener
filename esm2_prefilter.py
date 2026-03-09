@@ -565,9 +565,7 @@ def main():
         })
 
     results_df = pd.DataFrame(rows)
-
-    cs_thresh = ref_cs * 0.50
-    es_thresh = 0.80
+  
 
     out_dir = os.path.dirname(out_path)
     if out_dir:  # Only create directory if path contains one
@@ -575,29 +573,6 @@ def main():
     results_df = results_df.drop('contact_score', axis=1)
     results_df.to_csv(out_path, sep='\t', index=False)
 
-    print(f"\n{'='*70}")
-    print(f"Reference contact score: {ref_cs:.4f}")
-    print(f"Contact threshold (50%): {cs_thresh:.4f}")
-    print(f"Chemistry sim threshold: {es_thresh:.2f}")
-    print(f"{'='*70}")
-
-    # Compute pass/fail on the fly for console output only
-
-    chem_pass = results_df.apply(
-        lambda r: True if r['chem_sim'] is None else r['chem_sim'] >= es_thresh, axis=1)
-    pass_filter =  chem_pass
-
-    passed_count = pass_filter.sum()
-    filtered_count = len(results_df) - passed_count
-    print(f"\nPASS: {passed_count}  |  FILTERED: {filtered_count}")
-
-    print("\n── FILTERED OUT ──")
-    for i, r in results_df.iterrows():
-        if not pass_filter.iloc[i]:
-            reasons = []
-            if not chem_pass.iloc[i] and r['chem_sim'] is not None:
-                reasons.append(f"chem_sim={r['chem_sim']:.4f}<{es_thresh:.2f}")
-            print(f"  {r['candidate']:50s}  {', '.join(reasons)}")
 
     print(f"\nResults saved to {out_path}")
 
