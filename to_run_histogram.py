@@ -49,6 +49,8 @@ sns.histplot(
 
 
 
+threshold_norm = (0.775 - mn) / (mx - mn)
+ax.axvline(threshold_norm, color='#374151', linewidth=1.2, linestyle='--')
 ax.set_xlim(0, 1)
 ax.set_title('Aegis scores of Cholix toxin synthetic homologues',
              fontsize=13, fontweight='bold', color='#0f172a', pad=12)
