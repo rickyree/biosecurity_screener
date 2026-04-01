@@ -134,22 +134,3 @@ protein_2	MPLVQGDKIKIFVGIK...
     python scripts/plot_tm_distributions.py
     ```
 
-## Repository Structure
-   
-
-```
-biosecurity_screener/
-│
-├── scripts/                 # Helper scripts for downloading structures and analysing results
-│   └── fetch_cath_structures.py
-│   └── plot_tm_distributions.py
-│   └── summarise_usalign_metrics.py
-│
-├── structural_db/           # Reference protein structures
-│
-├── misc/                 # Output files and results
-│
-├── esm2_prefilter.py        # Main script to run Aegis
-│
-└── README.md
-```
