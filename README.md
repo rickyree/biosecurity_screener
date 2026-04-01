@@ -1,5 +1,5 @@
 # Aegis: Structure-based Biosecurity Screening
-A tool that screens user protein sequences to detect maliciously-redesigned ligand-binding toxins using interface signature detection and structural homology screening (site: https://rickyree.github.io/slidedeck/).
+A tool that screens user protein sequences to detect maliciously-redesigned ligand-binding toxins using interface signature detection and structural homology screeningv. Integrates ESM2-derived embeddings and contact maps to define a toxin-substrate interface fingerprint directly from the sequence. Further information: https://rickyree.github.io/slidedeck/ 
 
 ## Guided Workflow
 ### Installation
