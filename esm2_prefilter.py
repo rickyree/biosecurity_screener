@@ -26,7 +26,7 @@ from Bio.SeqUtils import seq1
 from Bio import pairwise2
 
 AMINA = os.path.join(os.path.dirname(sys.executable), 'amina')
-ESM2_CACHE_DIR = 'results/esm2_embed_cache'
+ESM2_CACHE_DIR = 'misc/esm2_embed_cache'
 
 # ── ESM2 inference (with sequence-keyed cache) ────────────────────────────────
 
@@ -219,7 +219,7 @@ def identify_interface_5a(apo_ref, bound_ref, bound_chain=None, bound_ligand=Non
     return iface_res
 
 def run_pesto_prediction(apo_ref, bound_ref, bound_chain=None, bound_ligand=None,
-                        pesto_threshold=0.5, work_dir='results/interface_tmp'):
+                        pesto_threshold=0.5, work_dir='misc/interface_tmp'):
     """Run PeSTo prediction method.
 
     Uses only the highest-confidence pocket for improved specificity.

@@ -1,16 +1,10 @@
-# ESM2 Prefilter Standalone - Minimal Python Dependencies
-# For users who only want to run the ESM2 prefilter without the full biosecurity screener
-
-# Core scientific computing
 numpy>=1.21.0
 pandas>=1.3.0
 scipy>=1.7.0
 
-# Machine learning & NLP
 torch>=1.11.0
 fair-esm>=2.0.0
 
-# Bioinformatics
 biopython>=1.79
 
 # Optional: For PeSTo binding site predictions

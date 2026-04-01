@@ -1,7 +1,7 @@
 """
 Plot TM-score distribution for cholix t1.5-passed sequences.
-Reads: results/usalign/cholix_t1.5_passed/summary_per_mobile.csv
-Saves: results/usalign/cholix_t1.5_passed/tm_score_distributions.png
+Reads: misc/usalign/cholix_t1.5_passed/summary_per_mobile.csv
+Saves: misc/usalign/cholix_t1.5_passed/tm_score_distributions.png
 """
 
 import csv
@@ -9,8 +9,8 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 import numpy as np
 
-CSV_PATH = "results/usalign/cholix_t1.5_passed/summary_per_mobile.csv"
-OUT_PATH = "results/usalign/cholix_t1.5_passed/tm_score_distributions.png"
+CSV_PATH = "misc/usalign/cholix_t1.5_passed/summary_per_mobile.csv"
+OUT_PATH = "misc/usalign/cholix_t1.5_passed/tm_score_distributions.png"
 
 THRESH_FLAG   = 0.7
 THRESH_BORDER = 0.5

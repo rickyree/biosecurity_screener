@@ -80,8 +80,8 @@ protein_2	MPLVQGDKIKIFVGIK...
 
 #### Notes
 
-- ESM2 embeddings cached in `results/esm2_embed_cache/`
-- PeSTo temp files in `results/interface_tmp/`
+- ESM2 embeddings cached in `misc/esm2_embed_cache/`
+- PeSTo temp files in `misc/interface_tmp/`
 
    
 ### Structural homology validation
@@ -98,7 +98,7 @@ protein_2	MPLVQGDKIKIFVGIK...
     Example:
    
    ```
-   amina run boltz2 -s "XXX" -o results/boltz2
+   amina run boltz2 -s "XXX" -o misc/boltz2
    ```
    
 
@@ -118,7 +118,7 @@ protein_2	MPLVQGDKIKIFVGIK...
    Example:
    
    ```
-   amina run usalign -m predicted.pdb -t reference.pdb -o results/usalign >> results/usalign/metrics.txt
+   amina run usalign -m predicted.pdb -t reference.pdb -o misc/usalign >> misc/usalign/metrics.txt
    ```
 
 10. **Obtain results**
@@ -147,7 +147,7 @@ biosecurity_screener/
 │
 ├── structural_db/           # Reference protein structures
 │
-├── results/                 # Output files and results
+├── misc/                 # Output files and results
 │
 ├── esm2_prefilter.py        # Main script to run Aegis
 │

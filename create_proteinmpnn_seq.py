@@ -20,7 +20,7 @@ Usage:
         --n-outside 15 \\
         --n-conserved 10 \\
         --cutoff 5.0 \\
-        --output-tsv results/dmasif/candidate_sequences.tsv
+        --output-tsv misc/dmasif/candidate_sequences.tsv
 """
 
 import argparse
@@ -227,10 +227,10 @@ def main():
                     help='Minimum sampling temperature (default: 0.3)')
     ap.add_argument('--temp-max',     type=float, default=0.3,
                     help='Maximum sampling temperature (default: 0.3)')
-    ap.add_argument('--output-tsv',   default='results/dmasif/candidate_sequences.tsv',
+    ap.add_argument('--output-tsv',   default='misc/dmasif/candidate_sequences.tsv',
                     help='TSV file to append sequences to')
-    ap.add_argument('--output-dir',   default='results/proteinmpnn',
-                    help='Directory for job downloads (default: results/proteinmpnn)')
+    ap.add_argument('--output-dir',   default='misc/proteinmpnn',
+                    help='Directory for job downloads (default: misc/proteinmpnn)')
     ap.add_argument('--jobs-file',    default=None,
                     help='JSON file to save job IDs (default: jobs/<prefix>_mpnn_jobs.json)')
     args = ap.parse_args()

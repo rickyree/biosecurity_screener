@@ -1,0 +1,14 @@
+# Large binary data files
+*.npz
+*.pdb
+*.cif
+*.a3m
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Compiled/binary outputs
+*.o
+*.so

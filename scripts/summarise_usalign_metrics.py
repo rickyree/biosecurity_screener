@@ -1,17 +1,17 @@
 """
 Summarise USalign results for cholix_fullprotein_t10 mutconserved sequences.
 
-Reads:  results/usalign/mutconserved_t10/metrics.txt
-Writes: results/usalign/mutconserved_t10/summary_per_comparison.csv
-        results/usalign/mutconserved_t10/summary_per_mobile.csv
+Reads:  misc/usalign/mutconserved_t10/metrics.txt
+Writes: misc/usalign/mutconserved_t10/summary_per_comparison.csv
+        misc/usalign/mutconserved_t10/summary_per_mobile.csv
 Prints: table to stdout
 """
 
 import re, csv
 from collections import defaultdict
 
-METRICS       = "results/usalign/mutconserved_t10/metrics.txt"
-OUT_DIR       = "results/usalign/mutconserved_t10"
+METRICS       = "misc/usalign/mutconserved_t10/metrics.txt"
+OUT_DIR       = "misc/usalign/mutconserved_t10"
 THRESH_FLAG   = 0.7
 THRESH_BORDER = 0.5
 
