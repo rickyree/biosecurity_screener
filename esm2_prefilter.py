@@ -571,6 +571,7 @@ def main():
     if out_dir:  # Only create directory if path contains one
         os.makedirs(out_dir, exist_ok=True)
     results_df = results_df.drop('contact_score', axis=1)
+    results_df['flagged'] = results_df['chem_sim'] > 0.775
     results_df.to_csv(out_path, sep='\t', index=False)
 
 
