@@ -67,6 +67,7 @@ protein_2	MPLVQGDKIKIFVGIK...
 | `candidate` | Sequence identifier |
 | `seq_len` | Sequence length |
 | `chem_sim` | Aegis score |
+| `flagged` | Detected as toxic or not (bool) |
 
 
 #### Interface Methods
